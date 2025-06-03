@@ -16,33 +16,31 @@ class Solution {
         map.put('8', Arrays.asList("t", "u", "v"));
         map.put('9', Arrays.asList("w", "x", "y", "z"));
 
-       
-
         char[] ch = digits.toCharArray();
 
-        List<String> ans
-         = map.get(ch[0]);
+        List<String> ans = map.get(ch[0]);
 
         if (ch.length == 1) {
             return ans;
         }
 
+    
         for (int i = 1; i < ch.length; i++) {
             List<String> curr = map.get(ch[i]);
+
+              ans = merge(ans,curr);
             
-            ans = merge(ans,curr);
         }
 
         return ans;
 
     }
 
-
-    public List<String> merge(List<String> str1 , List<String> str2){
+    public List<String> merge(List<String> str1, List<String> str2) {
         List<String> ans = new ArrayList<>();
 
-        for(String s1 : str1){
-            for(String s2 : str2){
+        for (String s1 : str1) {
+            for (String s2 : str2) {
                 ans.add(s1.concat(s2));
             }
         }
