@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/hash0209/LeetCode/tree/master/0037-sudoku-solver) |
 | [0051-n-queens](https://github.com/hash0209/LeetCode/tree/master/0051-n-queens) |
 | [0079-word-search](https://github.com/hash0209/LeetCode/tree/master/0079-word-search) |
 | [0139-word-break](https://github.com/hash0209/LeetCode/tree/master/0139-word-break) |
@@ -12,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/hash0209/LeetCode/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0037-sudoku-solver](https://github.com/hash0209/LeetCode/tree/master/0037-sudoku-solver) |
 | [0051-n-queens](https://github.com/hash0209/LeetCode/tree/master/0051-n-queens) |
 | [0079-word-search](https://github.com/hash0209/LeetCode/tree/master/0079-word-search) |
 | [0131-palindrome-partitioning](https://github.com/hash0209/LeetCode/tree/master/0131-palindrome-partitioning) |
@@ -20,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/hash0209/LeetCode/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0037-sudoku-solver](https://github.com/hash0209/LeetCode/tree/master/0037-sudoku-solver) |
 | [0139-word-break](https://github.com/hash0209/LeetCode/tree/master/0139-word-break) |
 ## String
 |  |
@@ -40,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/hash0209/LeetCode/tree/master/0037-sudoku-solver) |
 | [0079-word-search](https://github.com/hash0209/LeetCode/tree/master/0079-word-search) |
 ## Trie
 |  |
