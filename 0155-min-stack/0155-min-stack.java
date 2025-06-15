@@ -8,12 +8,8 @@ class MinStack {
     }
     
     public void push(int val) {
-        int min = val ;
-        if(!st.isEmpty()){
-            int lastMin = st.peek().getValue();
-            min = Math.min(min,lastMin);
-        }
-        Pair<Integer,Integer> p = new Pair<>(val, min);
+        int currentMin = st.isEmpty() ? val : Math.min(val, st.peek().getValue());
+        Pair<Integer,Integer> p = new Pair<>(val, currentMin);
         st.push(p);
     }
     
