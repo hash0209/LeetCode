@@ -1,32 +1,33 @@
 class MinStack {
 
-    Stack<Integer> st ;
+      Stack<Pair<Integer,Integer>> st ;
+      int min = Integer.MAX_VALUE;
 
     public MinStack() {
         st = new Stack<>();
     }
     
     public void push(int val) {
-       st.push(val); 
+        int min = val ;
+        if(!st.isEmpty()){
+            int lastMin = st.peek().getValue();
+            min = Math.min(min,lastMin);
+        }
+        Pair<Integer,Integer> p = new Pair<>(val, min);
+        st.push(p);
     }
     
     public void pop() {
         st.pop();
+      
     }
     
     public int top() {
-      return st.peek();  
+        return st.peek().getKey();
     }
     
     public int getMin() {
-
-        int minEl = Integer.MAX_VALUE;
-
-       for(Integer el : st){
-        minEl = Math.min(el,minEl);
-       }
-        return minEl;
-        
+        return st.peek().getValue();
     }
 }
 
