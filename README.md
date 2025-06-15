@@ -53,4 +53,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0139-word-break](https://github.com/hash0209/LeetCode/tree/master/0139-word-break) |
+## Stack
+|  |
+| ------- |
+| [0225-implement-stack-using-queues](https://github.com/hash0209/LeetCode/tree/master/0225-implement-stack-using-queues) |
+## Design
+|  |
+| ------- |
+| [0225-implement-stack-using-queues](https://github.com/hash0209/LeetCode/tree/master/0225-implement-stack-using-queues) |
+## Queue
+|  |
+| ------- |
+| [0225-implement-stack-using-queues](https://github.com/hash0209/LeetCode/tree/master/0225-implement-stack-using-queues) |
 <!---LeetCode Topics End-->
