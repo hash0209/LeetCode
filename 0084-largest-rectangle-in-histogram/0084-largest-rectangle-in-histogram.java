@@ -3,13 +3,13 @@ class Solution {
 
           Stack<Integer> s = new Stack<>();
 
-          int[] prev = new int[heights.length];
+          //int[] prev = new int[heights.length];
 
           int[] next = new int[heights.length];
 
 
 
-          for(int i=0; i < heights.length;i++){
+       /*   for(int i=0; i < heights.length;i++){
             while(!s.isEmpty()&& heights[s.peek()] >= heights[i]){
                 s.pop();
             }
@@ -22,10 +22,10 @@ class Solution {
             }
 
             s.push(i);
-          }
+          }*/
 
 
-          s =new Stack<Integer>();
+       //   s =new Stack<Integer>();
 
 
 
@@ -48,11 +48,24 @@ class Solution {
 
           int total =0;
 
+          s =new Stack<Integer>();
+
 
           for(int i =0; i < heights.length; i ++){
-            int sum = (next[i] - prev[i] - 1)* heights[i];
+
+            int prev = -1;
+
+            while(!s.isEmpty()&& heights[s.peek()] >= heights[i]){
+                s.pop();
+            }
+            if(!s.isEmpty()){
+                prev = s.peek();
+            }
+            
+            int sum = (next[i] - prev - 1)* heights[i];
 
             total = Math.max(total,sum);
+            s.push(i);
           }
 
           return total;
