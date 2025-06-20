@@ -6,7 +6,7 @@ class Solution {
 
         Stack<Character> s = new Stack<>();
         for (int i = 0; i < c.length; i++) {
-            while (!s.isEmpty() && s.peek() - '0' > c[i] - '0') {
+            while (!s.isEmpty() && s.peek()  > c[i] ) {
 
                 if (k == 0) {
                     break;
@@ -17,22 +17,19 @@ class Solution {
             }
 
             if (s.size() < allowed) {
-
-              
-
-                    s.push(c[i]);
-                
+                  s.push(c[i]);                
                 }
             else {
                 k--;
             }
         }
 
-        String ans = "";
+        StringBuilder ans = new StringBuilder();
 
         while (!s.isEmpty()) {
-            ans = String.valueOf(s.pop()).concat(ans);
+            ans.append(s.pop());
         }
+        ans.reverse();
 
         if (ans.isEmpty()) {
             return "0";
