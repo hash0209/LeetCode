@@ -1,79 +1,47 @@
 class Solution {
     public int largestRectangleArea(int[] heights) {
 
-          Stack<Integer> s = new Stack<>();
+        Stack<Integer> st = new Stack<>();
 
-          //int[] prev = new int[heights.length];
+        int maxArea = 0;
 
-          int[] next = new int[heights.length];
+        for (int i = 0; i < heights.length; i++) {
 
+            //pse
+            while (!st.isEmpty() && heights[st.peek()] >= heights[i]) {
+                int el = st.pop();
 
+                int nse = i;
+                int pse = 0;
+                if (!st.isEmpty()) {
+                    pse = st.peek();
+                } else {
+                    pse = -1;
+                }
 
-       /*   for(int i=0; i < heights.length;i++){
-            while(!s.isEmpty()&& heights[s.peek()] >= heights[i]){
-                s.pop();
+                int area = (nse - pse - 1) * heights[el];
+                maxArea = Math.max(area, maxArea);
+                
             }
+            st.push(i);
+        }
 
-            if(s.isEmpty()){
-                prev[i] = -1;
+        int nse = heights.length;
+
+        while (!st.isEmpty()) {
+            int el = st.pop();
+            int pse = 0;
+            if (!st.isEmpty()) {
+                pse = st.peek();
+            } else {
+                pse = -1;
             }
-            else{
-                prev[i] = s.peek();
-            }
-
-            s.push(i);
-          }*/
+            int area = (nse - pse - 1) * heights[el];
+            maxArea = Math.max(area, maxArea);
+        }
 
 
-       //   s =new Stack<Integer>();
+        return maxArea;
 
-
-
-
-           for(int i=heights.length-1; i >=0;i--){
-            while(!s.isEmpty()&& heights[s.peek()] >= heights[i]){
-                s.pop();
-            }
-
-            if(s.isEmpty()){
-                next[i] = heights.length;
-            }
-            else{
-                next[i] = s.peek();
-            }
-
-            s.push(i);
-          }
-
-
-          int total =0;
-
-          s =new Stack<Integer>();
-
-
-          for(int i =0; i < heights.length; i ++){
-
-            int prev = -1;
-
-            while(!s.isEmpty()&& heights[s.peek()] >= heights[i]){
-                s.pop();
-            }
-            if(!s.isEmpty()){
-                prev = s.peek();
-            }
-            
-            int sum = (next[i] - prev - 1)* heights[i];
-
-            total = Math.max(total,sum);
-            s.push(i);
-          }
-
-          return total;
-
-
-
-
-
-        
     }
 }
