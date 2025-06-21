@@ -2,6 +2,8 @@ class Solution {
     public int maximalRectangle(char[][] matrix) {
 
         int[] temp = new int[matrix[0].length];
+        Stack<Integer> s = new Stack<>();
+
 
         int maxArea = 0;
 
@@ -18,8 +20,7 @@ class Solution {
 
           
 
-            Stack<Integer> s = new Stack<>();
-
+           
             
 
             for (int k = 0; k < temp2.length; k++) {
