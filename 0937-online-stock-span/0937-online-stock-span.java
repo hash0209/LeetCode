@@ -21,7 +21,7 @@ class StockSpanner {
             }
 
             if(s.isEmpty()){
-                 span = idx -(-1);
+                 span = idx+1;
             }
             else{
                 span = idx - s.peek();
