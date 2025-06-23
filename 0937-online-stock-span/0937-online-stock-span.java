@@ -1,22 +1,39 @@
+class Pair<U, V> {
+    public U first;
+    public V second;
+
+    public Pair(U first, V second) {
+        this.first = first;
+        this.second = second;
+    }
+}
+
+
+
+
+
+
 class StockSpanner {
     int idx =0;
 
-    Stack<Integer> s ;
-    Map<Integer , Integer> map  ;
+   // Stack<Integer> s ;
+   // Map<Integer , Integer> map  ;
+
+    Stack<Pair<Integer,Integer>> s ;
 
     public StockSpanner() {
 
         
         
-        s =new Stack<Integer>();
-        map = new HashMap<>();
+        s =new Stack<>();
+       // map = new HashMap<>();
     }
     
     public int next(int price) {
-        int span = 1;
+          int span = 1;
         
         
-            while(!s.isEmpty() && map.get(s.peek()) <= price){
+            while(!s.isEmpty() && s.peek().second <= price){
                    s.pop();
             }
 
@@ -24,13 +41,13 @@ class StockSpanner {
                  span = idx+1;
             }
             else{
-                span = idx - s.peek();
+                span = idx - s.peek().first;
             }
 
            
         
-        map.put(idx , price);
-        s.push(idx);
+       // map.put(idx , price);
+        s.push(new Pair(idx , price));
         idx++;
 
         return span;
@@ -39,6 +56,8 @@ class StockSpanner {
 
     }
 }
+
+
 
 /**
  * Your StockSpanner object will be instantiated and called as such:
