@@ -11,12 +11,9 @@ class Solution {
         char[] c =s.toCharArray();
 
         while(r < c.length){
-            if(map.containsKey(c[r])){
-               int idx = map.get(c[r]);
-               while(l <=idx){
-                map.remove(c[l]);
-                l++;
-               }
+            if(map.containsKey(c[r]) && map.get(c[r]) >=l){
+               l = map.get(c[r]) +1;
+               
             }
             else{
                 map.put(c[r],r);
