@@ -1,7 +1,7 @@
 class Solution {
     public int totalFruit(int[] fruits) {
 
-        int[] nums = fruits;
+       
         Map<Integer, Integer> map = new HashMap<>();
 
         int first = -1;
@@ -16,19 +16,19 @@ class Solution {
 
         while (r < fruits.length) {
 
-            if (nums[r] == first) {
+            if (fruits[r] == first) {
                 firstcount++;
                 r++;
-            } else if (nums[r] == second) {
+            } else if (fruits[r] == second) {
                 secondcount++;
                 r++;
             } else if (first == -1) {
-                first = nums[r];
+                first = fruits[r];
                 firstcount++;
                 r++;
 
             } else if (second == -1) {
-                second = nums[r];
+                second = fruits[r];
                 secondcount++;
                 r++;
             } else {
@@ -36,7 +36,7 @@ class Solution {
                 max = Math.max(max, firstcount + secondcount);
 
                 while (first != -1 && second != -1) {
-                    if (nums[l] == first) {
+                    if (fruits[l] == first) {
                         firstcount--;
 
                     } else {
