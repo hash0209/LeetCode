@@ -40,6 +40,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/hash0209/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/hash0209/LeetCode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0037-sudoku-solver](https://github.com/hash0209/LeetCode/tree/master/0037-sudoku-solver) |
+| [0076-minimum-window-substring](https://github.com/hash0209/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0139-word-break](https://github.com/hash0209/LeetCode/tree/master/0139-word-break) |
 | [0146-lru-cache](https://github.com/hash0209/LeetCode/tree/master/0146-lru-cache) |
 | [0424-longest-repeating-character-replacement](https://github.com/hash0209/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
@@ -55,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/hash0209/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/hash0209/LeetCode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0020-valid-parentheses](https://github.com/hash0209/LeetCode/tree/master/0020-valid-parentheses) |
+| [0076-minimum-window-substring](https://github.com/hash0209/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0079-word-search](https://github.com/hash0209/LeetCode/tree/master/0079-word-search) |
 | [0131-palindrome-partitioning](https://github.com/hash0209/LeetCode/tree/master/0131-palindrome-partitioning) |
 | [0139-word-break](https://github.com/hash0209/LeetCode/tree/master/0139-word-break) |
@@ -148,6 +150,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/hash0209/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0076-minimum-window-substring](https://github.com/hash0209/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0239-sliding-window-maximum](https://github.com/hash0209/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0424-longest-repeating-character-replacement](https://github.com/hash0209/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0940-fruit-into-baskets](https://github.com/hash0209/LeetCode/tree/master/0940-fruit-into-baskets) |
