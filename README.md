@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0011-container-with-most-water](https://github.com/hash0209/LeetCode/tree/master/0011-container-with-most-water) |
 | [0037-sudoku-solver](https://github.com/hash0209/LeetCode/tree/master/0037-sudoku-solver) |
 | [0042-trapping-rain-water](https://github.com/hash0209/LeetCode/tree/master/0042-trapping-rain-water) |
+| [0045-jump-game-ii](https://github.com/hash0209/LeetCode/tree/master/0045-jump-game-ii) |
 | [0051-n-queens](https://github.com/hash0209/LeetCode/tree/master/0051-n-queens) |
 | [0055-jump-game](https://github.com/hash0209/LeetCode/tree/master/0055-jump-game) |
 | [0079-word-search](https://github.com/hash0209/LeetCode/tree/master/0079-word-search) |
@@ -71,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/hash0209/LeetCode/tree/master/0042-trapping-rain-water) |
+| [0045-jump-game-ii](https://github.com/hash0209/LeetCode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/hash0209/LeetCode/tree/master/0055-jump-game) |
 | [0085-maximal-rectangle](https://github.com/hash0209/LeetCode/tree/master/0085-maximal-rectangle) |
 | [0131-palindrome-partitioning](https://github.com/hash0209/LeetCode/tree/master/0131-palindrome-partitioning) |
@@ -149,6 +151,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/hash0209/LeetCode/tree/master/0011-container-with-most-water) |
+| [0045-jump-game-ii](https://github.com/hash0209/LeetCode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/hash0209/LeetCode/tree/master/0055-jump-game) |
 | [0402-remove-k-digits](https://github.com/hash0209/LeetCode/tree/master/0402-remove-k-digits) |
 | [0455-assign-cookies](https://github.com/hash0209/LeetCode/tree/master/0455-assign-cookies) |
