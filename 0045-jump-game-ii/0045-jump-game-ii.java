@@ -16,14 +16,15 @@ class Solution {
                 int minJump = Integer.MAX_VALUE;
 
                 while (maxlength > 0) {
-                    if (jumpCount[i + maxlength] != Integer.MAX_VALUE) {
-                        minJump = Math.min(minJump, 1 + jumpCount[i + maxlength]);
+                   
+                        minJump = Math.min(minJump, jumpCount[i + maxlength]);
+                         maxlength--;
                       
                     }
-                      maxlength--;
-                }
+                     
+                
 
-                jumpCount[i] = minJump;
+               jumpCount[i] = (minJump == Integer.MAX_VALUE) ? minJump : 1+minJump;
             }
         }
 
