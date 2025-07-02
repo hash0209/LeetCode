@@ -1,9 +1,8 @@
 class Solution {
     public boolean canJump(int[] nums) {
-        if(nums.length ==1){
-            return true;
-        }
+       
         boolean[] arr = new boolean[nums.length];
+        arr[nums.length-1] = true;
 
 
         int indexToReach = nums.length-1;
