@@ -20,11 +20,11 @@ class Solution {
                    if(i+jump > indexToReach){
                     break;
                    }
-                  else if(i+jump == indexToReach){
+                   if(i+jump == indexToReach){
                     canReach=true;
                     break;
                    }
-                   else if(arr[i+jump] == true){
+                    if(arr[i+jump] == true){
                     canReach=true;
                     break;
                    }
