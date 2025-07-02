@@ -1,33 +1,20 @@
 class Solution {
     public int jump(int[] nums) {
-        int[] jumpCount = new int[nums.length];
+      int jumps =0;
+      int l =0;
+      int r= 0;
 
-        jumpCount[nums.length - 1] = 0;
-
-        int dest = nums.length - 1;
-
-        for (int i = nums.length - 2; i >= 0; i--) {
-            int maxlength = nums[i];
-
-            if (i + maxlength >= dest) {
-                jumpCount[i] = 1;
-            } else {
-                
-                int minJump = Integer.MAX_VALUE;
-
-                while (maxlength > 0) {
-                   
-                        minJump = Math.min(minJump, jumpCount[i + maxlength]);
-                         maxlength--;
-                      
-                    }
-                     
-                
-
-               jumpCount[i] = (minJump == Integer.MAX_VALUE) ? minJump : 1+minJump;
-            }
-        }
-
-        return jumpCount[0];
+      while(r < nums.length-1){
+           int temp =l;
+           int farthest=0;
+           while(temp <= r){
+               farthest = Math.max(farthest , temp+nums[temp]);
+               temp++;
+           }
+           l =r+1;
+           r =farthest;
+           jumps++;
+      }
+      return jumps;
     }
 }
