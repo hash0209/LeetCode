@@ -5,25 +5,25 @@ class Solution {
       
 
         int idx=0;
+        int count =0;
+        int countAst =0;
 
-        Stack<Character> pst = new Stack<>();
-
-        Stack<Character> ast = new Stack<>();
+       
         while(idx < s.length()){
             char i = s.charAt(idx);
 
             if(i == '('){
-                pst.push(i);
+               count++;
             }
             else if( i == '*'){
-                ast.push(i);
+                countAst++;
             }
             else{
-                if(!pst.isEmpty()){
-                    pst.pop();
+                if(count!=0){
+                    count--;
                 }
-                else if(!ast.isEmpty()){
-                    ast.pop();
+                else if(countAst!=0){
+                    countAst--;
                 }
                 else{
                     return false;
@@ -32,30 +32,32 @@ class Solution {
             idx++;
         }
 
-        if(pst.isEmpty()){
+        if(count==0){
             return true;
         }
-        
+        if(countAst < count){
+            return false;
+        }
 
-        pst.clear();
-        ast.clear();
+         count =0;
+         countAst =0;
 
         idx =s.length()-1;
         while(idx >=0){
             char i = s.charAt(idx);
 
             if(i == ')'){
-                pst.push(i);
+                count++;
             }
             else if( i == '*'){
-                ast.push(i);
+               countAst++;
             }
             else{
-                if(!pst.isEmpty()){
-                    pst.pop();
+                if(count!=0){
+                    count--;
                 }
-                else if(!ast.isEmpty()){
-                    ast.pop();
+                else if(countAst!=0){
+                    countAst--;
                 }
                 else{
                     return false;
