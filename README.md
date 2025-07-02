@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0037-sudoku-solver](https://github.com/hash0209/LeetCode/tree/master/0037-sudoku-solver) |
 | [0042-trapping-rain-water](https://github.com/hash0209/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0051-n-queens](https://github.com/hash0209/LeetCode/tree/master/0051-n-queens) |
+| [0055-jump-game](https://github.com/hash0209/LeetCode/tree/master/0055-jump-game) |
 | [0079-word-search](https://github.com/hash0209/LeetCode/tree/master/0079-word-search) |
 | [0084-largest-rectangle-in-histogram](https://github.com/hash0209/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/hash0209/LeetCode/tree/master/0085-maximal-rectangle) |
@@ -70,6 +71,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/hash0209/LeetCode/tree/master/0042-trapping-rain-water) |
+| [0055-jump-game](https://github.com/hash0209/LeetCode/tree/master/0055-jump-game) |
 | [0085-maximal-rectangle](https://github.com/hash0209/LeetCode/tree/master/0085-maximal-rectangle) |
 | [0131-palindrome-partitioning](https://github.com/hash0209/LeetCode/tree/master/0131-palindrome-partitioning) |
 | [0139-word-break](https://github.com/hash0209/LeetCode/tree/master/0139-word-break) |
@@ -147,6 +149,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/hash0209/LeetCode/tree/master/0011-container-with-most-water) |
+| [0055-jump-game](https://github.com/hash0209/LeetCode/tree/master/0055-jump-game) |
 | [0402-remove-k-digits](https://github.com/hash0209/LeetCode/tree/master/0402-remove-k-digits) |
 | [0455-assign-cookies](https://github.com/hash0209/LeetCode/tree/master/0455-assign-cookies) |
 | [0678-valid-parenthesis-string](https://github.com/hash0209/LeetCode/tree/master/0678-valid-parenthesis-string) |
