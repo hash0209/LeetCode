@@ -16,26 +16,26 @@
 class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
 
+        Stack<TreeNode> st = new Stack<>();
         List<Integer> ans = new ArrayList<Integer>();
-        return find(root , ans);
-
-        
-        
-    }
-
-
-    public List<Integer> find(TreeNode root , List<Integer> ans ){
-
         if(root == null){
-                 return ans;
+            return ans;
+        }
+        st.push(root);
+        
+        while(!st.isEmpty()){
+            TreeNode root1 = st.pop();
+
+            ans.add(root1.val);
+            if(root1.right!=null){
+                st.push(root1.right);
+            }
+             if(root1.left!=null){
+                st.push(root1.left);
+            }
         }
 
-        ans.add(root.val);
-        find(root.left , ans);
-        find(root.right , ans);
-
         return ans;
-
         
     }
 }
