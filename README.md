@@ -54,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0146-lru-cache](https://github.com/hash0209/LeetCode/tree/master/0146-lru-cache) |
 | [0424-longest-repeating-character-replacement](https://github.com/hash0209/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0496-next-greater-element-i](https://github.com/hash0209/LeetCode/tree/master/0496-next-greater-element-i) |
+| [0768-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0768-partition-labels) |
 | [0940-fruit-into-baskets](https://github.com/hash0209/LeetCode/tree/master/0940-fruit-into-baskets) |
 | [0966-binary-subarrays-with-sum](https://github.com/hash0209/LeetCode/tree/master/0966-binary-subarrays-with-sum) |
 | [1034-subarrays-with-k-different-integers](https://github.com/hash0209/LeetCode/tree/master/1034-subarrays-with-k-different-integers) |
@@ -72,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0402-remove-k-digits](https://github.com/hash0209/LeetCode/tree/master/0402-remove-k-digits) |
 | [0424-longest-repeating-character-replacement](https://github.com/hash0209/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0678-valid-parenthesis-string](https://github.com/hash0209/LeetCode/tree/master/0678-valid-parenthesis-string) |
+| [0768-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0768-partition-labels) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/hash0209/LeetCode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 ## Dynamic Programming
 |  |
@@ -153,6 +155,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0011-container-with-most-water](https://github.com/hash0209/LeetCode/tree/master/0011-container-with-most-water) |
 | [0042-trapping-rain-water](https://github.com/hash0209/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0455-assign-cookies](https://github.com/hash0209/LeetCode/tree/master/0455-assign-cookies) |
+| [0768-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0768-partition-labels) |
 ## Greedy
 |  |
 | ------- |
@@ -165,6 +168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/hash0209/LeetCode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0455-assign-cookies](https://github.com/hash0209/LeetCode/tree/master/0455-assign-cookies) |
 | [0678-valid-parenthesis-string](https://github.com/hash0209/LeetCode/tree/master/0678-valid-parenthesis-string) |
+| [0768-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0768-partition-labels) |
 | [0890-lemonade-change](https://github.com/hash0209/LeetCode/tree/master/0890-lemonade-change) |
 ## Simulation
 |  |
