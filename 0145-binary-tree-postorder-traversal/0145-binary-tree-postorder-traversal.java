@@ -15,36 +15,40 @@
  */
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
-
-        List<Integer> l = new ArrayList<>();
-        if(root == null){
-            return l;
+        List<Integer> list = new ArrayList<>();
+        if(root ==null){
+            return list;
         }
-
-
-        Stack<TreeNode> st1 = new Stack<>();
-        Stack<TreeNode> st2 = new Stack<>();
-
+        TreeNode curr = root; 
+        TreeNode temp = null;
        
 
-        st1.push(root);
+        Stack<TreeNode> st = new Stack<>();
+        st.push(root);
+        curr = root.left;
 
-        while(!st1.isEmpty()){
-            TreeNode n = st1.pop();
-            st2.push(n);
-            if(n.left != null){
-                st1.push(n.left);
+        while(!st.isEmpty()){
+            if(curr !=null){
+              st.push(curr);
+              curr = curr.left ;
             }
-            if(n.right != null){
-                st1.push(n.right);
+            else{
+                 temp = st.peek();
+                if(temp.right!=null){
+                    curr =temp.right;
+                }
+                else{
+                    temp = st.pop();
+                    list.add(temp.val);
+                    while(!st.isEmpty() && st.peek().right == temp){
+                        temp = st.pop();
+                        list.add(temp.val);
+                    }
+
+                }
             }
         }
 
-        while(!st2.isEmpty()){
-            l.add(st2.pop().val);
-        }
-
-        return l;
-
+        return list;
     }
 }
