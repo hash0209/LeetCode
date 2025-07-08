@@ -29,27 +29,27 @@ class Solution {
 
         while(!q.isEmpty()){
              int size = q.size();
-             List<Integer> l = new ArrayList<Integer>();
+             LinkedList<Integer> l = new LinkedList<Integer>();
 
            
                 for(int i =0 ; i < size ; i++){
                     TreeNode curr = q.poll();
-                    l.add(curr.val);
-                    if(curr.right!=null){
-                        q.add(curr.right);
-                    }
+                   // l.add(curr.val);
+                   if(level%2 == 0){
+                    l.addFirst(curr.val);
+                   }
+                   else{
+                    l.addLast(curr.val);
+                   }
                     if(curr.left!=null){
                         q.add(curr.left);
                     }
+                    if(curr.right!=null){
+                        q.add(curr.right);
+                    }
                 }
-             if(level%2 == 0){
-             ans.add(l);
-             }
-             else{
-                Collections.reverse(l);
-                ans.add(l);
-             }
-
+           
+             ans.add(l);       
              level++;
         }
 
