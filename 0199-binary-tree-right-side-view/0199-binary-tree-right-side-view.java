@@ -20,46 +20,38 @@ class Solution {
             return l;
         }
 
-        Map<Integer,Integer> map = new TreeMap<>();
+     
 
-        Queue<Node> q = new LinkedList<Node>();
-        q.add(new Node(root , 0));
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
 
 
         while(!q.isEmpty()){
             int size = q.size();
+            int x =0;
 
             for(int i =0; i < size ; i++){
-                Node node = q.poll();
-                TreeNode n = node.treenode;
-                int level = node.level;
-                map.put(level,n.val);
+             //   Node node = q.poll();
+                TreeNode n =q.poll();
+              //  int level = node.level;
+               // map.put(level,n.val);
+                x = n.val;
 
                 if(n.left!=null){
-                    q.add(new Node(n.left , level+1));
+                    q.add(n.left );
                 }
                 if(n.right!=null){
-                    q.add(new Node(n.right , level+1));
+                    q.add(n.right);
                 }
             }
-        }
 
-
-        for(Integer x : map.values()){
             l.add(x);
         }
+
+
+        
 
         return l;
     }
 }
 
-class Node{
-    TreeNode treenode;
-    int level ; 
-
-
-    public Node(TreeNode treenode , int level){
-        this.treenode=treenode;
-        this.level=level;
-    }
-}
