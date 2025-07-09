@@ -40,13 +40,13 @@ class Solution {
                     if (lMap.containsKey(level)) {
                         ArrayList<Integer> l = lMap.get(level);
                         l.add(temp.val);
-                        lMap.put(level, l);
+                        //lMap.put(level, l);
                     } else {
                         ArrayList<Integer> nodeList = new ArrayList<>();
                         nodeList.add(temp.val);
                         lMap.put(level, nodeList);
                     }
-                    vMap.put(vertical, lMap);
+                   // vMap.put(vertical, lMap);
                 } else {
                     lMap = new TreeMap<>();
                     ArrayList<Integer> nodeList = new ArrayList<>();
