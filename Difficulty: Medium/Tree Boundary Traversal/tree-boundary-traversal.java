@@ -26,9 +26,9 @@ class Solution {
            return l;
         }
         
-        if(node.left != null){
+      
             findL(node.left , l);
-        }
+        
         
         
         Node curr = node ;
@@ -56,9 +56,9 @@ class Solution {
         
         
         
-        if(node.right!=null){
+      
              findR( node.right, l );
-        }
+        
         
         return l ;
     }
