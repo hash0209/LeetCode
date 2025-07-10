@@ -20,24 +20,27 @@ class Solution {
             return 0;
         }
 
-        Queue<Pair<Long, TreeNode>> q = new LinkedList<>();
+        Queue<Pair<Integer, TreeNode>> q = new LinkedList<>();
 
-        Pair<Long, TreeNode> p= new Pair(1L, root);
+        Pair<Integer, TreeNode> p= new Pair(1, root);
         q.add(p);
 
         int maxWidth = Integer.MIN_VALUE;
 
         while (!q.isEmpty()) {
 
-            Long first = 1L;
-            Long last = 1L;
+            int first = 0;
+
+            int last = 0;
+
+            int minIndex = q.peek().first;
 
             int size = q.size();
 
             for (int i = 0; i < size; i++) {
                 p = q.poll();
 
-                Long idx =p.first;
+                int idx =p.first - minIndex;
                 if (i == 0) {
                     first = idx;
                 }
@@ -45,23 +48,23 @@ class Solution {
                     last = idx;
                 }
 
-                TreeNode n = (TreeNode) p.second;
+                TreeNode n = p.second;
 
                 if (n.left != null) {
 
-                    q.add(new Pair(2L * idx, n.left));
+                    q.add(new Pair(2 * idx, n.left));
 
                 }
                 if (n.right != null) {
 
-                    q.add(new Pair((2L * idx) + 1L, n.right));
+                    q.add(new Pair((2 * idx) + 1, n.right));
                 }
 
             }
 
            
 
-            maxWidth = Math.max(maxWidth, (int)(last - first) + 1);
+            maxWidth = Math.max(maxWidth, last - first + 1);
 
         }
 
