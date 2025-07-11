@@ -43,9 +43,10 @@ class Solution {
         }
 
 
-        int[] arr = new int[501];
+        //int[] arr = new int[501];
+        Map<TreeNode , Integer> vm = new HashMap<>();
         q.add(target);
-        arr[target.val] =1;
+        vm.put(target , 1);
         int d =0;
 
 
@@ -56,20 +57,21 @@ class Solution {
                  TreeNode curr = q.poll();
 
 
-                 if(null!= curr.left && arr[curr.left.val] == 0){
+                 if(null!= curr.left && !vm.containsKey(curr.left)){
                     q.add(curr.left);
-                    arr[curr.left.val] =1;
+                    vm.put(curr.left,1);
+                   
                  }
-                 if(null!= curr.right && arr[curr.right.val] == 0){
+                 if(null!= curr.right && !vm.containsKey(curr.right)){
                     q.add(curr.right);
-                    arr[curr.right.val] =1;
+                    vm.put(curr.right,1);
                  }
 
                  TreeNode parent = m.get(curr);
 
-                 if(null!= parent && arr[parent.val] == 0){
+                 if(null!= parent && !vm.containsKey(parent)){
                     q.add(parent);
-                    arr[parent.val] = 1;
+                    vm.put(parent,1);
                  }
                  
             }
@@ -77,7 +79,7 @@ class Solution {
 
 
         }
-
+ 
 
         while (!q.isEmpty()){
             ans.add(q.poll().val);
