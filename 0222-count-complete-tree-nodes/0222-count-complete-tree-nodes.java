@@ -16,37 +16,39 @@
 class Solution {
     public int countNodes(TreeNode root) {
 
-        int count =0;
-        if(root == null){
-            return 0;
+        int lh = leftHeight(root);
+        int rh = rightHeight(root);
+
+        if(lh == rh){
+            return (int) Math.pow(2,lh)-1;
+           
+        }
+        else{
+            return 1 + countNodes(root.left) + countNodes(root.right);
         }
 
-        Queue< TreeNode> q = new LinkedList<>();
-
-
-        q.add(root);
-
-        while(!q.isEmpty()){
-            int size = q.size();
-
-
-            for(int i =0 ; i < size ; i ++){
-                TreeNode curr = q.poll();
-
-                count++;
-                if(null!=curr.left){
-                    q.add(curr.left);
-                }
-
-                if(null!=curr.right){
-                    q.add(curr.right);
-                }
-            }
-        }
-
-        return count;
 
 
         
+        
+    }
+
+
+    public int leftHeight(TreeNode root){
+        int count =0;
+        while(root!=null){
+            root=root.left;
+            count++;
+        }
+        return count;
+    }
+
+        public int rightHeight(TreeNode root){
+        int count =0;
+        while(root!=null){
+            root=root.right;
+            count++;
+        }
+        return count;
     }
 }
