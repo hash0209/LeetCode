@@ -13,9 +13,9 @@ public class Codec {
     public String serialize(TreeNode root) {
 
         if(root == null){
-            String s= "+";
-            s=s.concat("$");
-            return s;
+           
+          
+            return "$";
         }
         StringBuilder s = new StringBuilder();
         s = serial(root , s);
@@ -35,7 +35,7 @@ public class Codec {
     public StringBuilder serial(TreeNode root , StringBuilder path ){
         if(root == null){
             path.append("#");
-            path.append("+");
+          
             path.append("$");
             return path;
         }
@@ -45,9 +45,7 @@ public class Codec {
             path.append("#");
         }
 
-        if(root.val >=0){
-            path.append("+");
-        }
+       
         
         path.append(root.val);
 
@@ -59,7 +57,7 @@ public class Codec {
     public TreeNode deserial(String[] data , int[] idx ){
 
 
-        if(idx[0]  >= data.length || data[idx[0]].charAt(1) == '$'){
+        if(idx[0]  >= data.length || data[idx[0]].charAt(0) == '$'){
             return null;
         }
 
