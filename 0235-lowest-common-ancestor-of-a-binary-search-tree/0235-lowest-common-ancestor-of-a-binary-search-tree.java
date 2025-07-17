@@ -24,7 +24,7 @@ class Solution {
         } else if ( p.val > root.val) {
             return lowestCommonAncestor(root.right, p, q);
         } else {
-            TreeNode left = lowestCommonAncestor(root.left, p, q);
+          /*  TreeNode left = lowestCommonAncestor(root.left, p, q);
             TreeNode right = lowestCommonAncestor(root.right, p, q);
 
             if (left == null) {
@@ -33,7 +33,9 @@ class Solution {
                 return left;
             } else {
                 return root;
-            }
+            }*/
+
+            return root;
         }
 
     }
