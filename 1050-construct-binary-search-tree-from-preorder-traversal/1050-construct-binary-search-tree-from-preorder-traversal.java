@@ -15,43 +15,35 @@
  */
 class Solution {
     public TreeNode bstFromPreorder(int[] preorder) {
-
-              return construct(preorder , 0 , preorder.length-1);
-        
+        int[] idx = new int[1];
+        return find(preorder , idx , Integer.MAX_VALUE );
     }
 
 
-    public TreeNode construct(int[] preorder , int preStart , int preEnd ){
-        if(preStart > preEnd){
+    public TreeNode find(int[] preorder , int[] idx , int ub){
+
+        if(idx[0] >= preorder.length || preorder[idx[0]] >= ub){
             return null;
         }
 
-
-        TreeNode n = new TreeNode(preorder[preStart]);
-
-
-        int root = preorder[preStart];
+        int val = preorder[idx[0]];
 
 
-        int idx = preStart+1;
+        TreeNode n = new TreeNode(val);
 
-        while(idx <= preEnd){
-            if(root < preorder[idx]){
-                break;
-            }
-            idx++;
+        idx[0] = idx[0] +1 ;
+
+        if(idx[0] < preorder.length){
+
+        n.left = find(preorder ,idx , val);
         }
 
-        n.left  = construct(preorder,preStart+1,idx-1);
-        n.right = construct(preorder,idx , preEnd);
 
+        n.right = find(preorder , idx , ub);
 
         return n ;
 
 
-
-
-        
 
 
 
