@@ -39,18 +39,14 @@ class BSTIterator {
     public int next() {
         curr = s.pop();
         int val = curr.val;
+        curr = curr.right;
+        while(curr!=null){
+            s.push(curr);
+            curr=curr.left;
+        }
         
 
-        if(curr.right!=null){
-            s.push(curr.right);
-
-            curr = curr.right.left;
-            while(curr!=null){
-                s.push(curr);
-                curr = curr.left ;
-            }
-        }
-
+       
         return val ;
 
 
