@@ -12,62 +12,57 @@ class Solution {
     public ArrayList<Node> findPreSuc(Node root, int key) {
         // code here
         
-        Queue<Node> q = new LinkedList<>();
-        
-        q.add(root);
-        
-        Node predN = null;
-        
         Node succN = null;
-        
-        int pred = Integer.MIN_VALUE;
         int succ = Integer.MAX_VALUE;
         
+        Node curr = root;
         
-        while(!q.isEmpty()){
-            
-            int size =q.size();
-            
-            for(int i =0; i < size; i++){
-                  Node n = q.poll();
-                  
-                  if(n.data < key){
-                     if(n.data > pred){
-                         pred = n.data;
-                         predN = n;
-                     }
-                      
-                  }
-                  if(n.data > key){
-                       if(n.data <  succ){
-                         succ = n.data;
-                         succN = n;
-                     }
-                  }
-                  
-                  
-                  if(null!=n.left){
-                      q.add(n.left);
-                  }
-                  if(null!=n.right){
-                      q.add(n.right);
-                  }
+        while(curr != null){
+            if(curr.data <= key ){
+                curr = curr.right;
             }
-            
-            
+            else{
+                if(curr.data < succ){
+                    succ = curr.data;
+                    succN = curr;
+                    
+                }
+                curr = curr.left;
         }
         
-        ArrayList<Node> list = new ArrayList<Node>();
-        list.add(predN);
-        list.add(succN);
         
         
-       return list;
+    }
+    
+    curr = root;
+    
+    
+    Node predN = null;
+    int pred =  Integer.MIN_VALUE;
+    
+    
+        
+        while(curr != null){
+            if(curr.data >=  key ){
+                curr = curr.left;
+            }
+            else{
+                if(curr.data > pred){
+                    pred = curr.data;
+                    predN = curr;
+                    
+                }
+                curr = curr.right;
+        }
         
         
         
-        
-        
+    }
+    
+    ArrayList<Node> ans = new ArrayList<>();
+    ans.add(predN);
+    ans.add(succN);
+    return ans;
     }
     
     
