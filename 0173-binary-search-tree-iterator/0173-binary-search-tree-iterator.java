@@ -37,17 +37,17 @@ class BSTIterator {
     }
     
     public int next() {
-       TreeNode  currpop = s.pop();
-        int val = currpop.val;
+        curr = s.pop();
+        int val = curr.val;
         
 
-        if(currpop.right!=null){
-            s.push(currpop.right);
+        if(curr.right!=null){
+            s.push(curr.right);
 
-           TreeNode  temp = currpop.right.left;
-            while(temp!=null){
-                s.push(temp);
-                temp = temp.left ;
+            curr = curr.right.left;
+            while(curr!=null){
+                s.push(curr);
+                curr = curr.left ;
             }
         }
 
