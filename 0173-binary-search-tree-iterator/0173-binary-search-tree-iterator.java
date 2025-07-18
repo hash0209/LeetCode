@@ -21,42 +21,31 @@ class BSTIterator {
 
     public BSTIterator(TreeNode root) {
 
-        curr = root;
+        while (root != null) {
 
-        while(curr!=null){
-           
-            s.push(curr);
-            curr=curr.left;
-
+            s.push(root);
+            root = root.left;
 
         }
-    
-        
 
-        
     }
-    
+
     public int next() {
         curr = s.pop();
         int val = curr.val;
         curr = curr.right;
-        while(curr!=null){
+        while (curr != null) {
             s.push(curr);
-            curr=curr.left;
+            curr = curr.left;
         }
-        
 
-       
-        return val ;
-
+        return val;
 
     }
-    
+
     public boolean hasNext() {
-      if(s.isEmpty()){
-        return false;
-      }
-      return true;
+
+        return !s.isEmpty();
     }
 }
 
