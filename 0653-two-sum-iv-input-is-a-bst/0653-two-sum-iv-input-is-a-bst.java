@@ -16,46 +16,77 @@
 class Solution {
     public boolean findTarget(TreeNode root, int k) {
 
-        ArrayList<Integer> list = new ArrayList<>();
 
-        find(root , list);
+        Bsit it = new Bsit(root , false);
+        Bsit it2 = new Bsit(root,  true);
 
 
-        int left =0;
-        int right = list.size()-1;
+        int left = it.next() ;
+        int right = it2.next();
 
         while(left < right){
-            int sum = list.get(left) + list.get(right);
-            if(sum == k){
-                 return true;
+            int sum = left +right;
+            if(sum ==k){
+                return true;
             }
-            else if ( sum > k){
-                right --;
+            else if (sum > k ){
+               right =  it2.next();    
             }
             else{
-                left ++;
+               left = it.next();
             }
+          }
 
-        }
-
-        return false;
-
-
-
-    
-        
-    }
-
-
-    public void find(TreeNode root , ArrayList<Integer> list){
-        if(root == null){
-            return ;
-        }
-
-
-        find(root.left , list);
-        list.add(root.val);
-        find(root.right,  list);
+          return false;
 
     }
 }
+
+class Bsit {
+
+    Stack<TreeNode> s;
+
+    Boolean rev ;
+
+    
+
+    public Bsit(TreeNode root, boolean reverse) {
+
+        rev = reverse;
+
+        s = new Stack<>();
+        pushAll(root , reverse);
+
+    }
+
+    public int next(){
+
+         TreeNode  curr = s.pop();
+         int val = curr.val;
+         if(rev){
+            pushAll(curr.left , rev); 
+         }
+         else{
+         pushAll(curr.right , rev);
+         }
+         return val;
+
+
+
+    }
+
+    public void pushAll(TreeNode root , boolean reverse){
+
+       
+            while(root!=null){
+                s.push(root);
+                if(reverse){
+                root = root.right;
+                }
+                else{
+                    root = root.left;
+                }
+            }
+        }
+
+    }
