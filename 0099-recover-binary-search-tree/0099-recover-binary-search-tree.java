@@ -25,46 +25,40 @@ class Solution {
 
         TreeNode curr = root;
 
-        while(true){
+        while (true) {
 
-            if(curr!=null){
+            if (curr != null) {
                 s.push(curr);
                 curr = curr.left;
             }
 
-            else{
-                if(s.isEmpty()){
+            else {
+                if (s.isEmpty()) {
                     break;
                 }
 
-             
-
                 curr = s.pop();
-               
-                if(prev!=null){
-                    if(curr.val < prev.val) {
-                     if(n1 == null){
+
+                if (prev != null && curr.val < prev.val) {
+                    if (n1 == null) {
                         n1 = prev;
                         n2 = curr;
-                     }
-                     else{
-                        n2 = curr ;
+                    } else {
+                        n2 = curr;
                         break;
-                     }
+                    }
                 }
-                }
+
                 prev = curr;
                 curr = curr.right;
-            
+
             }
 
         }
-
 
         int temp = n1.val;
         n1.val = n2.val;
         n2.val = temp;
 
-        
     }
 }
