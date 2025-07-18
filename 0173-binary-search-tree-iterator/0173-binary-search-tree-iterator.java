@@ -15,11 +15,13 @@
  */
 class BSTIterator {
 
-    Stack<TreeNode> s = new Stack<>();
+    Stack<TreeNode> s ;
 
     TreeNode curr = null;
 
     public BSTIterator(TreeNode root) {
+
+        s = new Stack<>();
 
         while (root != null) {
 
