@@ -38,10 +38,10 @@ class Solution {
 
             if (total > left.sum && total > right.sum ) {
                 maxSize[0] = Math.max(total, maxSize[0]);
-            } else if (left.sum > total) {
-                maxSize[0] = Math.max(left.sum, maxSize[0]);
             } else {
-                maxSize[0] = Math.max(right.sum, maxSize[0]);
+
+                int total2 = Math.max(left.sum , right.sum);
+                maxSize[0] = Math.max(total2 , maxSize[0]);
             }
 
            // return new Node(total, Math.max(left.largest, root.val),
