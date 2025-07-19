@@ -31,10 +31,12 @@ class Solution {
         Node left = find(root.left, maxSize);
         Node right = find(root.right, maxSize);
 
-        if (root.val > left.largest && root.val < right.smallest) {
-            int total = root.val + left.sum + right.sum;
+        int total =0;
 
-            if (total > left.sum && total > right.sum && total >= root.val) {
+        if (root.val > left.largest && root.val < right.smallest) {
+             total = root.val + left.sum + right.sum;
+
+            if (total > left.sum && total > right.sum ) {
                 maxSize[0] = Math.max(total, maxSize[0]);
             } else if (left.sum > total) {
                 maxSize[0] = Math.max(left.sum, maxSize[0]);
@@ -49,7 +51,7 @@ class Solution {
                     Math.max(right.largest, root.val));
         }
 
-        int total = Math.max(left.sum , right.sum);
+        total = Math.max(left.sum , right.sum);
         total = Math.max(total , root.val);
 
         return new Node(total, Integer.MIN_VALUE, Integer.MAX_VALUE);
