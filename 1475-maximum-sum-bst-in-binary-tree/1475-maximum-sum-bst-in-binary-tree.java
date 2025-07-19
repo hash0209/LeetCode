@@ -52,7 +52,7 @@ class Solution {
         }
 
         total = Math.max(left.sum , right.sum);
-        total = Math.max(total , root.val);
+       // total = Math.max(total , root.val);
 
         return new Node(total, Integer.MIN_VALUE, Integer.MAX_VALUE);
 
