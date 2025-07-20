@@ -3,39 +3,27 @@ class Solution {
 
         int[][] dp = new int[nums.length][2];
 
-        for (int[] row : dp){
-            Arrays.fill(row,-1);
+        dp[0][0] = 0;
+        dp[0][1] = nums[0];
+
+        for (int idx = 1; idx < nums.length; idx++) {
+
+            for (int p = 0; p <= 1; p++) {
+                int pick = Integer.MIN_VALUE;
+
+                if (p == 1) {
+                    pick = dp[idx - 1][0] + nums[idx];
+                }
+
+                int notPick = dp[idx - 1][1];
+
+                 dp[idx][p] = Math.max(pick, notPick);
+            }
+
         }
-        return find(nums , nums.length-1 , 1 , dp);
+
+        return Math.max(dp[nums.length-1][0],dp[nums.length-1][1]);
+
     }
 
-
-    public int find (int [] nums , int idx , int p , int[][] dp){
-
-
-        if(idx ==0){
-            if (p == 1){
-                return nums[idx];
-            }
-            else{
-                return 0;
-            }
-        }
-
-        if(dp[idx][p] !=-1){
-            return dp[idx][p];
-        }
-
-        int pick =Integer.MIN_VALUE;
-
-
-        if(p == 1){
-              pick = find(nums , idx-1 , 0 , dp) + nums[idx];
-        }
-
-        int notPick = find(nums , idx-1 , 1 , dp);
-
-
-        return dp[idx][p] = Math.max(pick , notPick);
-    }
 }
