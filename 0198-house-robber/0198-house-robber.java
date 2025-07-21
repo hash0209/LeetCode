@@ -1,38 +1,34 @@
 class Solution {
     public int rob(int[] nums) {
 
-        
+        int[] dp = new int[nums.length];
+        Arrays.fill(dp,-1);
 
-        int[] cdp = new int[2];
-
-        cdp[0] =0;
-        cdp[1]=nums[0];
+             return rob(nums, nums.length-1 ,dp);
 
         
-
-        for (int idx = 1; idx < nums.length; idx++) {
-
-          int[] temp = new int[2];
-
-            for (int p = 0; p <= 1; p++) {
-                int pick = Integer.MIN_VALUE;
-
-                if (p == 1) {
-                    pick = cdp[0] + nums[idx];
-                }
-
-                int notPick = cdp[1];
-
-                temp[p] = Math.max(pick, notPick);
-               
-            }
-
-            cdp = temp;
-
-        }
-
-        return Math.max(cdp[0],cdp[1]);
-
     }
 
+
+    public int rob(int[] nums , int idx , int[] dp){
+
+        if(idx == 0){
+            return nums[idx];
+        }
+
+        if(idx < 0){
+            return 0;
+        }
+
+        if(dp[idx]!=-1){
+            return dp[idx];
+        }
+
+
+        int pick = nums[idx] + rob(nums, idx-2 , dp);
+        int notPick = rob(nums , idx-1 , dp);
+
+        return dp[idx] =  Math.max(pick,notPick);
+    
+    }
 }
