@@ -4,43 +4,38 @@ class Solution {
         if(nums.length == 1){
               return nums[0];
         }
-        List<Integer> nums1 = new ArrayList<>();
-        List<Integer> nums2 = new ArrayList<>();
 
 
-        
-        
+      
 
 
-        for(int i =0; i < nums.length ; i++){
-            if(i!=0){
-               nums1.add(nums[i]); 
-            }
-            if(i != nums.length-1){
-                nums2.add(nums[i]);
-            }
-        }
-
-
-        return Math.max(robb(nums1),robb(nums2));
+        return Math.max(robb(nums , 0 , nums.length -2),robb(nums , 1 , nums.length-1));
     }
 
 
 
-    public int robb(List<Integer> nums ){
+    public int robb(int[] nums , int start , int end ){
 
 
         int prev2 = 0;
-        int prev = nums.get(0);
+        int prev = nums[start];
 
 
-        for(int idx =1 ; idx < nums.size() ; idx++){
+        for(int idx =start+1 ; idx <= end ; idx++){
            
 
-            
-            int pick = nums.get(idx) + prev2;
+            int pick = nums[idx];
 
-            int notPick = prev;
+            if(idx- 2 >= 0){
+             pick = pick+ prev2;
+            }
+
+            int notPick = 0;
+
+            if(idx -1 >= 0){
+
+             notPick = prev;
+            }
 
 
             prev2 = prev;
