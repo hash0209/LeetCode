@@ -10,17 +10,17 @@ class Solution {
 
             int pick = nums[idx];
 
-            if (idx - 2 >= 0) {
+          //  if (idx - 2 >= 0) {
 
                 pick = pick + prev2;
-            }
+          //  }
 
             int notPick = 0;
 
-            if (idx - 1 >= 0) {
+         //   if (idx - 1 >= 0) {
 
                 notPick = prev;
-            }
+          //  }
 
             prev2 = prev ;
 
