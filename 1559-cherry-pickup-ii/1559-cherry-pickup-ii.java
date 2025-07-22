@@ -17,13 +17,9 @@ class Solution {
         if (n1 < 0 || n1 >= grid[0].length || n2 < 0 || n2 >= grid[0].length) {
             return Integer.MIN_VALUE;
         }
-         if (m1 == grid.length-1) {
-            if (n1 == n2) {
-                return grid[m1][n1];
-            } else {
-                return grid[m1][n1] + grid[m1][n2];
-            }
-        }
+         if(m1 >= grid.length){
+                return 0;
+         }
 
         if (dp[m1][n1][n2] != -1) {
             return dp[m1][n1][n2];
