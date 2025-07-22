@@ -9,17 +9,54 @@ class Solution {
            
         }
 
-        for(List<Integer> list : dp){
+     
 
-            for(int i = 0; i < list.size() ; i++){
-                list.set(i , Integer.MAX_VALUE);
+
+      
+
+
+        for(int row = 1 ; row < triangle.size() ; row ++){
+            for (int idx = 0; idx < triangle.get(row).size();idx ++){
+
+                int left = Integer.MAX_VALUE;
+
+
+                if(idx  < triangle.get(row-1).size()){
+
+
+                 left = dp.get(row-1).get(idx);
+                }
+
+                int right = Integer.MAX_VALUE;
+
+                if(idx-1 >= 0){
+
+                 right = dp.get(row-1).get(idx-1);
+                }
+
+                int ans = Math.min(left , right) +  triangle.get(row).get(idx);
+
+                 dp.get(row).set(idx , ans);
+                
             }
         }
+
+
+
+
+
+        
        
 
        
 
-        return  find(triangle , 0, 0 , dp);
+       int ans = Integer.MAX_VALUE;
+
+       for (int idx =0 ; idx < dp.get(dp.size()-1).size(); idx++){
+                ans = Math.min(ans , dp.get(dp.size()-1).get(idx) );
+       }
+
+       return ans ;
     }
 
 
