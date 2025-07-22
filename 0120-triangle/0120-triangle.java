@@ -16,27 +16,17 @@ class Solution {
         for(int row = 1 ; row < triangle.size() ; row ++){
 
             List<Integer> temp = new ArrayList<>(triangle.get(row));
-            for (int idx = 0; idx < triangle.get(row).size();idx ++){
-
-                int left = Integer.MAX_VALUE;
-
-
-                if(idx  < triangle.get(row-1).size()){
+            List<Integer> rows = triangle.get(row);
+            for (int idx = 0; idx < rows.size();idx ++){
 
 
-                 left = dp.get(idx);
-                }
+               int left = (idx  < triangle.get(row-1).size()) ?  dp.get(idx) :  Integer.MAX_VALUE;
 
-                int right = Integer.MAX_VALUE;
+               int right = (idx-1 >= 0) ?  dp.get(idx-1) :  Integer.MAX_VALUE;
 
-                if(idx-1 >= 0){
+               int ans = Math.min(left , right) + rows.get(idx);
 
-                 right = dp.get(idx-1);
-                }
-
-                int ans = Math.min(left , right) +  triangle.get(row).get(idx);
-
-                 temp.set(idx , ans);
+                temp.set(idx , ans);
                 
             }
 
