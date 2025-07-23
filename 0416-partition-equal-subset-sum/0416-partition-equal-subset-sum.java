@@ -15,14 +15,44 @@ class Solution {
 
      int[][] dp = new int[nums.length][sum+1];
 
-     for(int[] row : dp){
-        Arrays.fill(row, -1);
-     }
+    for(int idx = 0; idx < nums.length ; idx++){
+        dp[idx][0] =1;
+    }
+
+    for(int t = 1 ; t <= sum ; t ++){
+        if(nums[0]==t){
+            dp[0][t] = 1;
+        }
+    }
+
+
+    for(int idx = 1; idx < nums.length ; idx++){
+        
+
+        for(int target =1 ; target <= sum ; target++){
+
+
+            int take = 0;
+
+            if(target >= nums[idx]){
+                take = dp[idx-1][target-nums[idx]];
+            }
+
+            int notTake = dp[idx-1][target];
+
+            if(take == 1 || notTake ==1){
+                dp[idx][target] =1;
+              }
+              else{
+                 dp[idx][target] =0;
+              }
+        }
+    }
 
 
 
 
-     return find(nums , nums.length-1, sum , dp);
+     return dp[nums.length-1][sum] ==1 ? true : false;
     }
 
     public boolean find(int[] nums , int idx , int target , int[][] dp){
