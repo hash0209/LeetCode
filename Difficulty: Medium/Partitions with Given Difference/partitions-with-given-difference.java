@@ -16,27 +16,29 @@ class Solution {
         
         target= target/2;
         
-        int[][] dp = new int[arr.length][target+1];
+        int[] dp = new int[target+1];
         
         for(int t = 0; t <= target ; t++){
             if(t == arr[0]){
-                dp[0][t] =1;
+                dp[t] =1;
             }
         }
         
         for(int idx = 1; idx < arr.length ; idx++){
+            int[] temp = new int[target+1];
             for(int  t=0 ; t <= target ; t++){
-                int pick = (t >= arr[idx]) ? dp[idx-1][t-arr[idx]] : 0;
-                int notPick = dp[idx-1][t];
+                int pick = (t >= arr[idx]) ? dp[t-arr[idx]] : 0;
+                int notPick = dp[t];
                 
-                dp[idx][t] = (t == arr[idx]) ?  pick+notPick+1 : pick+notPick ;
+                temp[t] = (t == arr[idx]) ?  pick+notPick+1 : pick+notPick ;
             }
+            dp = temp;
         }
         
         
         
         
-        return dp[arr.length-1][target];
+        return dp[target];
         
         
         
