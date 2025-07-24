@@ -4,40 +4,43 @@ class Solution {
             return 0;
         }
 
-        int[][] dp = new int[coins.length][amount + 1];
+        int[] dp = new int[amount + 1];
 
-        for (int idx = 0; idx < coins.length; idx++) {
-            dp[idx][0] = 0;
-        }
+      
+            dp[0] = 0;
+        
 
         for (int amt = 1; amt <= amount; amt++) {
             if (amt >= coins[0] && (amt % coins[0]) == 0) {
-                dp[0][amt] = (amt / coins[0]);
+                dp[amt] = (amt / coins[0]);
             }
             else{
-            dp[0][amt] = Integer.MAX_VALUE;
+            dp[amt] = Integer.MAX_VALUE;
             }
         }
 
         for (int idx = 1; idx < coins.length; idx++) {
+            int[] temp = new int[amount+1];
+            temp[0] = 0;
 
             for (int amt = 1; amt <= amount; amt++) {
 
                 int pick = Integer.MAX_VALUE;
 
                 if (amt >= coins[idx]) {
-                    pick = dp[idx][ amt - coins[idx]];
+                    pick = temp[amt - coins[idx]];
                     pick = (pick == Integer.MAX_VALUE) ? pick : pick + 1;
                 }
 
-                int notPick = dp[idx-1][amt];
+                int notPick = dp[amt];
 
-                 dp[idx][amt] = Math.min(pick, notPick);
+                 temp[amt] = Math.min(pick, notPick);
 
             }
+            dp = temp;
         }
 
-        int ans = dp[coins.length-1][amount];
+        int ans = dp[amount];
         return (ans == Integer.MAX_VALUE) ? -1 : ans;
     }
 
