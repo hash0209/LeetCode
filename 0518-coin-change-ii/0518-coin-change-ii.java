@@ -2,36 +2,39 @@ class Solution {
     public int change(int amount, int[] coins) {
 
 
-        int[][] dp = new int[coins.length][amount+1];
+        int[] dp = new int[amount+1];
 
         
 
-        for(int idx = 0; idx < coins.length ; idx++){
-            dp[idx][0] = 1;
-        }
+      
+            dp[0] = 1;
+        
 
         for(int amt =1 ; amt <= amount ; amt++){
             if (amt >= coins[0] && (amt% coins[0] == 0)){
-                dp[0][amt] =1;
+                dp[amt] =1;
             }
         }
 
 
         for(int idx =1 ; idx < coins.length ; idx++){
+            int[] temp = new int[amount+1];
+            temp[0] =1;
 
             for(int amt =1 ; amt <= amount ; amt++){
 
-                int pick = (amt >= coins[idx]) ? dp[idx][amt-coins[idx]]:0;
+                int pick = (amt >= coins[idx]) ? temp[amt-coins[idx]]:0;
 
-                int notpick = dp[idx-1][amt];
+                int notpick = dp[amt];
 
-                dp[idx][amt] = pick +notpick;
+                temp[amt] = pick +notpick;
             }
+            dp=temp;
         }
 
 
 
-        return dp[coins.length-1][amount];
+        return dp[amount];
     }
 
 
