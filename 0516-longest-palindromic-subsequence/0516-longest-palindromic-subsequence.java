@@ -1,16 +1,16 @@
 class Solution {
     public int longestPalindromeSubseq(String s) {
 
-        StringBuilder s1 = new StringBuilder(s);
-        String s2 = s1.reverse().toString();
+       // StringBuilder s1 = new StringBuilder(s);
+       // String s2 = s1.reverse().toString();
 
-        int[] dp = new int[s2.length()+1];
+        int[] dp = new int[s.length()+1];
 
         for(int i =1 ; i <= s.length() ; i++){
-            int[] temp = new int[s2.length()+1];
+            int[] temp = new int[s.length()+1];
 
-            for(int j =1 ; j <= s2.length(); j++){
-                 if(s.charAt(i-1)==s2.charAt(j-1)){
+            for(int j =1 ; j <= s.length(); j++){
+                 if(s.charAt(i-1)==s.charAt(s.length()-j)){
                     temp[j] = 1+ dp[j-1];
                  }
                  else{
@@ -21,7 +21,7 @@ class Solution {
             dp = temp;
         }
 
-        return dp[s2.length()];
+        return dp[s.length()];
         
     }
 }
