@@ -93,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/hash0209/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0402-remove-k-digits](https://github.com/hash0209/LeetCode/tree/master/0402-remove-k-digits) |
 | [0424-longest-repeating-character-replacement](https://github.com/hash0209/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
+| [0516-longest-palindromic-subsequence](https://github.com/hash0209/LeetCode/tree/master/0516-longest-palindromic-subsequence) |
 | [0678-valid-parenthesis-string](https://github.com/hash0209/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0768-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0768-partition-labels) |
 | [1250-longest-common-subsequence](https://github.com/hash0209/LeetCode/tree/master/1250-longest-common-subsequence) |
@@ -117,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/hash0209/LeetCode/tree/master/0322-coin-change) |
 | [0416-partition-equal-subset-sum](https://github.com/hash0209/LeetCode/tree/master/0416-partition-equal-subset-sum) |
 | [0435-non-overlapping-intervals](https://github.com/hash0209/LeetCode/tree/master/0435-non-overlapping-intervals) |
+| [0516-longest-palindromic-subsequence](https://github.com/hash0209/LeetCode/tree/master/0516-longest-palindromic-subsequence) |
 | [0518-coin-change-ii](https://github.com/hash0209/LeetCode/tree/master/0518-coin-change-ii) |
 | [0678-valid-parenthesis-string](https://github.com/hash0209/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0943-sum-of-subarray-minimums](https://github.com/hash0209/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
