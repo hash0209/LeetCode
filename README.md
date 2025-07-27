@@ -85,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/hash0209/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/hash0209/LeetCode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0020-valid-parentheses](https://github.com/hash0209/LeetCode/tree/master/0020-valid-parentheses) |
+| [0072-edit-distance](https://github.com/hash0209/LeetCode/tree/master/0072-edit-distance) |
 | [0076-minimum-window-substring](https://github.com/hash0209/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0079-word-search](https://github.com/hash0209/LeetCode/tree/master/0079-word-search) |
 | [0115-distinct-subsequences](https://github.com/hash0209/LeetCode/tree/master/0115-distinct-subsequences) |
@@ -112,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0063-unique-paths-ii](https://github.com/hash0209/LeetCode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/hash0209/LeetCode/tree/master/0064-minimum-path-sum) |
 | [0070-climbing-stairs](https://github.com/hash0209/LeetCode/tree/master/0070-climbing-stairs) |
+| [0072-edit-distance](https://github.com/hash0209/LeetCode/tree/master/0072-edit-distance) |
 | [0085-maximal-rectangle](https://github.com/hash0209/LeetCode/tree/master/0085-maximal-rectangle) |
 | [0115-distinct-subsequences](https://github.com/hash0209/LeetCode/tree/master/0115-distinct-subsequences) |
 | [0120-triangle](https://github.com/hash0209/LeetCode/tree/master/0120-triangle) |
