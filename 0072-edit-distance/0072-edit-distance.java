@@ -5,9 +5,7 @@ class Solution {
     }
 
     public int find(int i , int j , String s1 , String s2 , Integer[][] dp){
-        if( i == 0 && j == 0){
-            return 0;
-        }
+        
         if(i== 0){
             return j ;
         }
