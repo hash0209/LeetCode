@@ -1,42 +1,44 @@
 class Solution {
     public int minDistance(String word1, String word2) {
-        int[][] dp = new int[word1.length() + 1][word2.length() + 1];
+        int[] dp = new int[word2.length() + 1];
 
         for (int j = 1; j <= word2.length(); j++) {
-            dp[0][j] = j;
+            dp[j] = j;
         }
 
-        for (int i = 1; i <= word1.length(); i++) {
-            dp[i][0] = i;
-        }
+            dp[0] = 0;
+        
 
         for (int i = 1; i <= word1.length(); i++) {
+            int[] temp = new int[word2.length()+1];
+            temp[0]=i;
 
             for (int j = 1; j <= word2.length(); j++) {
 
                 if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
-                      dp[i][j] = dp[i - 1][j - 1];
+                      temp[j] = dp[j - 1];
                 }
                 else{
-                int insert = dp[i][j-1] + 1;
+                int insert = temp[j-1] + 1;
 
-                int delete = dp[i-1][j] + 1;
-                int replace = dp[i-1][j-1] + 1;
+                int delete = dp[j] + 1;
+                int replace = dp[j-1] + 1;
 
                 int ans = Math.min(insert, delete);
-                 dp[i][j] = Math.min(ans, replace);
+                 temp[j] = Math.min(ans, replace);
                 }
+
+              
             }
+              dp = temp;
         }
 
-        return dp[word1.length()][ word2.length()];
+        return dp[ word2.length()];
     }
 
     public int find(int i, int j, String s1, String s2, Integer[][] dp) {
 
-        if (i == 0 && j == 0) {
-            return 0;
-        }
+       
 
         if (i == 0) {
             return j;
