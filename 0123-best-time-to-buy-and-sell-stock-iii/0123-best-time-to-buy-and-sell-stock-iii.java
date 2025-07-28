@@ -1,8 +1,40 @@
 class Solution {
     public int maxProfit(int[] prices) {
-        Integer[][][] dp = new Integer[prices.length][2][3];
-        return find(0,1 , 2 , prices,dp);
-    }
+        int[][][] dp = new int[prices.length][2][3];
+
+        dp[prices.length-1][0][1] = prices[prices.length-1];
+        dp[prices.length-1][0][2] = prices[prices.length-1];
+
+
+        for(int idx = prices.length-2 ; idx >= 0 ; idx --){
+
+            for(int buy =0; buy <= 1; buy++){
+
+                for(int t = 1; t <= 2 ; t ++){
+                    if(buy ==1 ){
+                        int buys = dp[idx+1][0][t] -  prices[idx];
+
+                        int notbuys = dp[idx+1][buy][t] ;
+
+                       dp[idx][buy][t] =Math.max(buys,notbuys);
+                       
+
+                       }
+                       else{
+                        int sell = dp[idx+1][1][t-1] + prices[idx];
+
+                        int notsell = dp[idx+1][buy][t];
+
+                        dp[idx][buy][t] = Math.max(sell,notsell);
+                       }
+                    }
+                }
+            }
+
+            return dp[0][1][2];
+        }
+        
+    
 
 
     public int find(int idx , int buy , int t , int[] prices , Integer[][][] dp){
