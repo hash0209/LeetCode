@@ -1,56 +1,44 @@
 class Solution {
     public int lengthOfLIS(int[] nums) {
-        int[] dp = new int[nums.length+1];
 
-        for(int last =0; last <= nums.length ; last++){
-            if(last == nums.length || nums[0] < nums[last]){
-                dp[last] =1 ;
+        int currSize = 0;
+        int[] ans = new int[nums.length];
+
+        for(int i = 0; i < nums.length ; i++){
+
+            int idx = find(0,currSize-1,nums[i],ans);
+
+            ans[idx] = nums[i];
+
+            if(idx == currSize){
+
+                currSize++;
+
             }
         }
 
-        for(int idx =1; idx < nums.length ; idx++){
-            int[] temp = new int[nums.length+1];
-
-            for(int last =0; last <= nums.length ; last++){
-
-                int pick = 0;
-                if(last == nums.length || nums[idx] < nums[last]){
-                    pick = dp[idx]+1;
-                }
-
-                int notpick = dp[last];
-
-               temp[last] = Math.max(pick,notpick);
-            }
-            dp =  temp;
-        }
+        return currSize ;
 
 
-        return dp[nums.length];
+        
     }
 
-    public int find(int idx , int last  , int[] nums , Integer[][] dp){
-        if(idx == 0){
-            if(last == nums.length || nums[idx] < nums[last]){
-                return 1;
+    public int find(int low , int high , int target , int[] ans){
+
+        int lb = high+1;
+
+        while(low <= high){
+            int mid =(low+high)/2;
+
+            if(ans[mid] >= target ){
+                lb = mid;
+                high =mid-1;
             }
-            return 0;
+            else{
+                low = mid+1;
+
+            }
         }
-
-        if( dp[idx][last]!=null){
-            return dp[idx][last];
-        }
-
-        int pick = 0;
-
-    
-
-        if(last == nums.length || nums[idx] <  nums[last]){
-            pick = find(idx-1 , idx , nums ,dp)+1;
-        }
-
-        int notpick = find(idx-1 , last , nums ,dp);
-
-        return dp[idx][last] = Math.max(pick,notpick);
+        return lb;
     }
 }
