@@ -11,7 +11,7 @@ class Solution {
         for(int idx =1; idx < nums.length ; idx++){
             
 
-            for(int last =0; last <= nums.length ; last++){
+            for(int last =idx+1; last <= nums.length ; last++){
 
                 int pick = 0;
                 if(last == nums.length || nums[idx] < nums[last]){
