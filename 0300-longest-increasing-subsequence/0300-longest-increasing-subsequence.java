@@ -1,44 +1,33 @@
 class Solution {
     public int lengthOfLIS(int[] nums) {
+        int[][] dp = new int[nums.length][nums.length+1];
 
-        int currSize = 0;
-        int[] ans = new int[nums.length];
-
-        for(int i = 0; i < nums.length ; i++){
-
-            int idx = find(0,currSize-1,nums[i],ans);
-
-            ans[idx] = nums[i];
-
-            if(idx == currSize){
-
-                currSize++;
-
+        for(int last =0; last <= nums.length ; last++){
+            if(last == nums.length || nums[0] < nums[last]){
+                dp[0][last] =1 ;
             }
         }
 
-        return currSize ;
+        for(int idx =1; idx < nums.length ; idx++){
+            
 
+            for(int last =0; last <= nums.length ; last++){
 
-        
-    }
+                int pick = 0;
+                if(last == nums.length || nums[idx] < nums[last]){
+                    pick = dp[idx-1][idx]+1;
+                }
 
-    public int find(int low , int high , int target , int[] ans){
+                int notpick = dp[idx-1][last];
 
-        int lb = high+1;
-
-        while(low <= high){
-            int mid =(low+high)/2;
-
-            if(ans[mid] >= target ){
-                lb = mid;
-                high =mid-1;
+              dp[idx][last] = Math.max(pick,notpick);
             }
-            else{
-                low = mid+1;
-
-            }
+           
         }
-        return lb;
+
+
+        return dp[nums.length-1][nums.length];
     }
+
+
 }
