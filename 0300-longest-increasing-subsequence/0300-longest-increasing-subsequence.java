@@ -1,54 +1,60 @@
 class Solution {
     public int lengthOfLIS(int[] nums) {
-        int[][] dp = new int[nums.length][nums.length+1];
+        int[] dp = new int[nums.length + 1];
 
-        for(int last =0; last <= nums.length ; last++){
-            if(last == nums.length || nums[0] < nums[last]){
-                dp[0][last] =1 ;
-            }
-        }
+        
 
-        for(int idx =1; idx < nums.length ; idx++){
+        for (int idx = 0; idx < nums.length; idx++) {
 
-            for(int last =0; last <= nums.length ; last++){
+            int[] temp = new int[nums.length + 1];
+
+            for (int last = 0; last <= nums.length; last++) {
+                if (idx == 0) {
+                    if (last == nums.length || nums[0] < nums[last]) {
+                        temp[last] = 1;
+                    }
+                }
+                else{
 
                 int pick = 0;
-                if(last == nums.length || nums[idx] < nums[last]){
-                    pick = dp[idx-1][idx]+1;
+                if (last == nums.length || nums[idx] < nums[last]) {
+                    pick = dp[idx] + 1;
                 }
 
-                int notpick = dp[idx-1][last];
+                int notpick = dp[last];
+                
 
-                dp[idx][last] = Math.max(pick,notpick);
+                temp[last] = Math.max(pick, notpick);
+                }
+
+              
             }
+              dp =temp;
         }
 
-
-        return dp[nums.length-1][nums.length];
+        return dp[nums.length];
     }
 
-    public int find(int idx , int last  , int[] nums , Integer[][] dp){
-        if(idx == 0){
-            if(last == nums.length || nums[idx] < nums[last]){
+    public int find(int idx, int last, int[] nums, Integer[][] dp) {
+        if (idx == 0) {
+            if (last == nums.length || nums[idx] < nums[last]) {
                 return 1;
             }
             return 0;
         }
 
-        if( dp[idx][last]!=null){
+        if (dp[idx][last] != null) {
             return dp[idx][last];
         }
 
         int pick = 0;
 
-    
-
-        if(last == nums.length || nums[idx] <  nums[last]){
-            pick = find(idx-1 , idx , nums ,dp)+1;
+        if (last == nums.length || nums[idx] < nums[last]) {
+            pick = find(idx - 1, idx, nums, dp) + 1;
         }
 
-        int notpick = find(idx-1 , last , nums ,dp);
+        int notpick = find(idx - 1, last, nums, dp);
 
-        return dp[idx][last] = Math.max(pick,notpick);
+        return dp[idx][last] = Math.max(pick, notpick);
     }
 }
