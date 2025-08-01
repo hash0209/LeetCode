@@ -31,7 +31,9 @@ class Solution {
     }
 
     public Boolean isValid(String curr , String prev){
-        if(curr.length() == prev.length()+1){
+        if(curr.length() != prev.length()+1){
+            return false;
+        }
             
         
 
@@ -39,7 +41,7 @@ class Solution {
         int left = 0;
         int right = 0;
 
-        while(right < prev.length() && left < curr.length() && count <= 1){
+        while(left < curr.length() && right< prev.length() && count <= 1){
 
             if(curr.charAt(left) == prev.charAt(right)){
                      left++;
@@ -55,7 +57,6 @@ class Solution {
 
 
     }
-    return false;
-    }
+  
 
 }
