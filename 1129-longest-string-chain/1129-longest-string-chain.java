@@ -3,11 +3,11 @@ class Solution {
 
         int[] dp = new int[words.length];
 
-        Arrays.sort(words ,(a,b) -> a.length() -b.length());
+        Arrays.sort(words, (a, b) -> a.length() - b.length());
 
         Arrays.fill(dp, 1);
 
-        int maxf =1;
+        int maxf = 1;
 
         for (int i = 0; i < words.length; i++) {
 
@@ -18,38 +18,36 @@ class Solution {
                     int length = dp[j] + 1;
                     if (dp[i] < length) {
                         dp[i] = length;
-                        maxf = Math.max(maxf, length);
+                        
                     }
 
                 }
 
             }
+            maxf = Math.max(maxf, dp[i]);
         }
 
         return maxf;
 
     }
 
-    public Boolean isValid(String curr , String prev){
-        if(curr.length() != prev.length()+1){
+    public Boolean isValid(String curr, String prev) {
+        if (curr.length() != prev.length() + 1) {
             return false;
         }
-            
-        
 
-        int count =0;
+        int diff = 0;
         int left = 0;
         int right = 0;
 
-        while(left < curr.length() && right< prev.length()){
+        while (left < curr.length() && right < prev.length()) {
 
-            if(curr.charAt(left) == prev.charAt(right)){
-                     left++;
-                     right++;
-            }
-            else{
-                count++;
-                if(count > 1){
+            if (curr.charAt(left) == prev.charAt(right)) {
+                left++;
+                right++;
+            } else {
+                diff++;
+                if (diff > 1) {
                     return false;
                 }
                 left++;
@@ -58,8 +56,6 @@ class Solution {
         }
         return true;
 
-
     }
-  
 
 }
