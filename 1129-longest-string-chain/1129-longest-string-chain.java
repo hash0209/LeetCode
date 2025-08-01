@@ -41,7 +41,7 @@ class Solution {
         int left = 0;
         int right = 0;
 
-        while(left < curr.length() && right< prev.length() && count <= 1){
+        while(left < curr.length() && right< prev.length()){
 
             if(curr.charAt(left) == prev.charAt(right)){
                      left++;
@@ -49,11 +49,14 @@ class Solution {
             }
             else{
                 count++;
+                if(count > 1){
+                    return false;
+                }
                 left++;
             }
 
         }
-        return (count <= 1);
+        return true;
 
 
     }
