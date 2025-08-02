@@ -1,49 +1,45 @@
 class Solution {
     public String longestPalindrome(String s) {
 
-        int max = 0;
-        int start = 0;
+        int maxlength = 0;
+        int start =0;
+        int end = 0;
 
-        Integer[][] dp = new Integer[s.length()][s.length()];
-
-        for (int i = 0; i < s.length(); i++) {
-
-            for (int j = i; j < s.length(); j++) {
-
-                if (isPalindrome(i, j, s , dp) == 1) {
-
-                    int len = j - i + 1;
-                    if (len > max) {
-                        max = len;
-                        start = i;
-                    }
-
-                }
-
-            }
-        }
-
-        return s.substring(start, start + max);
-    }
-
-    public int isPalindrome(int left, int right, String s ,Integer[][] dp) {
-
-        if(left > right){
-            return 1;
-        }
-        if(dp[left][right]!=null){
-             return dp[left][right];
-        }
-
-        if(s.charAt(left) ==s.charAt(right)){
-           return dp[left][right] = isPalindrome(left+1 , right-1 ,s ,dp);
-        }
-
-        return dp[left][right]=0;
-
-      
 
         
-       
+
+        for(int i =0 ; i < s.length(); i++){
+
+            int len1 = expand(i-1,i+1,s);
+            int len2 = expand(i,i+1,s);
+
+            int len =Math.max(len1,len2);
+
+            if(len > end-start+1){
+                start = i -(len-1)/2;
+                end = i+len /2;
+            }
+
+
+
+        }
+
+        return s.substring(start , end+1);
+    }
+
+
+    public int expand(int left , int right , String s){
+
+        int start =0;
+        int end = 0;
+
+
+        while(left >= 0 && right < s.length()  && s.charAt(left) == s.charAt(right)){
+            start = left ;
+            end = right;
+            left -- ;
+            right++;
+        }
+        return end-start+1 ;
     }
 }
