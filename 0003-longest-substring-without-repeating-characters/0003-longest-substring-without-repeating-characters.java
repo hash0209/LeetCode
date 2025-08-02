@@ -9,11 +9,8 @@ class Solution {
 
         while(r < s.length()){
 
-            if(map.containsKey(s.charAt(r))){
-                int idx = map.get(s.charAt(r));
-                if(idx >= l ){
-                    l =idx+1;
-                }
+            if(map.containsKey(s.charAt(r)) && map.get(s.charAt(r)) >= l){
+                l= map.get(s.charAt(r))+1;
             }
             
            
