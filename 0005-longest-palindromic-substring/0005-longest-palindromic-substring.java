@@ -6,6 +6,10 @@ class Solution {
 
         Integer[][] dp = new Integer[s.length()][s.length()];
 
+        for(int i = 0; i < s.length() ;i++){
+            dp[i][i] =1;
+        }
+
         for (int i = 0; i < s.length(); i++) {
 
             for (int j = 0; j < s.length(); j++) {
@@ -20,7 +24,7 @@ class Solution {
                     }
                 }
 
-                if (isPalindrome(i, j, s)) {
+              else  if (isPalindrome(i, j, s)) {
 
                     dp[i][j] = 1;
 
