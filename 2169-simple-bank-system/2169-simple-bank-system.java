@@ -1,61 +1,54 @@
 class Bank {
 
-
-    long[] bal ;
+    long[] bal;
 
     public Bank(long[] balance) {
 
         bal = balance;
-        
+
     }
-    
+
     public boolean transfer(int account1, int account2, long money) {
 
-        boolean ans1 = isValid(account1);
-        boolean ans2 = isValid(account2);
+        if (isValid(account1) && isValid(account2) && has(account1, money)) {
 
-        if(ans1 && ans2){
-                if(has(account1,money)){
-                    bal[account1-1] = bal[account1-1]-money;
-                    bal[account2-1] = bal[account2-1]+money;
-                    return true;
-                }
+            bal[account1 - 1] = bal[account1 - 1] - money;
+            bal[account2 - 1] = bal[account2 - 1] + money;
+            return true;
         }
 
         return false;
 
-
-        
     }
-    
+
     public boolean deposit(int account, long money) {
 
-        if(isValid(account)){
-            bal[account-1] = bal[account-1]+money;
+        if (isValid(account)) {
+            bal[account - 1] = bal[account - 1] + money;
             return true;
         }
         return false;
-        
+
     }
-    
+
     public boolean withdraw(int account, long money) {
-        if(isValid(account) && has(account , money)){
-            bal[account-1] = bal[account-1] - money;
+        if (isValid(account) && has(account, money)) {
+            bal[account - 1] = bal[account - 1] - money;
             return true;
         }
         return false;
-        
+
     }
 
-    public boolean isValid(int n){
-        if(n-1 >= 0 && n-1 < bal.length){
+    public boolean isValid(int n) {
+        if (n - 1 >= 0 && n - 1 < bal.length) {
             return true;
         }
         return false;
     }
 
-    public boolean has(int n , long amt){
-        if(bal[n-1]>= amt){
+    public boolean has(int n, long amt) {
+        if (bal[n - 1] >= amt) {
             return true;
         }
         return false;
