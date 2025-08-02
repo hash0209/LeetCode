@@ -4,16 +4,13 @@ class Solution {
         int max = 0;
         int start = 0;
 
-        
+        Integer[][] dp = new Integer[s.length()][s.length()];
 
         for (int i = 0; i < s.length(); i++) {
 
             for (int j = 0; j < s.length(); j++) {
 
-              
-             if (isPalindrome(i, j, s)) {
-
-                   
+                if (isPalindrome(i, j, s , dp) == 1) {
 
                     int len = j - i + 1;
                     if (len > max) {
@@ -22,23 +19,31 @@ class Solution {
                     }
 
                 }
-                
+
             }
         }
 
         return s.substring(start, start + max);
     }
 
-    public boolean isPalindrome(int left, int right, String s) {
+    public int isPalindrome(int left, int right, String s ,Integer[][] dp) {
 
-        while (left <= right) {
-            if (s.charAt(left) == s.charAt(right)) {
-                left++;
-                right--;
-            } else {
-                return false;
-            }
+        if(left > right){
+            return 1;
         }
-        return true;
+        if(dp[left][right]!=null){
+             return dp[left][right];
+        }
+
+        if(s.charAt(left) ==s.charAt(right)){
+           return dp[left][right] = isPalindrome(left+1 , right-1 ,s ,dp);
+        }
+
+        return dp[left][right]=0;
+
+      
+
+        
+       
     }
 }
