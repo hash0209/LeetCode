@@ -9,11 +9,12 @@ class Solution {
 
         while(r < s.length()){
 
-            while(map.containsKey(s.charAt(r))){
-                map.remove(s.charAt(l));
-                l++;
+            if(map.containsKey(s.charAt(r))){
+                int idx = map.get(s.charAt(r));
+                if(idx >= l ){
+                    l =idx+1;
+                }
             }
-
             
            
                 map.put(s.charAt(r),r);
