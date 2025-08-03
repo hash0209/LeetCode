@@ -60,6 +60,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1559-cherry-pickup-ii](https://github.com/hash0209/LeetCode/tree/master/1559-cherry-pickup-ii) |
 | [2169-simple-bank-system](https://github.com/hash0209/LeetCode/tree/master/2169-simple-bank-system) |
 | [2227-sum-of-subarray-ranges](https://github.com/hash0209/LeetCode/tree/master/2227-sum-of-subarray-ranges) |
+| [3335-minimum-operations-to-write-the-letter-y-on-a-grid](https://github.com/hash0209/LeetCode/tree/master/3335-minimum-operations-to-write-the-letter-y-on-a-grid) |
 | [3374-count-alternating-subarrays](https://github.com/hash0209/LeetCode/tree/master/3374-count-alternating-subarrays) |
 | [3797-design-spreadsheet](https://github.com/hash0209/LeetCode/tree/master/3797-design-spreadsheet) |
 ## Backtracking
@@ -97,6 +98,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1370-count-number-of-nice-subarrays](https://github.com/hash0209/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/hash0209/LeetCode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [2169-simple-bank-system](https://github.com/hash0209/LeetCode/tree/master/2169-simple-bank-system) |
+| [3335-minimum-operations-to-write-the-letter-y-on-a-grid](https://github.com/hash0209/LeetCode/tree/master/3335-minimum-operations-to-write-the-letter-y-on-a-grid) |
 | [3797-design-spreadsheet](https://github.com/hash0209/LeetCode/tree/master/3797-design-spreadsheet) |
 ## String
 |  |
@@ -215,6 +217,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0200-number-of-islands](https://github.com/hash0209/LeetCode/tree/master/0200-number-of-islands) |
 | [0967-minimum-falling-path-sum](https://github.com/hash0209/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [1559-cherry-pickup-ii](https://github.com/hash0209/LeetCode/tree/master/1559-cherry-pickup-ii) |
+| [3335-minimum-operations-to-write-the-letter-y-on-a-grid](https://github.com/hash0209/LeetCode/tree/master/3335-minimum-operations-to-write-the-letter-y-on-a-grid) |
 | [3797-design-spreadsheet](https://github.com/hash0209/LeetCode/tree/master/3797-design-spreadsheet) |
 ## Trie
 |  |
@@ -377,6 +380,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1034-subarrays-with-k-different-integers](https://github.com/hash0209/LeetCode/tree/master/1034-subarrays-with-k-different-integers) |
+| [3335-minimum-operations-to-write-the-letter-y-on-a-grid](https://github.com/hash0209/LeetCode/tree/master/3335-minimum-operations-to-write-the-letter-y-on-a-grid) |
 ## Sorting
 |  |
 | ------- |
