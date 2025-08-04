@@ -12,7 +12,7 @@ class Solution {
 
             while(r < ans.length()){
                     if(ans.charAt(l) != ans.charAt(r)){
-                          sb.append(String.valueOf(r-l));
+                          sb.append(r-l);
                           sb.append(ans.charAt(l));
                           l = r ; 
                     }
