@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/hash0209/LeetCode/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
 | [0198-house-robber](https://github.com/hash0209/LeetCode/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/hash0209/LeetCode/tree/master/0200-number-of-islands) |
+| [0204-count-primes](https://github.com/hash0209/LeetCode/tree/master/0204-count-primes) |
 | [0213-house-robber-ii](https://github.com/hash0209/LeetCode/tree/master/0213-house-robber-ii) |
 | [0216-combination-sum-iii](https://github.com/hash0209/LeetCode/tree/master/0216-combination-sum-iii) |
 | [0239-sliding-window-maximum](https://github.com/hash0209/LeetCode/tree/master/0239-sliding-window-maximum) |
@@ -380,6 +381,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/hash0209/LeetCode/tree/master/0013-roman-to-integer) |
 | [0062-unique-paths](https://github.com/hash0209/LeetCode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/hash0209/LeetCode/tree/master/0070-climbing-stairs) |
+| [0204-count-primes](https://github.com/hash0209/LeetCode/tree/master/0204-count-primes) |
 | [0368-largest-divisible-subset](https://github.com/hash0209/LeetCode/tree/master/0368-largest-divisible-subset) |
 | [1370-count-number-of-nice-subarrays](https://github.com/hash0209/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
 | [3374-count-alternating-subarrays](https://github.com/hash0209/LeetCode/tree/master/3374-count-alternating-subarrays) |
@@ -547,4 +549,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/hash0209/LeetCode/tree/master/0200-number-of-islands) |
+## Enumeration
+|  |
+| ------- |
+| [0204-count-primes](https://github.com/hash0209/LeetCode/tree/master/0204-count-primes) |
+## Number Theory
+|  |
+| ------- |
+| [0204-count-primes](https://github.com/hash0209/LeetCode/tree/master/0204-count-primes) |
 <!---LeetCode Topics End-->
