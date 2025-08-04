@@ -3,61 +3,28 @@ class Solution {
 
         List<List<Integer>> dp = new ArrayList<>();
 
-        for(List<Integer> list : triangle ){
-           
-           dp.add(new ArrayList<>(list));
-           
+        for(List<Integer> list : triangle){
+            dp.add(new ArrayList<>(list));
         }
 
-        for(List<Integer> list : dp){
+        
 
-            for(int i = 0; i < list.size() ; i++){
-                list.set(i , Integer.MAX_VALUE);
+        for(int row =  triangle.size()-2 ; row >= 0 ; row--){
+
+            for(int idx = 0; idx < triangle.get(row).size(); idx++){
+
+                int one = dp.get(row+1).get(idx);
+                int two = dp.get(row+1).get(idx+1);
+
+                dp.get(row).set(idx , Math.min(one,two)+triangle.get(row).get(idx));
             }
         }
-       
+        return dp.get(0).get(0);
 
-       
-
-        return  find(triangle , 0, 0 , dp);
+   
     }
 
 
 
-    public int find(List<List<Integer>> t , int row , int idx ,   List<List<Integer>> dp){
 
-        if(idx >=  t.get(row).size()){
-            return  Integer.MAX_VALUE;
-        }
-
-        if(row  ==  t.size() -1 ){
-            return t.get(row).get(idx);
-        }
-
-
-        if(dp.get(row).get(idx)!=Integer.MAX_VALUE){
-            return dp.get(row).get(idx);
-        }
-
-       
-
-
-
-        
-       int left = find(t , row+1 , idx , dp);
-        
-
-
-        
-        int right = find(t, row+1 , idx+1 , dp) ;
-
-        int ans = Math.min(left , right) +  t.get(row).get(idx);
-
-        dp.get(row).set(idx , ans);
-
-        
-
-        return ans ;
-
-    }
 }
