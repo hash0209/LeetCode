@@ -65,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2227-sum-of-subarray-ranges](https://github.com/hash0209/LeetCode/tree/master/2227-sum-of-subarray-ranges) |
 | [3335-minimum-operations-to-write-the-letter-y-on-a-grid](https://github.com/hash0209/LeetCode/tree/master/3335-minimum-operations-to-write-the-letter-y-on-a-grid) |
 | [3374-count-alternating-subarrays](https://github.com/hash0209/LeetCode/tree/master/3374-count-alternating-subarrays) |
+| [3790-fruits-into-baskets-ii](https://github.com/hash0209/LeetCode/tree/master/3790-fruits-into-baskets-ii) |
 | [3797-design-spreadsheet](https://github.com/hash0209/LeetCode/tree/master/3797-design-spreadsheet) |
 ## Backtracking
 |  |
@@ -324,6 +325,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/hash0209/LeetCode/tree/master/0054-spiral-matrix) |
 | [0735-asteroid-collision](https://github.com/hash0209/LeetCode/tree/master/0735-asteroid-collision) |
 | [2169-simple-bank-system](https://github.com/hash0209/LeetCode/tree/master/2169-simple-bank-system) |
+| [3790-fruits-into-baskets-ii](https://github.com/hash0209/LeetCode/tree/master/3790-fruits-into-baskets-ii) |
 ## Sliding Window
 |  |
 | ------- |
@@ -366,6 +368,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0222-count-complete-tree-nodes](https://github.com/hash0209/LeetCode/tree/master/0222-count-complete-tree-nodes) |
 | [0300-longest-increasing-subsequence](https://github.com/hash0209/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 | [1046-max-consecutive-ones-iii](https://github.com/hash0209/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
+| [3790-fruits-into-baskets-ii](https://github.com/hash0209/LeetCode/tree/master/3790-fruits-into-baskets-ii) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -545,6 +548,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/hash0209/LeetCode/tree/master/0673-number-of-longest-increasing-subsequence) |
+| [3790-fruits-into-baskets-ii](https://github.com/hash0209/LeetCode/tree/master/3790-fruits-into-baskets-ii) |
 ## Union Find
 |  |
 | ------- |
@@ -557,4 +561,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0204-count-primes](https://github.com/hash0209/LeetCode/tree/master/0204-count-primes) |
+## Ordered Set
+|  |
+| ------- |
+| [3790-fruits-into-baskets-ii](https://github.com/hash0209/LeetCode/tree/master/3790-fruits-into-baskets-ii) |
 <!---LeetCode Topics End-->
