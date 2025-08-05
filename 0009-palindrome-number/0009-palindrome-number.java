@@ -1,26 +1,26 @@
 class Solution {
     public boolean isPalindrome(int x) {
-
         if(x < 0){
-            return false;
+            return false;           
         }
 
-        Long reverse = 0L;
+        Long orig = (long)(x);
 
-        Long x1 = (long) x;
 
-        while (x1 != 0) {
-            Long digit = x1 % 10;
-            x1 = x1 / 10L;
+        Long reverse =0L;
 
-            reverse = (reverse * 10L) + digit;
+        while(orig!=0){
+
+            Long digit = orig%10L;
+
+            reverse = reverse *10 + digit;
+            orig = orig/10L;
 
         }
 
-        if (reverse == x) {
-            return true;
-        }
-        return false;
+        
 
+        return reverse == (long) x ;
+        
     }
 }
