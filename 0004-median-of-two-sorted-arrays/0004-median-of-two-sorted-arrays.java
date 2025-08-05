@@ -6,13 +6,14 @@ class Solution {
                 
             }
 
-            int n =(nums1.length+nums2.length)/2; //2
+            int total = nums1.length+nums2.length;
+
+            int n =(total)/2; //2
 
             int low = 0;
             int high = nums1.length; //
 
-            int el1 = -1;
-            int el2 = -1;
+            
 
             while(low <= high){
                 int mid1 = (low+high)/2;
@@ -28,9 +29,12 @@ class Solution {
                 int r2 = (mid2 < nums2.length) ? nums2[mid2] : Integer.MAX_VALUE;
 
                 if(l1 <= r2 && l2 <= r1){
-                       el1 = Math.max(l1,l2);
-                       el2 = Math.min(r1,r2);
-                       break;
+                    if(total % 2 == 0){
+                      return (double) (Math.max(l1,l2) + Math.min(r1,r2))/2.0;
+                    }
+                    else{
+                     return (double)  (Math.min(r1,r2));
+                    }
                 }
                 else if (  l2 > r1){
                     low = mid1+1;
@@ -41,14 +45,9 @@ class Solution {
 
 
             }
+            return 0.0;
 
-            if((nums1.length + nums2.length)%2 ==0){
-                return Double.valueOf(el1+el2)/2.0;
-            }
-            else{
-                return Double.valueOf(el2);
-            }
-       
+            
        }
 }
 
