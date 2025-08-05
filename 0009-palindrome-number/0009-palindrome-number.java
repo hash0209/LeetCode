@@ -20,7 +20,7 @@ class Solution {
 
         
 
-        return reverse == (long) x ;
+        return reverse == x ;
         
     }
 }
