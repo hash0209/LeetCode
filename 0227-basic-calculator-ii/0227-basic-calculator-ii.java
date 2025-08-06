@@ -2,7 +2,7 @@ class Solution {
     public int calculate(String s) {
 
         Stack<Integer> st = new Stack<>();
-         s =s.trim();
+       
 
         char[] c = s.toCharArray();
         int num =0;
@@ -12,14 +12,11 @@ class Solution {
 
         for(int i =0; i < c.length ; i++){
           
-            if(c[i] ==' ' ){
-               
-                continue;
-            }
+           
               if(Character.isDigit(c[i])){
                 num = num*10+(c[i]-'0');
               }
-              if(!Character.isDigit(c[i])||i==c.length-1){
+              if((!Character.isDigit(c[i]) && c[i]!=' ')||i==c.length-1){
                   if(prevSign=='+'){
                     st.push(num);
                   }
