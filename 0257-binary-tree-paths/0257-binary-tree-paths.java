@@ -15,43 +15,36 @@
  */
 class Solution {
     public List<String> binaryTreePaths(TreeNode root) {
-        List<String> ans = new ArrayList<>();
-        StringBuilder s = new StringBuilder();
-        dfs(root,s,ans);
-        return ans;
+        List<String> list = new ArrayList<>();
+        find(root,new StringBuilder() ,list);
+        return list;
     }
 
-    public void dfs(TreeNode root, StringBuilder path, List<String> ans) {
-
-
+    public void find(TreeNode root , StringBuilder path , List<String> res){
         if(root == null){
-            return;
-        }
-
-       
-
-      //  path += (path.length() > 0 ? "->" : "") + root.val;
-        if(path.length() > 0){
-            path.append("->");
-        }
-
-        path.append(root.val);
-
-        int len = path.length();
-
-        if(root.left == null && root.right ==null){
-            ans.add(path.toString());
             return ;
         }
 
-        dfs(root.left,path,ans);
+        
+
+        if(path.isEmpty()){
+            path.append(root.val);
+        }
+        else{
+            path.append("->" + root.val);
+        }
+
+        if(root.left == null && root.right == null){
+            res.add(path.toString());
+            return;
+        }
+
+        int len = path.length();
+
+        find(root.left ,path ,  res);
         path.setLength(len);
-        dfs(root.right,path,ans);
-
-
-
+        find(root.right,path , res);
 
 
     }
-
 }
