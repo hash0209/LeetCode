@@ -97,6 +97,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0139-word-break](https://github.com/hash0209/LeetCode/tree/master/0139-word-break) |
 | [0146-lru-cache](https://github.com/hash0209/LeetCode/tree/master/0146-lru-cache) |
 | [0208-implement-trie-prefix-tree](https://github.com/hash0209/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
+| [0242-valid-anagram](https://github.com/hash0209/LeetCode/tree/master/0242-valid-anagram) |
 | [0424-longest-repeating-character-replacement](https://github.com/hash0209/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0496-next-greater-element-i](https://github.com/hash0209/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/hash0209/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
@@ -135,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/hash0209/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0212-word-search-ii](https://github.com/hash0209/LeetCode/tree/master/0212-word-search-ii) |
 | [0227-basic-calculator-ii](https://github.com/hash0209/LeetCode/tree/master/0227-basic-calculator-ii) |
+| [0242-valid-anagram](https://github.com/hash0209/LeetCode/tree/master/0242-valid-anagram) |
 | [0257-binary-tree-paths](https://github.com/hash0209/LeetCode/tree/master/0257-binary-tree-paths) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/hash0209/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0402-remove-k-digits](https://github.com/hash0209/LeetCode/tree/master/0402-remove-k-digits) |
@@ -424,6 +426,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/hash0209/LeetCode/tree/master/0015-3sum) |
 | [0016-3sum-closest](https://github.com/hash0209/LeetCode/tree/master/0016-3sum-closest) |
 | [0056-merge-intervals](https://github.com/hash0209/LeetCode/tree/master/0056-merge-intervals) |
+| [0242-valid-anagram](https://github.com/hash0209/LeetCode/tree/master/0242-valid-anagram) |
 | [0368-largest-divisible-subset](https://github.com/hash0209/LeetCode/tree/master/0368-largest-divisible-subset) |
 | [0435-non-overlapping-intervals](https://github.com/hash0209/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/hash0209/LeetCode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
