@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0004-median-of-two-sorted-arrays](https://github.com/hash0209/LeetCode/tree/master/0004-median-of-two-sorted-arrays) |
 | [0011-container-with-most-water](https://github.com/hash0209/LeetCode/tree/master/0011-container-with-most-water) |
 | [0014-longest-common-prefix](https://github.com/hash0209/LeetCode/tree/master/0014-longest-common-prefix) |
+| [0015-3sum](https://github.com/hash0209/LeetCode/tree/master/0015-3sum) |
 | [0036-valid-sudoku](https://github.com/hash0209/LeetCode/tree/master/0036-valid-sudoku) |
 | [0037-sudoku-solver](https://github.com/hash0209/LeetCode/tree/master/0037-sudoku-solver) |
 | [0042-trapping-rain-water](https://github.com/hash0209/LeetCode/tree/master/0042-trapping-rain-water) |
@@ -298,6 +299,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/hash0209/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0011-container-with-most-water](https://github.com/hash0209/LeetCode/tree/master/0011-container-with-most-water) |
+| [0015-3sum](https://github.com/hash0209/LeetCode/tree/master/0015-3sum) |
 | [0042-trapping-rain-water](https://github.com/hash0209/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0455-assign-cookies](https://github.com/hash0209/LeetCode/tree/master/0455-assign-cookies) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/hash0209/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
@@ -400,6 +402,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0015-3sum](https://github.com/hash0209/LeetCode/tree/master/0015-3sum) |
 | [0056-merge-intervals](https://github.com/hash0209/LeetCode/tree/master/0056-merge-intervals) |
 | [0368-largest-divisible-subset](https://github.com/hash0209/LeetCode/tree/master/0368-largest-divisible-subset) |
 | [0435-non-overlapping-intervals](https://github.com/hash0209/LeetCode/tree/master/0435-non-overlapping-intervals) |
