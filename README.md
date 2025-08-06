@@ -141,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/hash0209/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0345-reverse-vowels-of-a-string](https://github.com/hash0209/LeetCode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0402-remove-k-digits](https://github.com/hash0209/LeetCode/tree/master/0402-remove-k-digits) |
+| [0415-add-strings](https://github.com/hash0209/LeetCode/tree/master/0415-add-strings) |
 | [0424-longest-repeating-character-replacement](https://github.com/hash0209/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0516-longest-palindromic-subsequence](https://github.com/hash0209/LeetCode/tree/master/0516-longest-palindromic-subsequence) |
 | [0583-delete-operation-for-two-strings](https://github.com/hash0209/LeetCode/tree/master/0583-delete-operation-for-two-strings) |
@@ -348,6 +349,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0054-spiral-matrix](https://github.com/hash0209/LeetCode/tree/master/0054-spiral-matrix) |
 | [0068-text-justification](https://github.com/hash0209/LeetCode/tree/master/0068-text-justification) |
+| [0415-add-strings](https://github.com/hash0209/LeetCode/tree/master/0415-add-strings) |
 | [0735-asteroid-collision](https://github.com/hash0209/LeetCode/tree/master/0735-asteroid-collision) |
 | [2169-simple-bank-system](https://github.com/hash0209/LeetCode/tree/master/2169-simple-bank-system) |
 | [3790-fruits-into-baskets-ii](https://github.com/hash0209/LeetCode/tree/master/3790-fruits-into-baskets-ii) |
@@ -415,6 +417,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0204-count-primes](https://github.com/hash0209/LeetCode/tree/master/0204-count-primes) |
 | [0227-basic-calculator-ii](https://github.com/hash0209/LeetCode/tree/master/0227-basic-calculator-ii) |
 | [0368-largest-divisible-subset](https://github.com/hash0209/LeetCode/tree/master/0368-largest-divisible-subset) |
+| [0415-add-strings](https://github.com/hash0209/LeetCode/tree/master/0415-add-strings) |
 | [1370-count-number-of-nice-subarrays](https://github.com/hash0209/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
 | [3374-count-alternating-subarrays](https://github.com/hash0209/LeetCode/tree/master/3374-count-alternating-subarrays) |
 ## Counting
