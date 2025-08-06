@@ -25,7 +25,7 @@ class Solution {
             }
        }
 
-       if(count ==0 && !sb.isEmpty()){
+       if(count ==0 && sb.length() > 0){
         sb.deleteCharAt(sb.length()-1);
        }
 
