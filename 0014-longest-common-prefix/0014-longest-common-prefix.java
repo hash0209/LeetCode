@@ -14,12 +14,11 @@ class Solution {
             int idx = 0;
 
             while (idx < l) {
-                if (prefix.charAt(idx) == curr.charAt(idx)) {
-                    temp.append(prefix.charAt(idx));
+                if (prefix.charAt(idx) != curr.charAt(idx)) {
+                    break ;
+                } 
+                temp.append(prefix.charAt(idx));
                     idx++;
-                } else {
-                    break;
-                }
             }
 
             prefix = temp.toString();
