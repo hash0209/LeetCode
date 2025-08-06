@@ -36,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0198-house-robber](https://github.com/hash0209/LeetCode/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/hash0209/LeetCode/tree/master/0200-number-of-islands) |
 | [0204-count-primes](https://github.com/hash0209/LeetCode/tree/master/0204-count-primes) |
+| [0212-word-search-ii](https://github.com/hash0209/LeetCode/tree/master/0212-word-search-ii) |
 | [0213-house-robber-ii](https://github.com/hash0209/LeetCode/tree/master/0213-house-robber-ii) |
 | [0216-combination-sum-iii](https://github.com/hash0209/LeetCode/tree/master/0216-combination-sum-iii) |
 | [0239-sliding-window-maximum](https://github.com/hash0209/LeetCode/tree/master/0239-sliding-window-maximum) |
@@ -79,6 +80,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0051-n-queens](https://github.com/hash0209/LeetCode/tree/master/0051-n-queens) |
 | [0079-word-search](https://github.com/hash0209/LeetCode/tree/master/0079-word-search) |
 | [0131-palindrome-partitioning](https://github.com/hash0209/LeetCode/tree/master/0131-palindrome-partitioning) |
+| [0212-word-search-ii](https://github.com/hash0209/LeetCode/tree/master/0212-word-search-ii) |
 | [0216-combination-sum-iii](https://github.com/hash0209/LeetCode/tree/master/0216-combination-sum-iii) |
 | [0257-binary-tree-paths](https://github.com/hash0209/LeetCode/tree/master/0257-binary-tree-paths) |
 ## Hash Table
@@ -131,6 +133,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0131-palindrome-partitioning](https://github.com/hash0209/LeetCode/tree/master/0131-palindrome-partitioning) |
 | [0139-word-break](https://github.com/hash0209/LeetCode/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/hash0209/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
+| [0212-word-search-ii](https://github.com/hash0209/LeetCode/tree/master/0212-word-search-ii) |
 | [0257-binary-tree-paths](https://github.com/hash0209/LeetCode/tree/master/0257-binary-tree-paths) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/hash0209/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0402-remove-k-digits](https://github.com/hash0209/LeetCode/tree/master/0402-remove-k-digits) |
@@ -231,6 +234,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/hash0209/LeetCode/tree/master/0079-word-search) |
 | [0085-maximal-rectangle](https://github.com/hash0209/LeetCode/tree/master/0085-maximal-rectangle) |
 | [0200-number-of-islands](https://github.com/hash0209/LeetCode/tree/master/0200-number-of-islands) |
+| [0212-word-search-ii](https://github.com/hash0209/LeetCode/tree/master/0212-word-search-ii) |
 | [0967-minimum-falling-path-sum](https://github.com/hash0209/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [1559-cherry-pickup-ii](https://github.com/hash0209/LeetCode/tree/master/1559-cherry-pickup-ii) |
 | [3335-minimum-operations-to-write-the-letter-y-on-a-grid](https://github.com/hash0209/LeetCode/tree/master/3335-minimum-operations-to-write-the-letter-y-on-a-grid) |
@@ -241,6 +245,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0014-longest-common-prefix](https://github.com/hash0209/LeetCode/tree/master/0014-longest-common-prefix) |
 | [0139-word-break](https://github.com/hash0209/LeetCode/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/hash0209/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
+| [0212-word-search-ii](https://github.com/hash0209/LeetCode/tree/master/0212-word-search-ii) |
 ## Memoization
 |  |
 | ------- |
