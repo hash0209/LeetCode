@@ -1,97 +1,47 @@
 class Solution {
     public boolean exist(char[][] board, String word) {
-        int rows = board.length;
-        int cols = board[0].length;
 
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                if (board[i][j] == word.charAt(0)) {
-                    board[i][j] = '$';
-                    boolean ans = find(i, j, board, word, 1);
-                    board[i][j] = word.charAt(0);
-                    if (ans) {
+        for(int i =0; i< board.length ; i++){
+            for(int j =0; j < board[0].length ; j++){
+                if(board[i][j] == word.charAt(0)){
+                     if(find(i,j,0,word,board)){
                         return true;
-                    }
+                     }
                 }
             }
         }
 
         return false;
 
+
+        
     }
 
-    public boolean find(int m, int n, char[][] board, String word, int index) {
+    public boolean find(int row , int col , int idx , String word , char[][] board){
 
-      
-
-        if (index == word.length()) {
-            return true;
+        if(idx == word.length()){
+            return true ;
         }
 
-        //  if(m >= board.length || n >= board[0].length){
-        //    return false;
-        //   }
-        //  if(board[m][n] == word.charAt(index)){
-        //      board[m][n]='$';
-
-        //       ans = find(m , n , board , word, index+1);
-        //         board[m][n] = word.charAt(index);
-        //        return ans;
-        //  }
-
-        char c = word.charAt(index);
-        boolean right = match(board, c, m, n + 1);
-        if (right) {
-            right = find(m, n+1, board, word, index + 1);
-            board[m][n+1] = c;
-            if(right){
-                return true;
-            }
-        }
-
-        boolean left = match(board, c, m, n - 1);
-        if (left) {
-            left = find(m , n-1, board, word, index + 1);
-             board[m][n-1] = c;
-            if(left){
-                return true;
-            }
-        }
-
-        boolean up = match(board, c, m - 1, n);
-        if (up) {
-            up = find(m -1, n, board, word, index + 1);
-             board[m-1][n] = c;
-           if(up){
-                return true;
-            }
-        }
-
-        boolean down = match(board, c, m + 1, n);
-        if (down) {
-            down = find(m + 1, n, board, word, index + 1);
-            board[m+1][n] = c;
-           if(down){
-                return true;
-            }
-        }
-        return false;
-      
-    }
-
-    public boolean match(char[][] board, char c, int m, int n) {
-        if (m >= board.length || n >= board[0].length || m < 0 || n <0) {
+        if(row < 0 || col < 0 || row == board.length || col ==board[0].length){
             return false;
         }
-        if (board[m][n] == c){
-            board[m][n] = '$';
 
-            //  ans = find(m , n , board , word, index+1);
-            //   board[m][n] = word.charAt(index);
-            return true;
+        if(board[row][col] == word.charAt(idx)){
+
+            board[row][col] ='.';
+
+            boolean up = find(row+1,col,idx+1,word,board);
+            boolean down = find(row-1,col,idx+1,word,board);
+            boolean right = find(row,col+1,idx+1,word,board);
+            boolean left = find(row,col-1,idx+1,word,board);
+
+            board[row][col] =word.charAt(idx);
+
+            return (up || down || right || left);
+
         }
 
         return false;
     }
-
 }
