@@ -11,7 +11,7 @@ class Solution {
 
         int n = target.length();
 
-        for(int i =0; i < target.length() ; i++){
+        for(int i =1; i < target.length() ; i++){
             String prefix = target.substring(0,i);
             String suffix = target.substring(i,n);
 
