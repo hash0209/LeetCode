@@ -5,16 +5,16 @@ class Solution {
         int r = 0;
         int count = 0;
 
-        Map<Character, Integer> map = new HashMap<>();
+        Map<Character, Integer> indicesMap = new HashMap<>();
 
         while (r < s.length()) {
 
-            if (map.containsKey(s.charAt(r)) && l <= map.get(s.charAt(r))) {
+            if (indicesMap.containsKey(s.charAt(r)) && l <= indicesMap.get(s.charAt(r))) {
               
-                l= map.get(s.charAt(r))+1;
+                l= indicesMap.get(s.charAt(r))+1;
             }
 
-            map.put(s.charAt(r), r);
+            indicesMap.put(s.charAt(r), r);
 
             if (r-l+1> k) {
               
