@@ -11,9 +11,12 @@ class FileSystem {
     }
     
     public boolean createPath(String path, int value) {
-        String[] arr = path.split("/");
+         List<String> list = Arrays.stream(path.split("/"))
+                                .filter(s -> !s.isEmpty())
+                                .collect(Collectors.toList());
+     
         
-        List<String> list = clean(arr);
+       
       
         Trie node = search(list , 0 , list.size()-2);
 
@@ -22,11 +25,12 @@ class FileSystem {
         } 
 
         Map<String,Trie> m = node.map;
-        if(m.containsKey(list.get(list.size()-1))){
+        String dir = list.get(list.size()-1);
+        if(m.containsKey(dir)){
             return false;
         }
         Trie t =  new Trie(new HashMap<>(),-1);
-        m.put(list.get(list.size()-1) , t);
+        m.put(dir , t);
 
         t.val = value;
         return true;
@@ -38,8 +42,10 @@ class FileSystem {
     }
     
     public int get(String path) {
-        String[] arr = path.split("/");
-        List<String> list = clean(arr);
+        List<String> list = Arrays.stream(path.split("/"))
+                                .filter(s -> !s.isEmpty())
+                                .collect(Collectors.toList());
+       
 
         Trie t = search(list,0,list.size()-1);
         if(t == null){
@@ -66,17 +72,6 @@ class FileSystem {
         return node;
     }
 
-    public List<String> clean (String[] arr){
-        List<String> list = new ArrayList<>();
-        for(int i = 0; i< arr.length ; i++){
-            if(arr[i].isEmpty()){
-                continue;
-            }
-            list.add(arr[i]);
-
-        }
-        return list;
-    }
 
 
     
