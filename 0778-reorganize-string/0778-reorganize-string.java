@@ -1,50 +1,73 @@
 class Solution {
     public String reorganizeString(String s) {
-        int[] freq =new int[26];
 
-        char[] ch =s.toCharArray();
-        for(int i =0; i < ch.length;i++){
-            freq[ch[i]-'a'] = freq[ch[i]-'a']+1;
-        }
-
+        char[] ch = s.toCharArray();
         int n = ch.length;
 
+        int[] freq =new int[26];
 
-        char[] res = new char[ch.length];
-        int idx =0;
-        while(true){
+        for(int i = 0; i < ch.length ; i++){
+               freq[ch[i]-'a'] = freq[ch[i]-'a']+1;
 
-            int maxf = 0;
-            int maxChar = -1;
-
-            for(int i =0; i < 26 ; i++){
-                if(freq[i] > maxf){
-                    maxf = freq[i];
-                    maxChar = i;
-                }
-            }
-            if(maxf > (n+1)/2){
-                return  "";
-            }
-
-            if(maxChar == -1){
-                break ;
-            }
-
-            while(freq[maxChar] > 0){
-                if(idx >= n) {
-                    idx = 1;
-                }
-                res[idx] =(char) (maxChar + 'a');
-                freq[maxChar] = freq[maxChar] -1;
-                idx =idx +2;
-            }
-
-
-
+               if(freq[ch[i]-'a']> (n+1)/2){
+                return "";
+               }
         }
 
-        return new String(res);
+        PriorityQueue<CharCount> maxheap = new PriorityQueue<>((a,b) -> b.freq-a.freq);
 
+        for(int i = 0; i< 26 ; i++){
+              if(freq[i] > 0){
+                char c = (char)(i +  'a');
+                
+                maxheap.add(new CharCount(c , freq[i] ));
+              }
+        }
+
+        StringBuilder sb = new StringBuilder();
+
+        while(maxheap.size()>=2){
+            CharCount first = maxheap.poll();
+            CharCount second = maxheap.poll();
+            System.out.println(first.ch);
+            System.out.println(second.ch);
+
+            sb.append(first.ch);
+            sb.append(second.ch);
+
+            first.freq--;
+            second.freq--;
+
+            if(first.freq > 0){
+                maxheap.add(first);
+            }
+            if(second.freq > 0){
+                maxheap.add(second);
+            }
+        }
+
+        while(!maxheap.isEmpty()){
+            sb.append(maxheap.poll().ch);
+        }
+
+        return sb.toString();
+
+
+
+
+
+
+
+        
+    }
+}
+
+class CharCount{
+    char ch ;
+    int freq ;
+
+   public   CharCount(char ch , int freq){
+        this.ch = ch;
+        this.freq = freq;
     }
 }
