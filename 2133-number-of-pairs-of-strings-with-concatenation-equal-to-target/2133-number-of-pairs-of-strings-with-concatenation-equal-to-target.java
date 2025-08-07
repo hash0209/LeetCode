@@ -1,33 +1,35 @@
 class Solution {
     public int numOfPairs(String[] nums, String target) {
-
-        int tlen = target.length();
-
         int count = 0;
+       
 
-        for(int i = 0; i < nums.length;i++){
+        HashMap<String,Integer> freqMap = new HashMap<>();
 
-            for(int j = 0; j < nums.length; j++){
-
-                if(i == j){
-                    continue;
-                }
-                if(nums[i].length()+nums[j].length() == tlen){
-                    StringBuilder sb = new StringBuilder();
-                    sb.append(nums[i]);
-                    sb.append(nums[j]);
-                    if(sb.toString().equals(target)){
-                        count++;
-                    }
-
-                }
-            }
-
-
+        for(int i =0; i < nums.length ; i++){
+            freqMap.put(nums[i],freqMap.getOrDefault(nums[i],0)+1);
         }
 
-        return count ;
+        int n = target.length();
 
+        for(int i =0; i < target.length() ; i++){
+            String prefix = target.substring(0,i);
+            String suffix = target.substring(i,n);
+
+            int prefixCount = freqMap.getOrDefault(prefix,0);
+            int suffixCount =freqMap.getOrDefault(suffix,0);
+
+            if(prefixCount!=0 && suffixCount!=0){
+                if(prefix.equals(suffix)){
+                    count+=prefixCount*(prefixCount-1);
+                }
+                else{
+                    count+= (prefixCount * suffixCount );
+                }
+            }
+            
+
+        }
         
+        return count;
     }
 }
