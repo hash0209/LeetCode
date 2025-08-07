@@ -9,15 +9,15 @@ class Solution {
 
         while (r < s.length()) {
 
-            while (map.containsKey(s.charAt(r))) {
-                map.remove(s.charAt(l));
-                l++;
+            if (map.containsKey(s.charAt(r)) && l <= map.get(s.charAt(r))) {
+              
+                l= map.get(s.charAt(r))+1;
             }
 
             map.put(s.charAt(r), r);
 
             if (r-l+1> k) {
-                map.remove(s.charAt(l));
+              
                 l++;
 
             }
