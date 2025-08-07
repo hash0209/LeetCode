@@ -16,12 +16,12 @@ class Solution {
 
             map.put(s.charAt(r), r);
 
-            if (map.size() > k) {
+            if (r-l+1> k) {
                 map.remove(s.charAt(l));
                 l++;
 
             }
-            if (map.size() == k) {
+            if (r-l+1 == k) {
                 count++;
             }
 
