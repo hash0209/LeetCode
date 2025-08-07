@@ -108,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0966-binary-subarrays-with-sum](https://github.com/hash0209/LeetCode/tree/master/0966-binary-subarrays-with-sum) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/hash0209/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1034-subarrays-with-k-different-integers](https://github.com/hash0209/LeetCode/tree/master/1034-subarrays-with-k-different-integers) |
+| [1125-design-file-system](https://github.com/hash0209/LeetCode/tree/master/1125-design-file-system) |
 | [1129-longest-string-chain](https://github.com/hash0209/LeetCode/tree/master/1129-longest-string-chain) |
 | [1370-count-number-of-nice-subarrays](https://github.com/hash0209/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/hash0209/LeetCode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
@@ -150,6 +151,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0678-valid-parenthesis-string](https://github.com/hash0209/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0768-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/hash0209/LeetCode/tree/master/0778-reorganize-string) |
+| [1125-design-file-system](https://github.com/hash0209/LeetCode/tree/master/1125-design-file-system) |
 | [1129-longest-string-chain](https://github.com/hash0209/LeetCode/tree/master/1129-longest-string-chain) |
 | [1170-shortest-common-supersequence](https://github.com/hash0209/LeetCode/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/hash0209/LeetCode/tree/master/1250-longest-common-subsequence) |
@@ -254,6 +256,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0139-word-break](https://github.com/hash0209/LeetCode/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/hash0209/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0212-word-search-ii](https://github.com/hash0209/LeetCode/tree/master/0212-word-search-ii) |
+| [1125-design-file-system](https://github.com/hash0209/LeetCode/tree/master/1125-design-file-system) |
 ## Memoization
 |  |
 | ------- |
@@ -296,6 +299,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0232-implement-queue-using-stacks](https://github.com/hash0209/LeetCode/tree/master/0232-implement-queue-using-stacks) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/hash0209/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0937-online-stock-span](https://github.com/hash0209/LeetCode/tree/master/0937-online-stock-span) |
+| [1125-design-file-system](https://github.com/hash0209/LeetCode/tree/master/1125-design-file-system) |
 | [2169-simple-bank-system](https://github.com/hash0209/LeetCode/tree/master/2169-simple-bank-system) |
 | [3797-design-spreadsheet](https://github.com/hash0209/LeetCode/tree/master/3797-design-spreadsheet) |
 ## Queue
