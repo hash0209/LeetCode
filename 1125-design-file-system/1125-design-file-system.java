@@ -84,7 +84,7 @@ class FileSystem {
 
 class Trie {
        HashMap<String,Trie> map = new HashMap<>();
-       int val;
+       int val =-1;
 }
 
 /**
