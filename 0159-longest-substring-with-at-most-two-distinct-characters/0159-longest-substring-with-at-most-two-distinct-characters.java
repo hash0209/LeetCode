@@ -6,9 +6,7 @@ class Solution {
         HashMap<Character,Integer> map = new HashMap<>();
 
         while(r < s.length()){
-            map.putIfAbsent(s.charAt(r),0);
-            int f = map.get(s.charAt(r));
-            map.put(s.charAt(r),f+1);
+            map.put(s.charAt(r),map.getOrDefault(s.charAt(r),0)+1);
             
 
             while(map.size() >2){
