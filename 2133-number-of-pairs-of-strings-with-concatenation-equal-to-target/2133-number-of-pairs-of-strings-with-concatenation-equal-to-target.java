@@ -18,14 +18,14 @@ class Solution {
             int prefixCount = freqMap.getOrDefault(prefix,0);
             int suffixCount =freqMap.getOrDefault(suffix,0);
 
-            if(prefixCount!=0 && suffixCount!=0){
+            
                 if(prefix.equals(suffix)){
                     count+=prefixCount*(prefixCount-1);
                 }
                 else{
                     count+= (prefixCount * suffixCount );
                 }
-            }
+            
             
 
         }
