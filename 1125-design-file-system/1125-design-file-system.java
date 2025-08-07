@@ -11,9 +11,7 @@ class FileSystem {
     }
     
     public boolean createPath(String path, int value) {
-         List<String> list = Arrays.stream(path.split("/"))
-                                .filter(s -> !s.isEmpty())
-                                .collect(Collectors.toList());
+         List<String> list = clean(path);
      
         
        
@@ -42,9 +40,7 @@ class FileSystem {
     }
     
     public int get(String path) {
-        List<String> list = Arrays.stream(path.split("/"))
-                                .filter(s -> !s.isEmpty())
-                                .collect(Collectors.toList());
+        List<String>  list = clean(path);
        
 
         Trie t = search(list,0,list.size()-1);
@@ -70,6 +66,13 @@ class FileSystem {
         }
 
         return node;
+    }
+
+    public List<String> clean(String path){
+       return  Arrays.stream(path.split("/"))
+                                .filter(s -> !s.isEmpty())
+                                .collect(Collectors.toList());
+
     }
 
 
