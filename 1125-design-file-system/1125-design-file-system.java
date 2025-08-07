@@ -5,7 +5,7 @@ class FileSystem {
    
     public FileSystem() {
         
-          root  =  new Trie();
+          root  =  new Trie(new HashMap<>(),-1);
     
 
     }
@@ -25,7 +25,7 @@ class FileSystem {
         if(m.containsKey(list.get(list.size()-1))){
             return false;
         }
-        Trie t = new Trie();
+        Trie t =  new Trie(new HashMap<>(),-1);
         m.put(list.get(list.size()-1) , t);
 
         t.val = value;
@@ -83,8 +83,13 @@ class FileSystem {
 }
 
 class Trie {
-       HashMap<String,Trie> map = new HashMap<>();
+       Map<String,Trie> map ;
        int val =-1;
+
+       public Trie( Map<String,Trie> map , int val){
+                  this.map = map;
+                  this.val = val ;
+       }
 }
 
 /**
