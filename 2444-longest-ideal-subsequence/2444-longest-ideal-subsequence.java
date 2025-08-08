@@ -16,8 +16,7 @@ class Solution {
                    maxlen = Math.max(maxlen,dp[range]);
               }
 
-              dp[idx] = Math.max(dp[idx],1+maxlen);
-              System.out.println(dp[idx]);
+              dp[idx] = Math.max(dp[idx],1+maxlen);              
               ans = Math.max(ans,dp[idx]);
         }
 
