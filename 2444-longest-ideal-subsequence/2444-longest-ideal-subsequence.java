@@ -3,9 +3,10 @@ class Solution {
         
         int[] dp = new int[26];
         int ans =0;
+        char[] c = s.toCharArray();
 
-        for(int i =0; i < s.length(); i++){
-              int idx = s.charAt(i) - 'a';
+        for(int i =0; i < c.length; i++){
+              int idx = c[i] - 'a';
 
               int start= Math.max(0,idx-k);
               int end = Math.min(25,idx+k);
