@@ -1,24 +1,28 @@
 class Solution {
     public int similarPairs(String[] words) {
 
-        boolean[] exists;
+       int[] dp = new int[words.length];
         int count = 0;
 
         for (int i = 0; i < words.length; i++) {
+            for(int j = 0 ; j < i ; j ++){
+                  if(isSimilar(words[i],words[j])){
+                    dp[i] = Math.max(dp[i] ,1+dp[j]);
+                  }
+            }
 
-            for (int j = i + 1; j < words.length; j++) {
+          
 
-              
-
-              if(isSimilar(words[i],words[j])){
-                count++;
-              }
+             
 
                 
             }
-        }
+        int sum = 0;
 
-        return count;
+        for(Integer i : dp){
+            sum+=i;
+        }
+        return sum ;
 
     }
 
