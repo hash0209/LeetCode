@@ -36,10 +36,8 @@ class Solution {
             
            
             for(int j =0; j < l2.size() ; j++){
-                sb = new StringBuilder();
-                sb.append(l1.get(i));
-                sb.append(l2.get(j));
-                res.add(sb.toString());
+               
+                res.add(l1.get(i).concat(l2.get(j)));
 
 
             }
