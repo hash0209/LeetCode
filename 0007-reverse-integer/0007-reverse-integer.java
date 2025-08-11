@@ -1,44 +1,25 @@
 class Solution {
     public int reverse(int x) {
 
-        String s = String.valueOf(x);
-        
-        int left =0 ;
-        if(s.charAt(0) == '-'){
-            left++;
-        }
+        int num =0;
 
+        while(x !=0){
+            int digit = x%10;
 
-        int right = s.length()-1;
-
-        char[] ch = s.toCharArray();
-
-        while(left < right){
-           Character temp = ch[left];
-           ch[left] =ch[right];
-           ch[right] = temp;
-
-           left++;
-           right--;
-
+            if(num >  Integer.MAX_VALUE/10 || (num == Integer.MAX_VALUE/10 && digit > 7)){
+                  return 0;
+            }
+            if(num < Integer.MIN_VALUE/10 || (num == Integer.MIN_VALUE/10 && digit < -8)){
+                return 0;
+            }
+            
+            num=num*10+digit;
+            x=x/10;
 
 
         }
-        StringBuilder sb = new StringBuilder();
 
-        
-
-        for(Character c :ch){
-            sb.append(c);
-        }
-
-        Long val = Long.valueOf(sb.toString());
-        if(val >= Integer.MAX_VALUE || val <= Integer.MIN_VALUE){
-            return 0;
-        }
-
-        return Integer.valueOf(sb.toString());
-        
+        return num ; 
         
     }
 }
