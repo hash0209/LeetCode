@@ -11,21 +11,24 @@
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
 
-       
         if(lists.length == 0){
             return null;
         }
 
-        ListNode l1 = lists[0];
-
-        for(int i =1 ; i < lists.length ; i++){
-
-            ListNode l2 =lists[i];
-            l1 = merge(l1 , l2);
-        }
-
-        return l1;
+       return mergeHelper(0, lists.length-1 , lists);
         
+    }
+
+    public ListNode mergeHelper(int left , int right , ListNode[] lists){
+        if(left == right){
+            return lists[left];
+        }
+        int mid = (left+right)/2;
+
+        ListNode l1 = mergeHelper(left , mid , lists);
+        ListNode l2 = mergeHelper(mid+1 , right , lists);
+
+        return merge(l1 , l2);
     }
 
     public ListNode merge(ListNode l1 , ListNode l2){
