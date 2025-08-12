@@ -14,14 +14,14 @@ class Solution {
         
         ListNode slow = head;
 
-        int count = 0;
+        int length = 0;
 
         while(slow!=null){
             slow =slow.next ;
-            count++;
+            length++;
         }
 
-        n = count - n;
+        n = length - n;
 
         if(n == 0){
             return head.next;
@@ -30,9 +30,10 @@ class Solution {
 
         ListNode temp = head;
 
-        count = 1;
+        int count = 0;
 
         while(temp!=null){
+            count++;
 
             if(count == n){
                 temp.next = temp.next.next;
@@ -40,7 +41,7 @@ class Solution {
             }
 
             temp = temp.next ;
-            count++;
+           
         }
 
 
