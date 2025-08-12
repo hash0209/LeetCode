@@ -36,6 +36,7 @@ class Solution {
 
             if(count == n){
                 temp.next = temp.next.next;
+                break;
             }
 
             temp = temp.next ;
