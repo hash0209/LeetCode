@@ -1,7 +1,8 @@
 class Solution {
     public List<Integer> findSubstring(String s, String[] words) {
         List<Integer> result = new ArrayList<>();
-        if (s.length() == 0 || words.length == 0) return result;
+        if (s.length() == 0 || words.length == 0)
+            return result;
 
         int wordLen = words[0].length();
         int numWords = words.length;
@@ -13,8 +14,8 @@ class Solution {
             targetMap.put(word, targetMap.getOrDefault(word, 0) + 1);
 
         // Check all offsets
-        int offset = 0;
-        while (offset < wordLen) {
+        
+       for(int offset=0; offset < wordLen ; offset++){
             int left = offset;
             int right = offset;
             Map<String, Integer> windowMap = new HashMap<>();
@@ -43,7 +44,7 @@ class Solution {
                     left = right;
                 }
             }
-            offset++;
+           
         }
 
         return result;
