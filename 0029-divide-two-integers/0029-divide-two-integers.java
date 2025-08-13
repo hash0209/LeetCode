@@ -11,12 +11,8 @@ class Solution {
 
 
 
-        if (divisor == 1) {
-            return dividend;
-        }
-        if (divisor == -1) {
-            return dividend * -1;
-        }
+     
+    
         
 
         
@@ -26,30 +22,35 @@ class Solution {
             sign = 1;
         }
 
-        int q = 0;
+        
        
 
-        int div1 = Math.abs(dividend);
-        int div2 = Math.abs(divisor);
+        long div1 = Math.abs((long)dividend);
+        long div2 = Math.abs((long)divisor);
+        long res =0;
 
-        while (div1 - div2 >= 0) {
+        while(div1 >= div2){
+            long mulitple =1;
+            long temp = div2;
 
-          // // int digit = (lastdigit+1)%10;
-           // if (sign == 1) {
-            //    if (q > Integer.MAX_VALUE - 1 || (q == Integer.MAX_VALUE - 1 && digit % 10 > 7)) {
-            //        return Integer.MAX_VALUE;
-             //   }
-         //   } else {
-          //      if (q > Integer.MAX_VALUE - 1 || (q == Integer.MAX_VALUE - 1 && digit % 10 > 8)) {
-            //        return Integer.MIN_VALUE;
-            //    }
-           // }
-            q++;
-          //  lastdigit = q%10;
-            div1 = div1 - div2;
+            while(div1 >= temp*2){
+                temp = temp*2;
+                mulitple = mulitple * 2;
+            }
+
+            res+=  mulitple;
+            div1 = div1-temp;
+
+
         }
 
-        return q * sign;
+       
+        
+
+        
+        
+
+        return (int) (res * sign);
 
     }
 }
