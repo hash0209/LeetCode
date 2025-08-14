@@ -22,9 +22,9 @@ class Solution {
         }
 
         // no rotten oranges
-        if (q.isEmpty() && isFresh) {
-            return -1;
-        }
+     //   if (q.isEmpty() && isFresh) {
+      //      return -1;
+     //   }
         if (q.isEmpty() && !isFresh) {
             return 0;
         }
