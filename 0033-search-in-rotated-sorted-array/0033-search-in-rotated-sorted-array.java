@@ -10,7 +10,7 @@ class Solution {
                 return mid ;
             }
 
-            if(nums[mid] >=  nums[low]){
+            if(nums[mid] >=nums[low]){
                 if(target >= nums[low] && target < nums[mid]){
                     high = mid-1;
                 }
