@@ -11,7 +11,7 @@ class Solution {
             }
 
             if(nums[mid] >=  nums[low]){
-                if(target >= nums[low] && target <= nums[mid]){
+                if(target >= nums[low] && target < nums[mid]){
                     high = mid-1;
                 }
                  else{
@@ -19,7 +19,7 @@ class Solution {
                  }
 
             }else{
-                if(target >= nums[mid] && target <= nums[high]){
+                if(target > nums[mid] && target <= nums[high]){
                     low=mid+1;
                 }
                 else{
