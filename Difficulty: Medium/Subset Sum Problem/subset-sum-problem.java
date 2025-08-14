@@ -5,44 +5,35 @@ class Solution {
         
         int[][] dp = new int[arr.length][sum+1];
         
-        for(int[] row : dp){
-            Arrays.fill(row , -1);
+        for(int t =0 ; t <= sum ; t++){
+            if(arr[0] == t){
+        
+        dp[0][arr[0]] =1;
+            }
         }
-        return isSubsetSum(arr , arr.length-1 , sum , dp);
-    }
-    
-    static boolean  isSubsetSum(int[] arr , int i , int target , int[][] dp){
-        if(target == 0){
-            return true ; 
-        }
-        
-        
-        if(i == 0){
-            return arr[0] == target;
-        }
-        
-        if(dp[i][target]!=-1){
-            return (dp[i][target] == 1)? true : false;
-        }
-        
-        
-        boolean take = false ; 
-        
-        if(target >= arr[i]){
-            take = isSubsetSum(arr , i-1 , target-arr[i] , dp);
-        }
-        
-        boolean notTake = isSubsetSum(arr , i-1 , target , dp);
-        
-        if(take || notTake){
-            dp[i][target] = 1;
-        }
-        else{
-            dp[i][target] = 0;
-        }
-        
-        return  take || notTake ; 
             
+        
+        
+        for(int idx = 0; idx < arr.length ; idx++){
+            dp[idx][0]=1;
+        }
+        
+        for(int idx = 1 ; idx < arr.length ; idx++){
+            
+            for(int t =1 ; t <= sum ; t++){
+                
+                int pick = (t-arr[idx]) >= 0 ? dp[idx-1][t-arr[idx]] : 0;
+                
+                int notpick = dp[idx-1][t] ;
+                
+                if(pick ==1 || notpick ==1){
+                    dp[idx][t] =1;
+                }
+            }
+        }
+        
+        
+        return dp[arr.length-1][sum] == 1;
         
     }
 }
