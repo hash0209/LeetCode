@@ -63,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0966-binary-subarrays-with-sum](https://github.com/hash0209/LeetCode/tree/master/0966-binary-subarrays-with-sum) |
 | [0967-minimum-falling-path-sum](https://github.com/hash0209/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [1034-subarrays-with-k-different-integers](https://github.com/hash0209/LeetCode/tree/master/1034-subarrays-with-k-different-integers) |
+| [1036-rotting-oranges](https://github.com/hash0209/LeetCode/tree/master/1036-rotting-oranges) |
 | [1046-max-consecutive-ones-iii](https://github.com/hash0209/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/hash0209/LeetCode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1129-longest-string-chain](https://github.com/hash0209/LeetCode/tree/master/1129-longest-string-chain) |
@@ -280,6 +281,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0200-number-of-islands](https://github.com/hash0209/LeetCode/tree/master/0200-number-of-islands) |
 | [0212-word-search-ii](https://github.com/hash0209/LeetCode/tree/master/0212-word-search-ii) |
 | [0967-minimum-falling-path-sum](https://github.com/hash0209/LeetCode/tree/master/0967-minimum-falling-path-sum) |
+| [1036-rotting-oranges](https://github.com/hash0209/LeetCode/tree/master/1036-rotting-oranges) |
 | [1559-cherry-pickup-ii](https://github.com/hash0209/LeetCode/tree/master/1559-cherry-pickup-ii) |
 | [3335-minimum-operations-to-write-the-letter-y-on-a-grid](https://github.com/hash0209/LeetCode/tree/master/3335-minimum-operations-to-write-the-letter-y-on-a-grid) |
 | [3797-design-spreadsheet](https://github.com/hash0209/LeetCode/tree/master/3797-design-spreadsheet) |
@@ -598,6 +600,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/hash0209/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/hash0209/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/hash0209/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [1036-rotting-oranges](https://github.com/hash0209/LeetCode/tree/master/1036-rotting-oranges) |
 ## String Matching
 |  |
 | ------- |
