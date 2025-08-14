@@ -7,6 +7,8 @@ class Solution {
         Queue<Pair> q = new LinkedList<>();
         boolean[][] visited = new boolean[m][n];
 
+        int freshCount = 0;
+
         boolean isFresh = false;
 
         for (int i = 0; i < m; i++) {
@@ -16,7 +18,7 @@ class Solution {
                     visited[i][j] = true;
                 }
                 if (grid[i][j] == 1) {
-                    isFresh = true;
+                    freshCount++;
                 }
             }
         }
@@ -32,25 +34,31 @@ class Solution {
 
                 if (i - 1 >= 0 && grid[i - 1][j] != 0 && !visited[i - 1][j]) {
 
+                    
+
                     q.add(new Pair(i - 1, j));
                     visited[i - 1][j] = true;
+                    freshCount--;
 
                 }
 
                 if (i + 1 < m && grid[i + 1][j] != 0 && !visited[i + 1][j]) {
                     q.add(new Pair(i + 1, j));
                     visited[i + 1][j] = true;
+                    freshCount--;
                 }
 
                 if (j - 1 >= 0 && grid[i][j - 1] != 0 && !visited[i][j - 1]) {
                     q.add(new Pair(i, j - 1));
                     visited[i][j - 1] = true;
+                    freshCount--;
                 }
 
                 if (j + 1 < n && grid[i][j + 1] != 0 && !visited[i][j + 1]) {
 
                     q.add(new Pair(i, j + 1));
                     visited[i][j + 1] = true;
+                    freshCount--;
                 }
 
             }
@@ -60,13 +68,9 @@ class Solution {
             }
         }
 
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (grid[i][j] == 1 && !visited[i][j]) {
-                    return -1;
-                }
-            }
-        }
+       if(freshCount!=0){
+        return -1;
+       }
         return mins;
 
     }
