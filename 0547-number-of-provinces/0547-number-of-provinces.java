@@ -7,14 +7,14 @@ class Solution {
         boolean[] visited = new boolean[n];
 
         for(int i =0; i < n ; i++){
-            for(int j = 0; j < n ; j++){
+          
                 if(!visited[i]){
                     ans ++;
-                     dfs(i,isConnected,visited);
+                    dfs(i,isConnected,visited);
                      
                 }
             }
-        }
+        
 
         return ans;
         
@@ -25,9 +25,7 @@ class Solution {
     public void dfs (int i , int[][] mat , boolean[] visited){
            if(visited[i]){
             return ;
-           }
-
-          
+           }     
 
            visited[i] = true;
 
