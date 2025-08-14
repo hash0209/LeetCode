@@ -1,60 +1,38 @@
 class Solution {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
 
-       
+          int m = obstacleGrid.length ; 
+          int n = obstacleGrid[0].length;
 
-        int[]dp = new int[obstacleGrid[0].length];
+          if(obstacleGrid[0][0] ==1 || obstacleGrid[m-1][n-1] ==1){
+            return 0;
+          }
 
-        dp[0] = (obstacleGrid[0][0] == 1) ? 0 : 1 ;
+          int[][] dp = new int [m][n];
 
-        for(int r = 0; r < obstacleGrid.length ; r++ ){
+          dp[0][0] =1;
 
-            int[] temp = new int[obstacleGrid[0].length];
-            temp[0] = dp[0];
+          for(int i = 0; i < m ; i++){
 
+            for(int j =0; j < n ; j++){
 
-            for(int c = 0; c < obstacleGrid[0].length ; c++){
-
-                if( r== 0 && c== 0){
-                    continue ;
+                if(i ==0 && j == 0){
+                    continue;
                 }
 
-
-                if(obstacleGrid[r][c] == 1){
-                    temp[c] = 0;
+                if(obstacleGrid[i][j] == 1){
+                    dp[i][j] = 0;
                 }
                 else{
+                    int up = (i-1)>=0 ? dp[i-1][j] : 0;
+                    int left = (j-1)>= 0? dp[i][j-1] : 0;
 
-
-                int up = 0;
-
-                if(r-1 >=0){
-                 up = dp[c];
-                }
-
-                int left = 0;
-
-                if(c-1 >= 0){
-                 left =temp[c-1];
-                }
-
-               temp[c] = up + left ;
+                    dp[i][j] = up+left;
+                                    }
             }
-            }
+          }
 
-           dp = temp ;
-
-        }
-
-
-        return dp[obstacleGrid[0].length-1];
-
-
-
-
-
-      
+          return dp[m-1][n-1];
+        
     }
-
-
 }
