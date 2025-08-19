@@ -10,15 +10,13 @@ class Solution {
              res.add(new ArrayList<>(ds));
              return res;
         }
-
-
-
         if(idx == -1){
-            
             return res;
-
         }
 
+
+
+       
         if(target >= nums[idx]){
             ds.add(nums[idx]);
             res.addAll(find(idx,nums,target-nums[idx],ds));
