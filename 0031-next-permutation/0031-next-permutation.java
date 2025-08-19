@@ -3,11 +3,15 @@ class Solution {
 
        
         int n = nums.length;
-        int idx =n-2;
-
-        while(idx >=0 && nums[idx] >= nums[idx+1]){
-            idx --;
+        int idx =-1;
+        for(int i =n-2; i>= 0; i-- ){
+            if(nums[i] < nums[i+1]){
+                idx =i;
+                break;
+            }
         }
+
+       
 
 
         if(idx!=-1){
@@ -29,8 +33,8 @@ class Solution {
 
         }
 
-        int l = idx+1;
-        int r =nums.length-1;
+        int l =idx+1;
+        int r =n-1;
 
         while(l < r){
             int temp = nums[l];
