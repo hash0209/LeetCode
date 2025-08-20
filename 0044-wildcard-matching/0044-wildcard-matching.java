@@ -3,7 +3,6 @@ class Solution {
         boolean[][] dp = new boolean[s.length() + 1][p.length() + 1];
 
         dp[0][0] = true;
-      
 
         for (int i = 0; i <= s.length(); i++) {
             for (int j = 0; j <= p.length(); j++) {
@@ -14,11 +13,9 @@ class Solution {
                 }
 
                 else if (i == 0) {
-                    int j1 = j;
-                    while (j1 > 0 && p.charAt(j1 - 1) == '*') {
-                        j1--;
-                    }
-                    dp[i][j] = (j1 == 0);
+
+                    dp[i][j] = (p.charAt(j - 1) == '*') && (dp[0][j - 1]);
+
                 } else {
                     if (s.charAt(i - 1) == p.charAt(j - 1) || p.charAt(j - 1) == '?') {
                         dp[i][j] = dp[i - 1][j - 1];
