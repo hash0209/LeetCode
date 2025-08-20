@@ -159,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0030-substring-with-concatenation-of-all-words](https://github.com/hash0209/LeetCode/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [0032-longest-valid-parentheses](https://github.com/hash0209/LeetCode/tree/master/0032-longest-valid-parentheses) |
 | [0038-count-and-say](https://github.com/hash0209/LeetCode/tree/master/0038-count-and-say) |
+| [0043-multiply-strings](https://github.com/hash0209/LeetCode/tree/master/0043-multiply-strings) |
 | [0044-wildcard-matching](https://github.com/hash0209/LeetCode/tree/master/0044-wildcard-matching) |
 | [0068-text-justification](https://github.com/hash0209/LeetCode/tree/master/0068-text-justification) |
 | [0071-simplify-path](https://github.com/hash0209/LeetCode/tree/master/0071-simplify-path) |
@@ -410,6 +411,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0043-multiply-strings](https://github.com/hash0209/LeetCode/tree/master/0043-multiply-strings) |
 | [0054-spiral-matrix](https://github.com/hash0209/LeetCode/tree/master/0054-spiral-matrix) |
 | [0068-text-justification](https://github.com/hash0209/LeetCode/tree/master/0068-text-justification) |
 | [0415-add-strings](https://github.com/hash0209/LeetCode/tree/master/0415-add-strings) |
@@ -489,6 +491,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0012-integer-to-roman](https://github.com/hash0209/LeetCode/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/hash0209/LeetCode/tree/master/0013-roman-to-integer) |
 | [0029-divide-two-integers](https://github.com/hash0209/LeetCode/tree/master/0029-divide-two-integers) |
+| [0043-multiply-strings](https://github.com/hash0209/LeetCode/tree/master/0043-multiply-strings) |
 | [0062-unique-paths](https://github.com/hash0209/LeetCode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/hash0209/LeetCode/tree/master/0070-climbing-stairs) |
 | [0204-count-primes](https://github.com/hash0209/LeetCode/tree/master/0204-count-primes) |
