@@ -1,8 +1,8 @@
 class Solution {
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
-       // if (image[sr][sr] == color) {
-         //   return image;
-      //  }
+        if (image[sr][sc] == color) {
+           return image;
+          }
         int m = image.length;
         int n = image[0].length;
         int originalcolor = image[sr][sc];
