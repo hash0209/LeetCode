@@ -15,16 +15,16 @@ class Solution {
             }
         }
 
-        int max =0;
+        
 
 
         for(int i = 0; i < nums.length ; i++){
             if(nums[i]!=i+1){
                 return i+1;
             }
-            max = Math.max(max , nums[i]);
+          
         }
-        return max+1;
+        return nums.length+1;
         
     }
 }
