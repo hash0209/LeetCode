@@ -4,7 +4,8 @@ class Solution {
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(candidates);
         find(candidates.length - 1, target, candidates, res, new ArrayList<>());
-        return new ArrayList<>(res);
+        return res;
+        
 
     }
 
