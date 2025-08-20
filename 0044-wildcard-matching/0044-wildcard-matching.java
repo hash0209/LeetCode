@@ -1,53 +1,37 @@
 class Solution {
     public boolean isMatch(String s, String p) {
-
-    Integer[][] dp = new Integer[s.length()+1][p.length()+1];
-      
-       return find(s.length(),p.length(),s,p,dp);
+        Boolean[][] dp = new Boolean[s.length()+1][p.length()+1];
+        return match(s.length(),p.length(),s,p ,dp);
     }
-
-    public boolean find(int i, int j, String s, String p ,Integer[][] dp) {
+    public boolean match(int i , int j , String s ,  String p , Boolean[][] dp){
 
         boolean ans = false;
 
-        if (i == 0 && j == 0) {
+        if(i == 0 && j == 0){
             return true;
         }
-
-        if (j == 0) {
+        if( j== 0){
             return false;
         }
-
-        if (i == 0) {
-
-            while (j > 0) {
-                if (p.charAt(j - 1) != '*') {
-                   return false;
-                } 
+        if(i == 0){
+            while( j >0 && p.charAt(j-1) == '*'){
                 j--;
             }
-            return true;
+            return j == 0;
+        }
+        if(dp[i][j]!=null){
+            return dp[i][j];
+        }
             
 
-        }
 
-        if(dp[i][j]!=null){
-           return  dp[i][j] ==1 ? true : false;
-        }
+            if(s.charAt(i-1) == p.charAt(j-1) || p.charAt(j-1) == '?'){
+                ans = match(i-1 , j-1 , s , p , dp);
+            }
+            else if(p.charAt(j-1) == '*'){
+                ans = match(i , j-1 , s , p,dp) || match(i-1,j,s,p,dp);
+            }
 
-        if (p.charAt(j - 1) == s.charAt(i - 1) || p.charAt(j - 1)=='?' ) {
-            ans =  find(i - 1, j - 1, s, p,dp);
-        }
-
-       else if (p.charAt(j - 1) == '*' ){
-           ans =  find(i-1,j,s,p,dp) || find(i,j-1,s,p,dp);
-
-        }
-
-        dp[i][j] = (ans) ? 1 : 0;
-
-
-        return ans;
-
+            return dp[i][j] = ans;
     }
 }
