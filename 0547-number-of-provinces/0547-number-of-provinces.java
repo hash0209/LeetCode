@@ -6,53 +6,33 @@ class Solution {
         int n = isConnected.length;
         boolean[] visited = new boolean[n];
 
-        List<List<Integer>> adj  =  build(isConnected);
-
-        for (int i = 0; i < adj.size(); i++) {
-
-            if (!visited[i]) {
-                ans++;
-                dfs(i, adj, visited);
-
-            }
-        }
-
-        return ans;
-
-    }
-
-    public void dfs(int i,  List<List<Integer>> adj , boolean[] visited) {
-        if (visited[i]) {
-            return;
-        }
-
-        visited[i] = true;
-
-        for (int nb : adj.get(i)) {
-            
-                dfs(nb, adj, visited);
-            
-        }
-    }
-
-    public List<List<Integer>> build(int[][] mat){
-          List<List<Integer>> adj = new ArrayList<>();
-
+        for(int i =0; i < n ; i++){
           
-          for(int i = 0; i < mat.length ; i++){
-            
-            List<Integer> list = new ArrayList<>();
-            for(int j =0; j < mat.length ; j ++){
-                if(i!=j && mat[i][j] == 1){
-                    list.add(j);
+                if(!visited[i]){
+                    ans ++;
+                    dfs(i,isConnected,visited);
+                     
                 }
             }
-            adj.add(list);
+        
+
+        return ans;
+        
+    }
 
 
-          }
-          return adj;
 
-          
+    public void dfs (int i , int[][] mat , boolean[] visited){
+             
+
+           visited[i] = true;
+
+           
+
+           for(int j =0; j < mat[i].length ; j ++){
+              if(   mat[i][j] ==1 && !visited[j]){
+                dfs (j , mat , visited);
+              }
+           }
     }
 }
