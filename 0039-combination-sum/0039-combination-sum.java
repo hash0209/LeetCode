@@ -24,8 +24,12 @@ class Solution {
             ds.remove(ds.size() - 1);
 
         }
+        idx =idx-1;
+        while(idx >= 0 && nums[idx] == nums[idx+1]){
+            idx --;
+        }
 
-         find(idx - 1, nums, target, ds,res);
+         find(idx , nums, target, ds,res);
        
     }
 }
