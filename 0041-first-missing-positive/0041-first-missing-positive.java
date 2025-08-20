@@ -4,14 +4,15 @@ class Solution {
         int idx = 0;
 
         while(idx < nums.length){
-            if(nums[idx] > nums.length || nums[idx] <= 0 || nums[idx] == nums[nums[idx]-1] ){
+             int correctIdx =nums[idx]-1;
+            if(nums[idx] > nums.length || nums[idx] <= 0 || nums[idx] == nums[correctIdx] ){
                 idx++;
             }
             else{
                 int temp = nums[idx];
-                int idx2 = nums[idx]-1; 
-                nums[idx] =nums[nums[idx]-1];
-                nums[idx2] = temp ;
+                
+                nums[idx] =nums[correctIdx];
+                nums[correctIdx] = temp ;
             }
         }
 
