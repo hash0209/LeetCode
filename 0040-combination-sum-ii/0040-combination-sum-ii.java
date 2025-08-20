@@ -14,7 +14,7 @@ class Solution {
             res.add(new ArrayList<>(ds));
             return;
         }
-        if (idx <= -1) {
+        if (idx == -1) {
             return;
         }
 
