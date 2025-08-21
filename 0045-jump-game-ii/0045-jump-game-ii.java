@@ -4,9 +4,6 @@ class Solution {
             return 0;
         }
 
-        List<Integer> list =new ArrayList<>();
-        list.add(0);
-
         int min = 1;
        
         int max = nums[0];
