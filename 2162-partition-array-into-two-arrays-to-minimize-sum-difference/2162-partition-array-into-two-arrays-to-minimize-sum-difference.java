@@ -49,6 +49,9 @@ class Solution {
                    int s1 = l1.get(l) +r1.get(r);
                    int s2 = sum - s1;
                    int diff = Math.abs(s1-s2);
+                   if(diff == 0){
+                    return 0;
+                   }
                   
                    ans = Math.min(ans ,diff);
                   
