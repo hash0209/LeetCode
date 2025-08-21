@@ -1,20 +1,43 @@
 class Solution {
     public int jump(int[] nums) {
-      int jumps =0;
-      int l =0;
-      int r= 0;
+        if(nums.length == 1){
+            return 0;
+        }
 
-      while(r < nums.length-1){
-           int temp =l;
-           int farthest=0;
-           while(temp <= r){
-               farthest = Math.max(farthest , temp+nums[temp]);
-               temp++;
-           }
-           l =r+1;
-           r =farthest;
-           jumps++;
-      }
-      return jumps;
+        List<Integer> list =new ArrayList<>();
+        list.add(0);
+
+        int min = 1;
+       
+        int max = nums[0];
+        int jumps =1;
+
+        while(true){
+            if(max >= nums.length-1){
+                return jumps;
+            }
+            jumps++;
+
+            int tempMax = Integer.MIN_VALUE;
+            
+
+            for(int idx = min ; idx <= max ; idx++){
+                tempMax = Math.max(tempMax , idx+nums[idx]);
+                  
+            }
+
+            min=max+1;
+            max = tempMax;
+
+            
+
+            
+
+
+        }
+
+        
     }
+
+
 }
