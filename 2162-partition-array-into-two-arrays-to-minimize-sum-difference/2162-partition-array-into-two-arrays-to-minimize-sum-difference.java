@@ -4,56 +4,54 @@ class Solution {
     public int minimumDifference(int[] nums) {
         int n = nums.length / 2;
 
-        // Step 1: calculate total sum of all numbers
+        // Step 1: calculate total sum
         int totalSum = 0;
         for (int num : nums) totalSum += num;
 
-        // Step 2: split nums into two halves
-        int[] left = new int[n];
-        int[] right = new int[n];
-        for (int i = 0; i < n; i++) left[i] = nums[i];
-        for (int i = 0; i < n; i++) right[i] = nums[i + n];
+        // Step 2: split array into two halves
+        int[] left = Arrays.copyOfRange(nums, 0, n);
+        int[] right = Arrays.copyOfRange(nums, n, nums.length);
 
-        // Step 3: generate all subset sums from each half
-        // Group them by number of elements chosen
+        // Step 3: generate all subset sums grouped by size
         List<List<Integer>> leftSums = getSubsetSums(left);
         List<List<Integer>> rightSums = getSubsetSums(right);
 
-        // Step 4: sort right half sums for binary search
-        for (List<Integer> list : rightSums) {
-            list.sort((a, b) -> a - b);
-        }
+        // Step 4: sort each list to use two pointers
+        for (List<Integer> list : leftSums) Collections.sort(list);
+        for (List<Integer> list : rightSums) Collections.sort(list);
 
         int ans = Integer.MAX_VALUE;
 
-        // Step 5: Try all splits of choosing k from left and (n-k) from right
+        // Step 5: iterate over all possible splits
         for (int k = 0; k <= n; k++) {
-            List<Integer> L = leftSums.get(k);
-            List<Integer> R = rightSums.get(n - k);
+            List<Integer> L = leftSums.get(k);       // choose k elements from left
+            List<Integer> R = rightSums.get(n - k);  // choose n-k elements from right
 
-            for (int lSum : L) {
-                // target is how much we ideally want from right side
-                int target = totalSum / 2 - lSum;
+            int i = 0;
+            int j = R.size() - 1;
 
-                // Binary search: find smallest element >= target
-                int idx = binarySearch(R, target);
+            // two pointer scan
+            while (i < L.size() && j >= 0) {
+                int sum = L.get(i) + R.get(j);
+                int diff = Math.abs(totalSum - 2 * sum);
+                ans = Math.min(ans, diff);
 
-                // Check candidate at idx
-                if (idx < R.size()) {
-                    int pick = lSum + R.get(idx);
-                    ans = Math.min(ans, Math.abs(totalSum - 2 * pick));
-                }
-                // Check candidate just before idx (closest smaller one)
-                if (idx > 0) {
-                    int pick = lSum + R.get(idx - 1);
-                    ans = Math.min(ans, Math.abs(totalSum - 2 * pick));
+                // dry run example:
+                // totalSum = 22, want sum close to 11
+                // if sum > 11 -> decrease sum by moving j--
+                // else -> increase sum by moving i++
+                if (sum > totalSum / 2) {
+                    j--;
+                } else {
+                    i++;
                 }
             }
         }
+
         return ans;
     }
 
-    // Generate all subset sums grouped by size
+    // Generate all subset sums grouped by number of elements chosen
     private List<List<Integer>> getSubsetSums(int[] arr) {
         int n = arr.length;
         List<List<Integer>> result = new ArrayList<>();
@@ -62,10 +60,9 @@ class Solution {
         return result;
     }
 
-    // Recursive function to generate subsets
     private void generate(int[] arr, int idx, int count, int sum, List<List<Integer>> res) {
         if (idx == arr.length) {
-            // dry run example: if arr = [3,5], 
+            // Example dry run for arr=[3,5]:
             // subset {} -> count=0, sum=0
             // subset {3} -> count=1, sum=3
             // subset {5} -> count=1, sum=5
@@ -73,33 +70,9 @@ class Solution {
             res.get(count).add(sum);
             return;
         }
-        // choose arr[idx]
+        // include arr[idx]
         generate(arr, idx + 1, count + 1, sum + arr[idx], res);
-
         // skip arr[idx]
         generate(arr, idx + 1, count, sum, res);
-    }
-
-    // Binary search: find index of smallest element >= target
-    private int binarySearch(List<Integer> arr, int target) {
-        int low = 0, high = arr.size() - 1;
-        int ans = arr.size(); // default: nothing >= target
-        while (low <= high) {
-            int mid = low + (high - low) / 2;
-
-            // dry run idea:
-            // arr = [2,5,9], target=6
-            // mid=1 -> arr[1]=5 < 6 -> move right
-            // mid=2 -> arr[2]=9 >= 6 -> ans=2, move left
-            // final ans=2 (index of 9, first >= target)
-
-            if (arr.get(mid) >= target) {
-                ans = mid;
-                high = mid - 1;
-            } else {
-                low = mid + 1;
-            }
-        }
-        return ans;
     }
 }
