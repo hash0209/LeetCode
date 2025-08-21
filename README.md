@@ -78,6 +78,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/hash0209/LeetCode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1559-cherry-pickup-ii](https://github.com/hash0209/LeetCode/tree/master/1559-cherry-pickup-ii) |
 | [2133-number-of-pairs-of-strings-with-concatenation-equal-to-target](https://github.com/hash0209/LeetCode/tree/master/2133-number-of-pairs-of-strings-with-concatenation-equal-to-target) |
+| [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/hash0209/LeetCode/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 | [2169-simple-bank-system](https://github.com/hash0209/LeetCode/tree/master/2169-simple-bank-system) |
 | [2227-sum-of-subarray-ranges](https://github.com/hash0209/LeetCode/tree/master/2227-sum-of-subarray-ranges) |
 | [2594-count-pairs-of-similar-strings](https://github.com/hash0209/LeetCode/tree/master/2594-count-pairs-of-similar-strings) |
@@ -249,6 +250,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/hash0209/LeetCode/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1475-maximum-sum-bst-in-binary-tree](https://github.com/hash0209/LeetCode/tree/master/1475-maximum-sum-bst-in-binary-tree) |
 | [1559-cherry-pickup-ii](https://github.com/hash0209/LeetCode/tree/master/1559-cherry-pickup-ii) |
+| [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/hash0209/LeetCode/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 | [2444-longest-ideal-subsequence](https://github.com/hash0209/LeetCode/tree/master/2444-longest-ideal-subsequence) |
 ## Depth-First Search
 |  |
@@ -393,6 +395,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/hash0209/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0768-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0768-partition-labels) |
 | [1129-longest-string-chain](https://github.com/hash0209/LeetCode/tree/master/1129-longest-string-chain) |
+| [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/hash0209/LeetCode/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 ## Greedy
 |  |
 | ------- |
@@ -477,6 +480,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0222-count-complete-tree-nodes](https://github.com/hash0209/LeetCode/tree/master/0222-count-complete-tree-nodes) |
 | [0300-longest-increasing-subsequence](https://github.com/hash0209/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 | [1046-max-consecutive-ones-iii](https://github.com/hash0209/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
+| [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/hash0209/LeetCode/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 | [3790-fruits-into-baskets-ii](https://github.com/hash0209/LeetCode/tree/master/3790-fruits-into-baskets-ii) |
 ## Prefix Sum
 |  |
@@ -638,6 +642,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0029-divide-two-integers](https://github.com/hash0209/LeetCode/tree/master/0029-divide-two-integers) |
 | [0222-count-complete-tree-nodes](https://github.com/hash0209/LeetCode/tree/master/0222-count-complete-tree-nodes) |
+| [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/hash0209/LeetCode/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 | [2594-count-pairs-of-similar-strings](https://github.com/hash0209/LeetCode/tree/master/2594-count-pairs-of-similar-strings) |
 ## Divide and Conquer
 |  |
@@ -702,6 +707,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Ordered Set
 |  |
 | ------- |
+| [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/hash0209/LeetCode/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 | [3790-fruits-into-baskets-ii](https://github.com/hash0209/LeetCode/tree/master/3790-fruits-into-baskets-ii) |
 ## Rolling Hash
 |  |
@@ -715,4 +721,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0547-number-of-provinces](https://github.com/hash0209/LeetCode/tree/master/0547-number-of-provinces) |
+## Bitmask
+|  |
+| ------- |
+| [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/hash0209/LeetCode/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 <!---LeetCode Topics End-->
