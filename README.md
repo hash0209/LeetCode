@@ -25,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0046-permutations](https://github.com/hash0209/LeetCode/tree/master/0046-permutations) |
 | [0047-permutations-ii](https://github.com/hash0209/LeetCode/tree/master/0047-permutations-ii) |
 | [0048-rotate-image](https://github.com/hash0209/LeetCode/tree/master/0048-rotate-image) |
+| [0049-group-anagrams](https://github.com/hash0209/LeetCode/tree/master/0049-group-anagrams) |
 | [0051-n-queens](https://github.com/hash0209/LeetCode/tree/master/0051-n-queens) |
 | [0054-spiral-matrix](https://github.com/hash0209/LeetCode/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/hash0209/LeetCode/tree/master/0055-jump-game) |
@@ -118,6 +119,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0036-valid-sudoku](https://github.com/hash0209/LeetCode/tree/master/0036-valid-sudoku) |
 | [0037-sudoku-solver](https://github.com/hash0209/LeetCode/tree/master/0037-sudoku-solver) |
 | [0041-first-missing-positive](https://github.com/hash0209/LeetCode/tree/master/0041-first-missing-positive) |
+| [0049-group-anagrams](https://github.com/hash0209/LeetCode/tree/master/0049-group-anagrams) |
 | [0076-minimum-window-substring](https://github.com/hash0209/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/hash0209/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/hash0209/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
@@ -168,6 +170,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0038-count-and-say](https://github.com/hash0209/LeetCode/tree/master/0038-count-and-say) |
 | [0043-multiply-strings](https://github.com/hash0209/LeetCode/tree/master/0043-multiply-strings) |
 | [0044-wildcard-matching](https://github.com/hash0209/LeetCode/tree/master/0044-wildcard-matching) |
+| [0049-group-anagrams](https://github.com/hash0209/LeetCode/tree/master/0049-group-anagrams) |
 | [0068-text-justification](https://github.com/hash0209/LeetCode/tree/master/0068-text-justification) |
 | [0071-simplify-path](https://github.com/hash0209/LeetCode/tree/master/0071-simplify-path) |
 | [0072-edit-distance](https://github.com/hash0209/LeetCode/tree/master/0072-edit-distance) |
@@ -530,6 +533,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0016-3sum-closest](https://github.com/hash0209/LeetCode/tree/master/0016-3sum-closest) |
 | [0018-4sum](https://github.com/hash0209/LeetCode/tree/master/0018-4sum) |
 | [0047-permutations-ii](https://github.com/hash0209/LeetCode/tree/master/0047-permutations-ii) |
+| [0049-group-anagrams](https://github.com/hash0209/LeetCode/tree/master/0049-group-anagrams) |
 | [0056-merge-intervals](https://github.com/hash0209/LeetCode/tree/master/0056-merge-intervals) |
 | [0242-valid-anagram](https://github.com/hash0209/LeetCode/tree/master/0242-valid-anagram) |
 | [0368-largest-divisible-subset](https://github.com/hash0209/LeetCode/tree/master/0368-largest-divisible-subset) |
