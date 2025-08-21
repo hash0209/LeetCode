@@ -1,78 +1,78 @@
-import java.util.*;
-
 class Solution {
     public int minimumDifference(int[] nums) {
-        int n = nums.length / 2;
+        int sum =0;
+        for(int i =0; i < nums.length ; i++){
+            sum+=nums[i];
+        }
 
-        // Step 1: calculate total sum
-        int totalSum = 0;
-        for (int num : nums) totalSum += num;
+        int target = sum/2;
 
-        // Step 2: split array into two halves
-        int[] left = Arrays.copyOfRange(nums, 0, n);
-        int[] right = Arrays.copyOfRange(nums, n, nums.length);
+        int n = nums.length/2;
 
-        // Step 3: generate all subset sums grouped by size
-        List<List<Integer>> leftSums = getSubsetSums(left);
-        List<List<Integer>> rightSums = getSubsetSums(right);
+        int[] left = new int[n];
+        int[] right = new int[n];
 
-        // Step 4: sort each list to use two pointers
-        for (List<Integer> list : leftSums) Collections.sort(list);
-        for (List<Integer> list : rightSums) Collections.sort(list);
+        for(int i =0; i < n ; i++){
+            left[i] = nums[i];
+        }
+        for(int i =n; i < nums.length ; i++){
+            right[i-n] =nums[i];
+        }
 
-        int ans = Integer.MAX_VALUE;
+        List<List<Integer>> lSum = new ArrayList<>();
+         List<List<Integer>> rSum = new ArrayList<>();
+        for(int i =0; i <= n ; i++){
+           lSum.add(new ArrayList<>());
+           rSum.add(new ArrayList<>());
+        }
+       
+       
 
-        // Step 5: iterate over all possible splits
-        for (int k = 0; k <= n; k++) {
-            List<Integer> L = leftSums.get(k);       // choose k elements from left
-            List<Integer> R = rightSums.get(n - k);  // choose n-k elements from right
+        generateSubsets(left.length-1 , left , 0,0 ,lSum);
+        generateSubsets(right.length-1 , right , 0,0 ,rSum);
 
-            int i = 0;
-            int j = R.size() - 1;
+        int ans =Integer.MAX_VALUE;
 
-            // two pointer scan
-            while (i < L.size() && j >= 0) {
-                int sum = L.get(i) + R.get(j);
-                int diff = Math.abs(totalSum - 2 * sum);
-                ans = Math.min(ans, diff);
 
-                // dry run example:
-                // totalSum = 22, want sum close to 11
-                // if sum > 11 -> decrease sum by moving j--
-                // else -> increase sum by moving i++
-                if (sum > totalSum / 2) {
-                    j--;
-                } else {
-                    i++;
-                }
+
+        for(int k =0; k <=n ; k++){
+            List<Integer> l1 = lSum.get(k);
+            List<Integer> r1 = rSum.get(n-k);
+
+            Collections.sort(l1);
+            Collections.sort(r1);
+
+            int l =0;
+            int r = r1.size()-1;
+
+            while(l < l1.size() && r >= 0 ){
+                   int s1 = l1.get(l) +r1.get(r);
+                   int s2 = sum - s1;
+                   int diff = Math.abs(s1-s2);
+                  
+                   ans = Math.min(ans ,diff);
+                  
+                   if(s1 > target ){
+                    r--;
+                   }
+                   else{
+                    l++;
+                   }
             }
         }
-
         return ans;
+
+
     }
 
-    // Generate all subset sums grouped by number of elements chosen
-    private List<List<Integer>> getSubsetSums(int[] arr) {
-        int n = arr.length;
-        List<List<Integer>> result = new ArrayList<>();
-        for (int i = 0; i <= n; i++) result.add(new ArrayList<>());
-        generate(arr, 0, 0, 0, result);
-        return result;
-    }
+    public  void generateSubsets(int idx , int[] nums , int count , int sum ,List<List<Integer>> list){
 
-    private void generate(int[] arr, int idx, int count, int sum, List<List<Integer>> res) {
-        if (idx == arr.length) {
-            // Example dry run for arr=[3,5]:
-            // subset {} -> count=0, sum=0
-            // subset {3} -> count=1, sum=3
-            // subset {5} -> count=1, sum=5
-            // subset {3,5} -> count=2, sum=8
-            res.get(count).add(sum);
-            return;
+        if(idx == -1){
+            list.get(count).add(sum); 
+            return ;
         }
-        // include arr[idx]
-        generate(arr, idx + 1, count + 1, sum + arr[idx], res);
-        // skip arr[idx]
-        generate(arr, idx + 1, count, sum, res);
+
+        generateSubsets(idx-1 , nums , count+1 ,sum +nums[idx],list );
+        generateSubsets(idx-1  , nums , count , sum , list);
     }
 }
