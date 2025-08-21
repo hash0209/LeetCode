@@ -2,40 +2,34 @@ class Solution {
 
     static Boolean isSubsetSum(int arr[], int sum) {
         // code here
+        boolean[][] dp = new boolean[arr.length][sum+1];
+        for(int i = 0; i < arr.length ; i++){
+            dp[i][0] = true;
+        }
         
-        int[] dp = new int[sum+1];
-        
-        for(int t =0 ; t <= sum ; t++){
+        for(int t =1 ; t<= sum ; t++){
             if(arr[0] == t){
         
-        dp[arr[0]] =1;
+        dp[0][t] = true;
             }
         }
-            
         
         
-       dp[0]=1;
-        
-        for(int idx = 1 ; idx < arr.length ; idx++){
-            
-            int[] temp = new int[sum+1];
-            temp[0]=1;
-            
-            for(int t =1 ; t <= sum ; t++){
+        for(int i =1; i < arr.length ; i++){
+            for(int t =1 ; t<= sum ; t++){
                 
-                int pick = (t-arr[idx]) >= 0 ? dp[t-arr[idx]] : 0;
-                
-                int notpick = dp[t] ;
-                
-                if(pick ==1 || notpick ==1){
-                    temp[t] =1;
+                boolean pick = false;
+                if(t >= arr[i]){
+                    pick = dp[i-1][t-arr[i]];
                 }
+                
+                boolean notpick = dp[i-1][t];
+                
+                dp[i][t] = pick || notpick;
+                
             }
-            dp =temp;
         }
         
-        
-        return dp[sum] == 1;
-        
+        return dp[arr.length-1][sum];
     }
 }
