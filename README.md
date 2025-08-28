@@ -737,4 +737,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/hash0209/LeetCode/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
+## Database
+|  |
+| ------- |
+| [0176-second-highest-salary](https://github.com/hash0209/LeetCode/tree/master/0176-second-highest-salary) |
 <!---LeetCode Topics End-->
