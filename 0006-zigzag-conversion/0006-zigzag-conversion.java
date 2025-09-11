@@ -1,12 +1,12 @@
 class Solution {
     public String convert(String s, int numRows) {
         List<StringBuilder> list = new ArrayList<>();
-        if(numRows == 1|| s.length() <= 1){
+        if(numRows == 1|| s.length() <= numRows){
              return s;
         }
         for(int i =0; i < numRows ; i++){   
-            StringBuilder sb = new StringBuilder("");         
-            list.add(sb);
+           
+            list.add(new StringBuilder(""));
         }
 
         int row=0;
@@ -25,11 +25,11 @@ class Solution {
              row=row+d;
         }
 
-        String ans="";
-        for(StringBuilder sb : list){
-           ans = ans+sb.toString();
+        StringBuilder sb = new StringBuilder();
+        for(StringBuilder sb1 : list){
+           sb.append(sb1);
         }
-        return ans;
+        return sb.toString();
 
 
     }
