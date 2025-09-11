@@ -1,42 +1,36 @@
 class Solution {
     public String convert(String s, int numRows) {
-
-        if(numRows ==1){
-            return s;
-        }
-
         List<StringBuilder> list = new ArrayList<>();
-        
-        for(int i =0; i < numRows ; i++){
-            list.add(new StringBuilder());
+        if(numRows == 1|| s.length() <= 1){
+             return s;
+        }
+        for(int i =0; i < numRows ; i++){   
+            StringBuilder sb = new StringBuilder("");         
+            list.add(sb);
         }
 
-        int row =0;
-        int direction = 1;
+        int row=0;
+        int d =1;
 
-        for(int i = 0; i < s.length() ;i++){
+
+        for(int i =0; i < s.length() ; i++){
             list.get(row).append(s.charAt(i));
-            if(row == 0){
-                direction =1 ;
-            }
-            if(row == numRows-1){
-                direction = -1;
-            }
-
-            row = row+direction;
            
+            if(row == numRows-1){
+                d =-1;
+            }
+            if(row == 0){
+                d = 1;
+            }
+             row=row+d;
         }
 
-      StringBuilder ans1 =new StringBuilder();
-
-        for(int i =0 ; i < list.size();i++){
-            ans1.append(list.get(i));
+        String ans="";
+        for(StringBuilder sb : list){
+           ans = ans+sb.toString();
         }
-
-        return ans1.toString();
-
+        return ans;
 
 
-        
     }
 }
