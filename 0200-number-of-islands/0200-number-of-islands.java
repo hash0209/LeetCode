@@ -1,43 +1,48 @@
 class Solution {
     public int numIslands(char[][] grid) {
 
-        int row = grid.length;
-        int col = grid[0].length;
+        int n = grid.length-1;
+        int m = grid[0].length-1;
 
-        boolean[][] visited = new boolean[row][col];
+        int ans =0;
 
-        int count=0;
+        boolean[][] visited =new boolean[ grid.length][ grid[0].length];
 
-
-        for(int r =0; r < row ; r++){
-
-            for(int c= 0; c < col ; c++){
-
-                if(!visited[r][c] && grid[r][c]== '1'){
-                    findIsland(r,c,grid ,visited);
-                    count++;
+        for(int i =0; i <= n ; i++){
+            for(int j =0; j <= m ; j++){
+                if(grid[i][j] == '0'){
+                    continue;
                 }
-            }
-        }
+                if(!visited[i][j]){
+                    ans++;
+                    find(i, j , grid,visited);
+                }
 
-          return count;
-        
+
+            }
+    }
+    return ans;      
     }
 
-    public void findIsland(int r , int c , char[][] grid , boolean[][] visited){
-          if(r < 0 || c <  0|| r >= grid.length || c >= grid[0].length){
-            return ;
-          }
 
-          if(visited[r][c] || grid[r][c] == '0'){
-            return ;
-          }
+    public void find(int row , int col , char[][] grid , boolean[][] visited){
+               if(row < 0 || row == grid.length || col <0 || col == grid[0].length){
+                   return;
+               }
 
-          visited[r][c] =true;
-          findIsland(r+1 , c , grid ,visited);
-          findIsland(r-1,c,grid  ,visited);
-          findIsland(r , c+1 , grid ,visited);
-          findIsland(r , c-1 , grid ,visited);
+               if(grid[row][col]=='0' || visited[row][col]){
+                return;
+               }
+
+               visited[row][col] = true;
+
+               find(row+1 , col , grid , visited);
+               find(row-1,col , grid,visited);
+               find(row , col+1,grid,visited);
+               find(row , col-1,grid,visited);
+
+
+
 
     }
 }
