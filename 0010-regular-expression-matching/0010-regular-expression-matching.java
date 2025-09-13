@@ -1,39 +1,38 @@
 class Solution {
     public boolean isMatch(String s, String p) {
-        return match(s.length(), p.length(), s, p);
+        return find(s, s.length(), p, p.length());
     }
 
-    public boolean match(int i, int j, String s, String p) {
-        if (i == 0 & j ==0 ) {
+    public boolean find(String s, int x, String p, int y) {
+        if (x == 0 && y == 0) {
             return true;
         }
-        if (j == 0) {
+
+        if (y == 0) {
             return false;
         }
 
-        if (i == 0) {
-            while (j > 0 && p.charAt(j - 1) == '*') {
-                j=j-2;
+        if (x == 0) {
+
+            while (y > 0 && p.charAt(y - 1) == '*') {
+                y=y-2;
             }
-            return (j == 0);
-
+            return (y == 0);
         }
 
-        if (p.charAt(j - 1) == s.charAt(i - 1) || p.charAt(j - 1) == '.') {
-            return match(i - 1, j - 1, s, p);
+        if (p.charAt(y - 1) == '.' || s.charAt(x - 1) == p.charAt(y - 1)) {
+            return find(s, x - 1, p, y - 1);
         }
-        if (p.charAt(j - 1) == '*') {
-             boolean ans1  = match(i,j-2,s,p);
 
-             boolean ans2 = false;
-
-             if(p.charAt(j-2) == s.charAt(i - 1) || p.charAt(j - 2) == '.'){
-             
-              ans2 =match(i-1,j,s,p);
-             }
-             
-             return ans1 || ans2;
+        if (p.charAt(y - 1) == '*') {
+           boolean ans1 = find(s,x,p ,y-2);
+           boolean ans2= false;
+           if(p.charAt(y-2)== '.'||p.charAt(y-2)==s.charAt(x-1)){
+            ans2 = find(s,x-1,p,y);
+           }
+           return ans1 || ans2;
         }
+
         return false;
     }
 }
