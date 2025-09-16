@@ -10,7 +10,7 @@ class Solution {
               if(idx!=-1){
                 ans[0] =i;
                 ans[1] =idx;
-                break;
+                return ans;
               }
         map.put(nums[i],i);
        }
