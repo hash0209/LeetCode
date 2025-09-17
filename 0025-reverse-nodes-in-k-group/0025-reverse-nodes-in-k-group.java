@@ -25,6 +25,8 @@ class Solution {
             ListNode tail = temp.next;
             
             if(count == k){
+
+               
                 temp.next = null;
                 
                 ListNode newHead = reverse(null , oldhead);
