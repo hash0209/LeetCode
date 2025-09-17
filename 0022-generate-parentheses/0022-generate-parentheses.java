@@ -1,37 +1,28 @@
 class Solution {
     public List<String> generateParenthesis(int n) {
-        return find(n, n, new StringBuilder());
-
+        List<String> res = new ArrayList<>();
+         gen(n,n, new StringBuilder(),res);
+         return res;
     }
 
-    public List<String> find(int left , int right , StringBuilder res){
-
-        List<String> ans = new ArrayList<String>();
-
-        if(left == 0 && right == 0){
-            ans.add(res.toString());
-            return ans; 
+    public void gen(int open , int close , StringBuilder curr ,List<String> res){
+        if(open == 0 && close == 0){
+             res.add(curr.toString());
+             return;
         }
 
-
-        if(left == right ){
-
-            ans.addAll(find(left-1,right, res.append("(")));
+        if(open == close){
+               gen(open-1,close,curr.append("(") , res);
         }
         else{
-            if(left!=0){
-                int len = res.length();
-                 ans.addAll(find(left-1,right , res.append("(")));
-                res.setLength(len);
+            if(open!=0){
+             int len = curr.length();
+             gen(open-1,close,curr.append("(") , res);
+             curr.setLength(len);
             }
-
-             ans.addAll(find(left , right-1 , res.append(")")));
-
+             gen(open,close-1,curr.append(")") , res);
 
         }
-
-        return ans;
-
-
+              
     }
 }
