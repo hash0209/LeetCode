@@ -15,32 +15,31 @@ class Solution {
             return head;
         }
 
-        int len = 0 ;
-        ListNode temp = head;
+        ListNode dummy = new ListNode(-1);
+        ListNode fast = dummy;
+        ListNode slow = dummy;
 
-        while(temp!=null){
-            len++;
-            temp = temp.next;
+        dummy.next = head;
 
+        for(int i =1 ; i <= n+1 ; i++){
+            fast = fast.next;
         }
 
-         n = len-n;
-        if(n == 0){
+
+        while(fast!=null){
+            fast = fast.next;
+            slow=slow.next;
+        }
+
+        if(slow == dummy){
             return head.next;
         }
 
-        temp = head;
-        int count =0;
-        while(temp!=null){
-            count++;
-            if(count==n){
-                temp.next = temp.next.next;
-                break;
-
-            }
-            temp = temp.next;
-        }
-
+        slow.next = slow.next.next;
         return head;
+
+
+
+        
     }
 }
