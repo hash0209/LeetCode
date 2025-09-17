@@ -23,14 +23,14 @@ class Solution {
     }
 
     public int check(String s, int start, int end) {
-        if (start < 0 || end >= s.length()) {
-            return end-start-1;
-        }
+        
 
-        if (s.charAt(start) != s.charAt(end)) {
-            return end-start-1;
+        while(start >=0 && end <s.length() && s.charAt(start) == s.charAt(end)){
+            start--;
+            end++;
+            
+            
         }
-
-        return check(s, start - 1, end + 1);
+        return end-start-1;
     }
 }
