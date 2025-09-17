@@ -11,50 +11,58 @@
 class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
 
-        int count = 0;
+        int count=0;
+        ListNode prev = null;
+        ListNode oldhead =null;
+        ListNode temp = head;
 
-        ListNode currhead = null;
-        ListNode prev = new ListNode(-1);
-        ListNode ans = prev ;
 
-
-        while(head!=null){
-              count++;
-
-            if(count ==1){
-                currhead= head;
+        while(temp !=null){
+            count++;
+            if(count==1){
+                oldhead =temp;
             }
-
-            ListNode next = head.next ;
-
+            ListNode tail = temp.next;
+            
             if(count == k){
-                head.next = null ;
-                ListNode reversedHead = reverse(currhead , null);
-                currhead.next = next;
-                prev.next = reversedHead;
-                prev = currhead;
-                count = 0;
-
+                temp.next = null;
+                
+                ListNode newHead = reverse(null , oldhead);
+                if(prev == null){
+                    head =newHead;
+                }
+                else{
+                prev.next = newHead;
+                }
+               
+                oldhead.next = tail;
+                prev = oldhead;
+                count=0;
             }
 
-          
-            head = next ;
+            temp=tail;
 
-        }
-
-        return ans.next ;
-    }
 
         
 
-        public ListNode reverse(ListNode curr , ListNode prev){
-
-            if(curr == null){
-                return prev;
-            }
-
-            ListNode next = curr.next ;
-            curr.next = prev ;
-            return reverse(next , curr);
         }
+
+        return head;
+
+
+
+        
+
     }
+
+    public ListNode reverse(ListNode prev , ListNode curr){
+        if(curr == null){
+            return prev;
+        }
+        ListNode temp = curr.next;
+        curr.next = prev ; 
+        return reverse(curr,temp);
+    }
+
+
+}
