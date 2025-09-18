@@ -1,26 +1,27 @@
 class Solution {
     public List<List<Integer>> permute(int[] nums) {
-        List<List<Integer>> res = new ArrayList<>();
-        find(nums,res,new ArrayList<>()  , new boolean[nums.length]);
+
+        List<List<Integer>> res =new ArrayList<>();
+        find(nums , new boolean[nums.length] , new ArrayList<>() , res);
         return res;
+
     }
 
-    public void find(int[] nums , List<List<Integer>> res , List<Integer> path , boolean[] used){
-        if(path.size() == nums.length){
-            res.add(new ArrayList<>(path));
-            return ;
+    public void find(int[] nums, boolean[] taken, List<Integer> ds, List<List<Integer>> res) {
+        if (ds.size() == nums.length) {
+            res.add(new ArrayList<>(ds));
+            return;
         }
 
-        for(int i =0; i < nums.length ; i++){
-                if(used[i]){
-                    continue;
-                }
-                used[i] = true;
-                path.add(nums[i]);
-                find(nums , res , path , used);
-                used[i] =false;
-                path.remove(path.size()-1);
+        for (int idx = 0; idx < nums.length; idx++) {
+            if (!taken[idx]) {
+                taken[idx] = true;
+                ds.add(nums[idx]);
+                find(nums, taken, ds, res);
+                ds.remove(ds.size() - 1);
+                taken[idx] = false;
+            }
+
         }
-        
     }
 }
