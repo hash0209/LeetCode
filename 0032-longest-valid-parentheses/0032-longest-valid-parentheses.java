@@ -1,49 +1,29 @@
 class Solution {
     public int longestValidParentheses(String s) {
-        int leftCount = 0; int rightCount = 0;  int maxlen =0;
 
-        for(int i =0 ; i <s.length() ;i++){
-            char c = s.charAt(i);
-            if(c=='('){
-                leftCount++;
+        Stack<Integer> st= new Stack<>();
+        st.push(-1);
+        int maxlen = 0;
 
-            }
-            else{
-                rightCount++;
-            }
+        for(int i= 0; i < s.length();i++){
+            if(s.charAt(i) == '('){
+                 st.push(i);
+            }else{
+                if(!st.isEmpty()){
+                      st.pop();
 
-            if(leftCount == rightCount){
-                maxlen =Math.max(maxlen,leftCount+rightCount);
-            }
-            if(rightCount > leftCount){
-                leftCount =0;
-                rightCount=0;
-            }
-        }
-
-         leftCount = 0;  rightCount = 0; 
-        for(int i =s.length()-1 ; i >=0 ;i--){
-            char c = s.charAt(i);
-            if(c=='('){
-                leftCount++;
-
-            }
-            else{
-                rightCount++;
+                }
+                if(st.isEmpty()){
+                    st.push(i);
+                }
+                else{
+                    maxlen = Math.max(i-st.peek(),maxlen);
+                }
             }
 
-            if(leftCount == rightCount){
-                maxlen =Math.max(maxlen,leftCount+rightCount);
-            }
-            if(leftCount > rightCount){
-                leftCount =0;
-                rightCount=0;
-            }
         }
 
         return maxlen;
-
-
-
+        
     }
 }
