@@ -3,11 +3,12 @@ class Solution {
 
         int idx = 0 ;
         while(idx < nums.length){
-            if(nums[idx] <= 0 || nums[idx] > nums.length || idx== nums[idx] -1 || nums[nums[idx]-1] == nums[idx] ){
+            int correctidx = nums[idx]-1;
+            if(nums[idx] <= 0 || nums[idx] > nums.length || idx== nums[idx] -1 || nums[correctidx] == nums[idx] ){
                 idx++;
             }
             else{
-                int correctidx = nums[idx]-1;
+                
                 int temp = nums[correctidx];
                 nums[correctidx] =nums[idx];
                 nums[idx] = temp;
