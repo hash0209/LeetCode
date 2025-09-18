@@ -17,7 +17,7 @@ class Solution {
              return;
          }
 
-         if(idx < 0){
+         if(idx == -1){
             return ;
          }
 
