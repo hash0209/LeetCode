@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0063-unique-paths-ii](https://github.com/hash0209/LeetCode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/hash0209/LeetCode/tree/master/0064-minimum-path-sum) |
 | [0068-text-justification](https://github.com/hash0209/LeetCode/tree/master/0068-text-justification) |
+| [0075-sort-colors](https://github.com/hash0209/LeetCode/tree/master/0075-sort-colors) |
 | [0079-word-search](https://github.com/hash0209/LeetCode/tree/master/0079-word-search) |
 | [0084-largest-rectangle-in-histogram](https://github.com/hash0209/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/hash0209/LeetCode/tree/master/0085-maximal-rectangle) |
@@ -407,6 +408,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0031-next-permutation](https://github.com/hash0209/LeetCode/tree/master/0031-next-permutation) |
 | [0042-trapping-rain-water](https://github.com/hash0209/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0061-rotate-list](https://github.com/hash0209/LeetCode/tree/master/0061-rotate-list) |
+| [0075-sort-colors](https://github.com/hash0209/LeetCode/tree/master/0075-sort-colors) |
 | [0345-reverse-vowels-of-a-string](https://github.com/hash0209/LeetCode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0455-assign-cookies](https://github.com/hash0209/LeetCode/tree/master/0455-assign-cookies) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/hash0209/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
@@ -547,6 +549,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0047-permutations-ii](https://github.com/hash0209/LeetCode/tree/master/0047-permutations-ii) |
 | [0049-group-anagrams](https://github.com/hash0209/LeetCode/tree/master/0049-group-anagrams) |
 | [0056-merge-intervals](https://github.com/hash0209/LeetCode/tree/master/0056-merge-intervals) |
+| [0075-sort-colors](https://github.com/hash0209/LeetCode/tree/master/0075-sort-colors) |
 | [0242-valid-anagram](https://github.com/hash0209/LeetCode/tree/master/0242-valid-anagram) |
 | [0368-largest-divisible-subset](https://github.com/hash0209/LeetCode/tree/master/0368-largest-divisible-subset) |
 | [0435-non-overlapping-intervals](https://github.com/hash0209/LeetCode/tree/master/0435-non-overlapping-intervals) |
