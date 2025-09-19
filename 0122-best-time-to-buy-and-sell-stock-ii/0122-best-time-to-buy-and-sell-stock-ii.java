@@ -1,10 +1,15 @@
 class Solution {
     public int maxProfit(int[] prices) {
 
-        Integer[][] dp = new Integer[prices.length][2];
+        int[][] dp = new int[prices.length+1][2];
+
+        for(int idx = prices.length-1; idx >=0  ; idx--){
+               dp[idx][1] = Math.max(dp[idx+1][0] - prices[idx] ,dp[idx+1][1]);
+               dp[idx][0] = Math.max(dp[idx+1][1] + prices[idx] ,dp[idx+1][0]);
+        }
 
 
-        return find(prices,1,0,dp);
+        return dp[0][1];
     }
 
     public int find(int[] prices , int buy , int idx, Integer[][] dp  ){
