@@ -1,46 +1,49 @@
 class Solution {
     public int[][] merge(int[][] intervals) {
+
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+
+        List<List<Integer>> res = new ArrayList<>();
+
         int start = intervals[0][0];
-        int end = intervals[0][1]; 
+        int end = intervals[0][1];
 
-        Arrays.sort(intervals,(a,b) -> Integer.compare(a[0],b[0]));
+        for (int i = 1; i < intervals.length; i++) {
+            int s = intervals[i][0];
+            int e = intervals[i][1];
 
-        int i =0;
-        List<List<Integer>> ans = new ArrayList<>();
+            if (s > end) {
+                ArrayList<Integer> l = new ArrayList<>();
 
+                l.add(start);
+                l.add(end);
 
-        while(i < intervals.length ){
-                start = intervals[i][0];
-                end= intervals[i][1];
-                i++;
-       
-                while(i < intervals.length &&  isOverlapping(intervals[i][0] ,intervals[i][1],start , end)){
-                    start = Math.min(start , intervals[i][0]);
-                    end = Math.max(end, intervals[i][1]);
-                    i++;
+                res.add(l);
+
+                start = s;
+                end = e;
+
+            } else {
+                if (e > end) {
+                    end = e;
                 }
+            }
 
-                ans.add(Arrays.asList(start,end));
-                
-               
         }
 
-        int[][] arr = new int[ans.size()][2];
+        ArrayList<Integer> l = new ArrayList<>();
+        l.add(start);
+        l.add(end);
+        res.add(l);
 
-        for(int j =0; j < ans.size() ;j++){
-            arr[j][0] = ans.get(j).get(0);
-            arr[j][1] =ans.get(j).get(1);
+        int[][] ans = new int[res.size()][2];
+
+        for (int i = 0; i < res.size(); i++) {
+            ans[i][0] = res.get(i).get(0);
+            ans[i][1] = res.get(i).get(1);
         }
 
-        return arr;
+        return ans;
 
-
-    }
-
-    public boolean isOverlapping(int start , int end , int newStart , int newEnd){
-        if(newStart > end || newEnd < start){
-            return false;
-        }
-        return true;
     }
 }
