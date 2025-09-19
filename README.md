@@ -38,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0064-minimum-path-sum](https://github.com/hash0209/LeetCode/tree/master/0064-minimum-path-sum) |
 | [0068-text-justification](https://github.com/hash0209/LeetCode/tree/master/0068-text-justification) |
 | [0075-sort-colors](https://github.com/hash0209/LeetCode/tree/master/0075-sort-colors) |
+| [0078-subsets](https://github.com/hash0209/LeetCode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/hash0209/LeetCode/tree/master/0079-word-search) |
 | [0084-largest-rectangle-in-histogram](https://github.com/hash0209/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/hash0209/LeetCode/tree/master/0085-maximal-rectangle) |
@@ -107,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0046-permutations](https://github.com/hash0209/LeetCode/tree/master/0046-permutations) |
 | [0047-permutations-ii](https://github.com/hash0209/LeetCode/tree/master/0047-permutations-ii) |
 | [0051-n-queens](https://github.com/hash0209/LeetCode/tree/master/0051-n-queens) |
+| [0078-subsets](https://github.com/hash0209/LeetCode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/hash0209/LeetCode/tree/master/0079-word-search) |
 | [0131-palindrome-partitioning](https://github.com/hash0209/LeetCode/tree/master/0131-palindrome-partitioning) |
 | [0212-word-search-ii](https://github.com/hash0209/LeetCode/tree/master/0212-word-search-ii) |
@@ -669,6 +671,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0029-divide-two-integers](https://github.com/hash0209/LeetCode/tree/master/0029-divide-two-integers) |
+| [0078-subsets](https://github.com/hash0209/LeetCode/tree/master/0078-subsets) |
 | [0222-count-complete-tree-nodes](https://github.com/hash0209/LeetCode/tree/master/0222-count-complete-tree-nodes) |
 | [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/hash0209/LeetCode/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 | [2594-count-pairs-of-similar-strings](https://github.com/hash0209/LeetCode/tree/master/2594-count-pairs-of-similar-strings) |
