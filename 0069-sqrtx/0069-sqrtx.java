@@ -11,7 +11,7 @@ class Solution {
         long high = x /2;
 
         while (low <= high) {
-            long mid = (low + high) / 2;
+            long mid = low + (high-low) / 2;
 
             long prod = mid * mid;
             if (prod == x) {
