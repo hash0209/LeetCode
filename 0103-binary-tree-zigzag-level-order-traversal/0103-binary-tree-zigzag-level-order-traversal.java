@@ -29,10 +29,15 @@ class Solution {
 
           while(!q.isEmpty()){
             int size = q.size();
-            List<Integer> l = new ArrayList<>();
+            LinkedList<Integer> l = new LinkedList<>();
             for(int i =0; i < size ; i++){
                     TreeNode n = q.poll();
-                    l.add(n.val);
+                    if(level%2 == 0){
+                        l.addFirst(n.val);
+                    }else{
+                         l.addLast(n.val);
+                    }
+                   
                     if(n.left!=null){
                         q.add(n.left);
                     }
@@ -41,9 +46,7 @@ class Solution {
                     }
             }
 
-            if(level%2 == 0){
-                Collections.reverse(l);
-            }
+            
             res.add(l);
             level++;
 
