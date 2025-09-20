@@ -6,7 +6,7 @@ class Solution {
         q.add(beginWord);
 
         Set<String> set = new HashSet<>(wordList);
-        System.out.println(set.size());
+       
      
         int level = 1;
 
