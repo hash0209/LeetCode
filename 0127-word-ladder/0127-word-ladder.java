@@ -28,8 +28,7 @@ class Solution {
                     for (char c = 'a'; c <= 'z'; c++) {
                         ch[i] = c;
                         String t = new String(ch);
-                        System.out.println(t);
-                        
+                      
                         if (set.contains(t)) {
                            
                             q.add(t);
