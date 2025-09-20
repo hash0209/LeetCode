@@ -21,10 +21,14 @@ class Solution {
                     return level;
                 }
 
+                char[] ch = s.toCharArray();
+                  
+
                 
                 for (int i = 0; i < s.length(); i++) {
-                    char[] ch = s.toCharArray();
-                  
+
+                    char original = ch[i];
+                   
                     for (char c = 'a'; c <= 'z'; c++) {
                         ch[i] = c;
                         String t = new String(ch);
@@ -35,6 +39,7 @@ class Solution {
                             set.remove(t);
                         }
                     }
+                    ch[i]=original;
                 }
             }
             level++;
