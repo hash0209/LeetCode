@@ -186,6 +186,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/hash0209/LeetCode/tree/master/0079-word-search) |
 | [0091-decode-ways](https://github.com/hash0209/LeetCode/tree/master/0091-decode-ways) |
 | [0115-distinct-subsequences](https://github.com/hash0209/LeetCode/tree/master/0115-distinct-subsequences) |
+| [0125-valid-palindrome](https://github.com/hash0209/LeetCode/tree/master/0125-valid-palindrome) |
 | [0131-palindrome-partitioning](https://github.com/hash0209/LeetCode/tree/master/0131-palindrome-partitioning) |
 | [0139-word-break](https://github.com/hash0209/LeetCode/tree/master/0139-word-break) |
 | [0159-longest-substring-with-at-most-two-distinct-characters](https://github.com/hash0209/LeetCode/tree/master/0159-longest-substring-with-at-most-two-distinct-characters) |
@@ -413,6 +414,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/hash0209/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0061-rotate-list](https://github.com/hash0209/LeetCode/tree/master/0061-rotate-list) |
 | [0075-sort-colors](https://github.com/hash0209/LeetCode/tree/master/0075-sort-colors) |
+| [0125-valid-palindrome](https://github.com/hash0209/LeetCode/tree/master/0125-valid-palindrome) |
 | [0345-reverse-vowels-of-a-string](https://github.com/hash0209/LeetCode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0455-assign-cookies](https://github.com/hash0209/LeetCode/tree/master/0455-assign-cookies) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/hash0209/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
