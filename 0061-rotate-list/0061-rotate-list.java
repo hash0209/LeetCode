@@ -44,9 +44,9 @@ class Solution {
             
          }
 
-         ListNode ans = temp.next;
+         head = temp.next;
          temp.next = null;
-         return ans ;
+         return head ;
 
 
          
