@@ -7,29 +7,28 @@ class Solution {
 
         for(int i =0 ; i < strs.length ; i++){
             
-            char[] s = strs[i].toCharArray();
+            
             
 
-            int[] ch = new int[26];
+            int[] freq = new int[26];
             StringBuilder key = new StringBuilder();
 
-            for(int j =0; j < s.length ; j++){
-                ch[s[j]-'a']++;
+            for(char c : strs[i].toCharArray() ){
+                freq[c-'a']++;
                    
                   
             }
 
-            for(int  j = 0; j < ch.length ; j++){
-                key.append(ch[j]);
-                key.append("#");
+            for(int  j = 0; j < freq.length ; j++){
+                key.append(freq[j] + "#");
+                
             }
 
             String k = key.toString();
 
             map.putIfAbsent(k,new ArrayList<>());
-            List<String> l = map.get(k);
-            l.add(strs[i]);
-            map.put(k,l);
+            map.get(k).add(strs[i]);
+           
             
              
         }
