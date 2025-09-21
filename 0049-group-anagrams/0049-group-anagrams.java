@@ -3,15 +3,35 @@ class Solution {
 
         Map<String,List<String>> map = new HashMap<>();
 
-        for(int i =0 ; i < strs.length ; i++){
-            char[] ch = strs[i].toCharArray();
-            Arrays.sort(ch);
-            String s =new String(ch);
+        
 
-            map.putIfAbsent(s,new ArrayList<>());
-            List<String> l = map.get(s);
+        for(int i =0 ; i < strs.length ; i++){
+            
+            char[] s = strs[i].toCharArray();
+            
+
+            int[] ch = new int[26];
+            StringBuilder key = new StringBuilder();
+
+            for(int j =0; j < s.length ; j++){
+                ch[s[j]-'a']++;
+                   
+                  
+            }
+
+            for(int  j = 0; j < ch.length ; j++){
+                key.append(ch[j]);
+                key.append("#");
+            }
+
+            String k = key.toString();
+
+            map.putIfAbsent(k,new ArrayList<>());
+            List<String> l = map.get(k);
             l.add(strs[i]);
-            map.put(s,l);
+            map.put(k,l);
+            
+             
         }
 
 
