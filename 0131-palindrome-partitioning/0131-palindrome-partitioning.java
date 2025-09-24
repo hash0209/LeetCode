@@ -1,62 +1,36 @@
 class Solution {
     public List<List<String>> partition(String s) {
 
-        return part(s);
-
+        List<List<String>> res = new ArrayList<>();
+        find(0,s,res,new ArrayList<>());
+        return res;
+        
     }
 
-    public List<List<String>> part(String str) {
+    public void find(int idx , String s , List<List<String>> list , List<String> current){
+         if(idx == s.length()){
+             list.add(new ArrayList<>(current));
+             return;
+         }
 
 
-        List<List<String>> ans = new ArrayList<>();
-
-        if (str.isEmpty()) {
-            return new ArrayList<>();
-        }
-
-        for (int i = str.length()-1; i>=0; i--) {
-            String l = str.substring(i,str.length());
-
-            boolean isPalindrome = checkPalindrome(l);
-            if (isPalindrome) {
-                String r = str.substring(0,i);
-                List<List<String>> res = part(r);
-
-                if (!res.isEmpty()) {
-                    for (List<String> l1 : res) {
-                        l1.add(l);
-                    }
-                } else {
-
-                    List<String> l1 = new ArrayList<>();
-                    l1.add(l);
-                    res.add(l1);
-
-                }
-
-                ans.addAll(res);
-
-            }
-
-           
-        }
-         return ans;
+         for(int i = idx+1 ; i <= s.length() ;i++){
+               if(checkPalindrome( idx ,  i-1 ,  s)){
+                    current.add(s.substring(idx,i));
+                    find(i ,s,list , current);
+                    current.remove(current.size()-1);
+               }
+         }
     }
 
-    public boolean checkPalindrome(String str) {
-        int l = 0;
-        int r = str.length() - 1;
-
-        while (l < r) {
-            if (str.charAt(l) != str.charAt(r)) {
+    public boolean checkPalindrome(int start , int end , String s){
+          while(start < end){
+            if(s.charAt(start) != s.charAt(end)){
                 return false;
             }
-            l++;
-            r--;
-
-        }
-
-        return true;
+            start++;
+            end--;
+          }
+          return true;
     }
-
 }
