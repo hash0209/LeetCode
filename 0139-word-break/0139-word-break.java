@@ -1,30 +1,24 @@
-import java.util.*;
-
 class Solution {
     public boolean wordBreak(String s, List<String> wordDict) {
-        Set<String> wordSet = new HashSet<>(wordDict);  // Faster lookup
-        Boolean[] memo = new Boolean[s.length()];
-        return dfs(s, 0, wordSet, memo);
+        Boolean[] dp = new Boolean[s.length()];
+        return find(0,s,new HashSet<>(wordDict) , dp);
     }
 
-    private boolean dfs(String s, int idx, Set<String> wordSet, Boolean[] memo) {
-        if (idx == s.length()) {
+    public boolean find(int i , String s , Set<String> wordDict , Boolean[] dp){
+        if(i == s.length()){
             return true;
         }
-
-        if (memo[idx] != null) {
-            return memo[idx];
+        if(null != dp[i]){
+            return dp[i];
         }
 
-        for (int end = idx + 1; end <= s.length(); end++) {
-            String prefix = s.substring(idx, end);
-            if (wordSet.contains(prefix) && dfs(s, end, wordSet, memo)) {
-                memo[idx] = true;
-                return true;
+        for(int idx =i+1; idx <= s.length() ; idx++){
+            if(wordDict.contains(s.substring(i,idx))){
+                  if(find(idx,s,wordDict,dp)){
+                    return true;
+                  }
             }
         }
-
-        memo[idx] = false;
-        return false;
+        return dp[i] =false;
     }
 }
