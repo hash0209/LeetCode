@@ -11,21 +11,11 @@ class Solution {
               
           }
 
-         int l =0;
-         int r = list.size()-1;
-
-         while(l < r){
-            String temp = list.get(r);
-            list.set(r,list.get(l));
-            list.set(l,temp);
-           
-            l++;
-            r--;
-         }
+         
 
          StringBuilder sb= new StringBuilder();
-         for(int i =0; i < list.size();i++){
-            if(i !=0){
+         for(int i =list.size()-1; i>= 0;i--){
+            if(i !=list.size()-1){
                 sb.append(" ");
             }
             sb.append(list.get(i));
