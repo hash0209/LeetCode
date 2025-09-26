@@ -4,7 +4,7 @@ class LRUCache {
     Node tail;
     Map<Integer, Node> map;
     int cap;
-    int curr = 0;
+  
 
     public LRUCache(int capacity) {
         cap = capacity;
@@ -38,14 +38,12 @@ class LRUCache {
             insert(n);
             return;
         }
-        if (curr == cap) {
+        if (map.size()==cap) {
             map.remove(tail.prev.key);
           
             delete(tail.prev);
         }
-        else{
-            curr++;
-        }
+        
 
         n = new Node(key, value);
         map.put(key, n);
