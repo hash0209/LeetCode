@@ -11,8 +11,6 @@ class Solution {
               
           }
 
-          System.out.println(list.size());
-
          int l =0;
          int r = list.size()-1;
 
