@@ -53,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0135-candy](https://github.com/hash0209/LeetCode/tree/master/0135-candy) |
 | [0139-word-break](https://github.com/hash0209/LeetCode/tree/master/0139-word-break) |
 | [0152-maximum-product-subarray](https://github.com/hash0209/LeetCode/tree/master/0152-maximum-product-subarray) |
+| [0169-majority-element](https://github.com/hash0209/LeetCode/tree/master/0169-majority-element) |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/hash0209/LeetCode/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
 | [0198-house-robber](https://github.com/hash0209/LeetCode/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/hash0209/LeetCode/tree/master/0200-number-of-islands) |
@@ -140,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0141-linked-list-cycle](https://github.com/hash0209/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/hash0209/LeetCode/tree/master/0146-lru-cache) |
 | [0159-longest-substring-with-at-most-two-distinct-characters](https://github.com/hash0209/LeetCode/tree/master/0159-longest-substring-with-at-most-two-distinct-characters) |
+| [0169-majority-element](https://github.com/hash0209/LeetCode/tree/master/0169-majority-element) |
 | [0208-implement-trie-prefix-tree](https://github.com/hash0209/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0242-valid-anagram](https://github.com/hash0209/LeetCode/tree/master/0242-valid-anagram) |
 | [0424-longest-repeating-character-replacement](https://github.com/hash0209/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
@@ -556,6 +558,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Counting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/hash0209/LeetCode/tree/master/0169-majority-element) |
 | [0778-reorganize-string](https://github.com/hash0209/LeetCode/tree/master/0778-reorganize-string) |
 | [1034-subarrays-with-k-different-integers](https://github.com/hash0209/LeetCode/tree/master/1034-subarrays-with-k-different-integers) |
 | [1987-substrings-of-size-three-with-distinct-characters](https://github.com/hash0209/LeetCode/tree/master/1987-substrings-of-size-three-with-distinct-characters) |
@@ -572,6 +575,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/hash0209/LeetCode/tree/master/0049-group-anagrams) |
 | [0056-merge-intervals](https://github.com/hash0209/LeetCode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/hash0209/LeetCode/tree/master/0075-sort-colors) |
+| [0169-majority-element](https://github.com/hash0209/LeetCode/tree/master/0169-majority-element) |
 | [0242-valid-anagram](https://github.com/hash0209/LeetCode/tree/master/0242-valid-anagram) |
 | [0368-largest-divisible-subset](https://github.com/hash0209/LeetCode/tree/master/0368-largest-divisible-subset) |
 | [0435-non-overlapping-intervals](https://github.com/hash0209/LeetCode/tree/master/0435-non-overlapping-intervals) |
@@ -704,6 +708,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/hash0209/LeetCode/tree/master/0053-maximum-subarray) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/hash0209/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/hash0209/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
+| [0169-majority-element](https://github.com/hash0209/LeetCode/tree/master/0169-majority-element) |
 ## Binary Search Tree
 |  |
 | ------- |
