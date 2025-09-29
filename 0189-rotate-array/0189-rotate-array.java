@@ -6,9 +6,9 @@ class Solution {
         
 
         k=k%n;
-        if(k == 0){
-            return ; 
-        }
+     //   if(k == 0){
+      //      return ; 
+      //  }
 
         k = n-k-1;
 
