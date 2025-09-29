@@ -1,7 +1,7 @@
 class MinStack {
 
     Stack<Pair> st ;
-    int currentMin = Integer.MAX_VALUE;
+    //int currentMin = Integer.MAX_VALUE;
 
     public MinStack() {
 
@@ -11,13 +11,13 @@ class MinStack {
     }
     
     public void push(int val) {
-          currentMin= st.isEmpty() ? val : Math.min(currentMin,val);
+         int currentMin= st.isEmpty() ? val : Math.min(val,st.peek().value);
           st.push(new Pair(val,currentMin));
     }
     
     public void pop() {
-       int min = st.pop().value;
-       currentMin = st.isEmpty() ? Integer.MAX_VALUE : st.peek().value;
+          st.pop();
+      
     }
     
     public int top() {
