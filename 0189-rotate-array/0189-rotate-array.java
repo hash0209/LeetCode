@@ -5,9 +5,7 @@ class Solution {
 
         
 
-        if(k > n ){
-            k = k%n;
-        }
+        k=k%n;
         if(k == 0){
             return ; 
         }
