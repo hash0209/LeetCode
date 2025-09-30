@@ -17,15 +17,18 @@ class Solution {
         if(isprime[i]){
             count++ ;
 
-            int multiple = 2;
-            int num = i *multiple;
+            int increment = 2 ;
 
-            while(num < n ){
+           
+            
+
+            while(i * increment  < n ){
                 
-                isprime[num] = false;
+                isprime[i * increment] = false;
+                increment++;
 
-                multiple++;
-                num=i*multiple;
+                
+                
             }
         }
       }
