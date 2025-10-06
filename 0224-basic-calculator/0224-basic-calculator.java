@@ -32,6 +32,7 @@ class Solution {
             else if(c =='('){
                 st.push(res);
                 st.push(sign);
+              
 
                 res=0;
                 sign=1;
@@ -39,10 +40,13 @@ class Solution {
             }
             else if(c ==')'){
                 res+=sign*num;
+
+                res =res * st.pop();
                 
-                res=res*st.pop();
+              
                 res=res+st.pop();
                 num=0;
+                
 
             }
            
