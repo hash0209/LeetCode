@@ -4,31 +4,36 @@ class Solution {
         int r = matrix.length;
         int c = matrix[0].length;
 
-        boolean[][] visited = new boolean[r][c];
+        boolean[] rowZero = new boolean[r];
+        boolean[] colZero = new boolean[c];
+
 
         for (int i = 0; i < r; i++) {
             for (int j = 0; j < c; j++) {
-                if (matrix[i][j] == 0 && !visited[i][j]) {
-                    setZeroes(i, j, matrix, visited);
+                if (matrix[i][j] == 0) {
+                    rowZero[i] = true;
+                    colZero[j]= true;
+                }
+            }
+        }
+
+        for(int row =0; row < r ; row++){
+            if(rowZero[row]){
+                for(int col =0; col < c ; col++){
+                      matrix[row][col] =0;
+                }
+            }
+        }
+
+
+         for(int col =0; col < c ; col++){
+            if(colZero[col]){
+                for(int row =0; row < r ; row++){
+                      matrix[row][col] =0;
                 }
             }
         }
     }
-
-    public void setZeroes(int r, int c, int[][] matrix, boolean[][] visited) {
-
-        for (int col = 0; col < matrix[0].length; col++) {
-            if (matrix[r][col] != 0) {
-                matrix[r][col] = 0;
-                visited[r][col] = true;
-            }
-        }
-
-        for (int row = 0; row < matrix.length; row++) {
-            if (matrix[row][c] != 0) {
-                matrix[row][c] = 0;
-                visited[row][c] = true;
-            }
-        }
-    }
 }
+
+
