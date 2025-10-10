@@ -4,35 +4,55 @@ class Solution {
         int r = matrix.length;
         int c = matrix[0].length;
 
-        boolean[] rowZero = new boolean[r];
-        boolean[] colZero = new boolean[c];
+        boolean firstRowZero =false;
+        boolean firstColZero =false;
 
-
-        for (int i = 0; i < r; i++) {
-            for (int j = 0; j < c; j++) {
-                if (matrix[i][j] == 0) {
-                    rowZero[i] = true;
-                    colZero[j]= true;
-                }
+        for(int i = 0; i < r ; i ++){
+            if(matrix[i][0] ==0){
+                firstColZero =true;
+                break;
+            }
+        }
+         for(int i = 0; i < c ; i ++){
+            if(matrix[0][i] ==0){
+                firstRowZero =true;
+                break;
             }
         }
 
-        for(int row =0; row < r ; row++){
-            if(rowZero[row]){
-                for(int col =0; col < c ; col++){
-                      matrix[row][col] =0;
-                }
+        for(int i = 1; i <r ; i++){
+            for(int j =1 ; j < c ; j++){
+                 if(matrix[i][j] == 0){
+                      matrix[i][0] =0;
+                      matrix[0][j] =0;
+                 }
             }
         }
 
 
-         for(int col =0; col < c ; col++){
-            if(colZero[col]){
-                for(int row =0; row < r ; row++){
-                      matrix[row][col] =0;
+        for(int i =1; i < r ; i++){
+            for(int j =1 ; j < c ; j++){
+                if(matrix[i][0] ==0 || matrix[0][j] == 0){
+                    matrix[i][j] =0;
                 }
+
             }
         }
+
+        if(firstRowZero){
+            for(int i =0; i < c ; i++){
+                matrix[0][i] = 0;
+            }
+        }
+
+        if(firstColZero){
+            for(int j =0; j < r ; j++){
+                matrix[j][0] =0;
+            }
+        }
+        
+
+        
     }
 }
 
