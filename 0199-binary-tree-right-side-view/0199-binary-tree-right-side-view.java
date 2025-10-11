@@ -16,32 +16,21 @@
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> ans = new ArrayList<>();
-        if(root == null){
-            return ans;
-        }
-
-        Queue<TreeNode> q = new LinkedList<>();
-        q.add(root);
-
-        while(!q.isEmpty()){
-
-            int size = q.size();
-
-            for(int i =0; i < size ; i ++){
-                   TreeNode temp = q.poll();
-                   if(temp.left!=null) {
-                    q.add(temp.left);
-                   }
-                   if(temp.right!=null){
-                    q.add(temp.right);
-                   }
-                   if(i ==size-1){
-                    ans.add(temp.val);
-                   }
-            }
-        }
-
+        recurrse(root , 0 ,ans);
         return ans;
 
+    }
+
+    public void recurrse(TreeNode root , int depth , List<Integer> list){
+           if(root == null){
+            return;
+           }
+
+           if(depth == list.size()){
+            list.add(root.val);
+           }
+
+           recurrse(root.right ,depth+1 , list);
+           recurrse(root.left , depth +1 , list);
     }
 }
