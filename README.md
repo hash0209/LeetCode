@@ -152,6 +152,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0146-lru-cache](https://github.com/hash0209/LeetCode/tree/master/0146-lru-cache) |
 | [0159-longest-substring-with-at-most-two-distinct-characters](https://github.com/hash0209/LeetCode/tree/master/0159-longest-substring-with-at-most-two-distinct-characters) |
 | [0169-majority-element](https://github.com/hash0209/LeetCode/tree/master/0169-majority-element) |
+| [0202-happy-number](https://github.com/hash0209/LeetCode/tree/master/0202-happy-number) |
 | [0208-implement-trie-prefix-tree](https://github.com/hash0209/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0242-valid-anagram](https://github.com/hash0209/LeetCode/tree/master/0242-valid-anagram) |
 | [0424-longest-repeating-character-replacement](https://github.com/hash0209/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
@@ -446,6 +447,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0151-reverse-words-in-a-string](https://github.com/hash0209/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/hash0209/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0189-rotate-array](https://github.com/hash0209/LeetCode/tree/master/0189-rotate-array) |
+| [0202-happy-number](https://github.com/hash0209/LeetCode/tree/master/0202-happy-number) |
 | [0234-palindrome-linked-list](https://github.com/hash0209/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0253-meeting-rooms-ii](https://github.com/hash0209/LeetCode/tree/master/0253-meeting-rooms-ii) |
 | [0283-move-zeroes](https://github.com/hash0209/LeetCode/tree/master/0283-move-zeroes) |
@@ -585,6 +587,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0069-sqrtx](https://github.com/hash0209/LeetCode/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/hash0209/LeetCode/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/hash0209/LeetCode/tree/master/0189-rotate-array) |
+| [0202-happy-number](https://github.com/hash0209/LeetCode/tree/master/0202-happy-number) |
 | [0204-count-primes](https://github.com/hash0209/LeetCode/tree/master/0204-count-primes) |
 | [0224-basic-calculator](https://github.com/hash0209/LeetCode/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/hash0209/LeetCode/tree/master/0227-basic-calculator-ii) |
