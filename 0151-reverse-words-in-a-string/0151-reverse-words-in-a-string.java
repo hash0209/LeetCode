@@ -1,7 +1,7 @@
 class Solution {
     public String reverseWords(String s) {
           s=s.trim();
-          String[] str = s.split("\\s+");
+          String[] str = s.split(" ");
 
         //  List<String> list = new ArrayList<>();
         //  for(int i =0; i < str.length;i++){
@@ -22,10 +22,12 @@ class Solution {
        //  }
 
        for(int i = str.length-1; i >= 0 ;i--){
+        if(!str[i].isEmpty()){
            if(i!=str.length-1){
             sb.append(" ");
            }
            sb.append(str[i]);
+        }
        }
          return sb.toString();
 
