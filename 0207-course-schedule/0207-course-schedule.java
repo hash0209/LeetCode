@@ -65,7 +65,7 @@ class Solution {
 
     public void build(int[][] pre, List<List<Integer>> list) {
         for (int i = 0; i < pre.length; i++) {
-            list.get(pre[i][0]).add(pre[i][1]);
+            list.get(pre[i][1]).add(pre[i][0]);
         }
     }
 }
