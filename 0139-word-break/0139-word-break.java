@@ -15,7 +15,7 @@ class Solution {
         for(int idx =i+1; idx <= s.length() ; idx++){
             if(wordDict.contains(s.substring(i,idx))){
                   if(find(idx,s,wordDict,dp)){
-                    return true;
+                    return dp[i] =  true;
                   }
             }
         }
