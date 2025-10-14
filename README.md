@@ -594,6 +594,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0204-count-primes](https://github.com/hash0209/LeetCode/tree/master/0204-count-primes) |
 | [0224-basic-calculator](https://github.com/hash0209/LeetCode/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/hash0209/LeetCode/tree/master/0227-basic-calculator-ii) |
+| [0263-ugly-number](https://github.com/hash0209/LeetCode/tree/master/0263-ugly-number) |
 | [0368-largest-divisible-subset](https://github.com/hash0209/LeetCode/tree/master/0368-largest-divisible-subset) |
 | [0415-add-strings](https://github.com/hash0209/LeetCode/tree/master/0415-add-strings) |
 | [1370-count-number-of-nice-subarrays](https://github.com/hash0209/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
