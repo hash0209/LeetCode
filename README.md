@@ -67,6 +67,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0213-house-robber-ii](https://github.com/hash0209/LeetCode/tree/master/0213-house-robber-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/hash0209/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0216-combination-sum-iii](https://github.com/hash0209/LeetCode/tree/master/0216-combination-sum-iii) |
+| [0217-contains-duplicate](https://github.com/hash0209/LeetCode/tree/master/0217-contains-duplicate) |
 | [0239-sliding-window-maximum](https://github.com/hash0209/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0252-meeting-rooms](https://github.com/hash0209/LeetCode/tree/master/0252-meeting-rooms) |
 | [0253-meeting-rooms-ii](https://github.com/hash0209/LeetCode/tree/master/0253-meeting-rooms-ii) |
@@ -154,6 +155,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/hash0209/LeetCode/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/hash0209/LeetCode/tree/master/0202-happy-number) |
 | [0208-implement-trie-prefix-tree](https://github.com/hash0209/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
+| [0217-contains-duplicate](https://github.com/hash0209/LeetCode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/hash0209/LeetCode/tree/master/0242-valid-anagram) |
 | [0424-longest-repeating-character-replacement](https://github.com/hash0209/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0496-next-greater-element-i](https://github.com/hash0209/LeetCode/tree/master/0496-next-greater-element-i) |
@@ -618,6 +620,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0075-sort-colors](https://github.com/hash0209/LeetCode/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/hash0209/LeetCode/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/hash0209/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
+| [0217-contains-duplicate](https://github.com/hash0209/LeetCode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/hash0209/LeetCode/tree/master/0242-valid-anagram) |
 | [0252-meeting-rooms](https://github.com/hash0209/LeetCode/tree/master/0252-meeting-rooms) |
 | [0253-meeting-rooms-ii](https://github.com/hash0209/LeetCode/tree/master/0253-meeting-rooms-ii) |
