@@ -25,6 +25,8 @@ class Solution {
 
         int mins = 0;
 
+         int[][] dir = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };
+
         while (!q.isEmpty()) {
             int size = q.size();
             for (int u = 0; u < size; u++) {
@@ -32,34 +34,18 @@ class Solution {
                 int i = cell.i;
                 int j = cell.j;
 
-                if (i - 1 >= 0 && grid[i - 1][j] != 0 && !visited[i - 1][j]) {
+                for(int d =0; d < dir.length ; d++){
+                    int ni = i + dir[d][0];
+                    int nj = j + dir[d][1];
 
-                    
-
-                    q.add(new Pair(i - 1, j));
-                    visited[i - 1][j] = true;
-                    freshCount--;
-
+                    if(ni >= 0 && nj >= 0 && ni < m && nj < n && grid[ni][nj] !=0 && !visited[ni][nj] ){
+                          q.add(new Pair(ni,nj));
+                          visited[ni][nj] = true;
+                          freshCount--;
+                    }
                 }
 
-                if (i + 1 < m && grid[i + 1][j] != 0 && !visited[i + 1][j]) {
-                    q.add(new Pair(i + 1, j));
-                    visited[i + 1][j] = true;
-                    freshCount--;
-                }
-
-                if (j - 1 >= 0 && grid[i][j - 1] != 0 && !visited[i][j - 1]) {
-                    q.add(new Pair(i, j - 1));
-                    visited[i][j - 1] = true;
-                    freshCount--;
-                }
-
-                if (j + 1 < n && grid[i][j + 1] != 0 && !visited[i][j + 1]) {
-
-                    q.add(new Pair(i, j + 1));
-                    visited[i][j + 1] = true;
-                    freshCount--;
-                }
+                
 
             }
             if (!q.isEmpty()) {
