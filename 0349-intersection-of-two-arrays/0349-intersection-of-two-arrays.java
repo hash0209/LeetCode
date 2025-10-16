@@ -40,7 +40,7 @@ class Solution {
 
                     }
             }
-            System.out.println(idx);
+         
            
             return Arrays.copyOfRange(res,0,idx);
         
