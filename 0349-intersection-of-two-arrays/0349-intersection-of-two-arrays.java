@@ -1,34 +1,48 @@
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
 
-        if(nums1.length > nums2.length){
-            return intersection(nums2,nums1);
-        }
+            int len = nums1.length > nums2.length ? nums1.length : nums2.length;
+            int[] res = new int[len];
 
-        Set<Integer> list = new HashSet<>();
+            Arrays.sort(nums1);
+            Arrays.sort(nums2);
 
-        Set<Integer> set = new HashSet<>();
+            int left =0; 
+            int right =0;
 
-        for(Integer i : nums2){
-            set.add(i);
-        }
+            int idx =0;
 
-        for(Integer i : nums1){
-            if(set.contains(i)){
-                list.add(i);
+            while(left < nums1.length &&  right < nums2.length){
+                    if(nums1[left] == nums2[right]){
+                        
+                        res[idx] = nums1[left];
+                       
+                        left++;
+                        while(left  < nums1.length && nums1[left]==res[idx]){
+                            left++;
+                        }
+                        right++;
+                        while(right  < nums2.length && nums2[right]==res[idx]){
+                            right++;
+                        }
+                        idx++;
+                        
+                    }
+                    else if(nums1[left] < nums2[right]){
+
+                        left++;
+                        
+
+                    }
+                    else{
+                        right++;
+                       
+
+                    }
             }
-        }
-
-
-        int[] res = new int[list.size()];
-        int idx =0;
-
-        for(Integer i : list){
-              res[idx] = i;
-              idx++;
-        }
-
-        return res;
+            System.out.println(idx);
+           
+            return Arrays.copyOfRange(res,0,idx);
         
     }
 }
