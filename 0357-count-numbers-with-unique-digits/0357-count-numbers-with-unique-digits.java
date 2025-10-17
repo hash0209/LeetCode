@@ -13,7 +13,7 @@ class Solution {
         int count = 1;
 
         for(int i = 1 ; i <= n ; i++){
-            count+= find(i , new ArrayList<>() , new boolean[10]);
+            count+= find(i , 0 , new boolean[10]);
            
         }
 
@@ -23,8 +23,8 @@ class Solution {
         
     }
 
-    public int find (int digits , List<Integer> ds , boolean[] visit){
-          if(digits == ds.size()){
+    public int find (int digits , int taken , boolean[] visit){
+          if(digits == taken){
             return 1;
           }
 
@@ -32,16 +32,16 @@ class Solution {
 
 
           for(int i =0; i <= 9 ; i++){
-              if(ds.isEmpty() && i == 0){
+              if(taken==0 && i == 0){
                 continue;
               }
               if(!visit[i]){
                visit[i] =true;
               
-              ds.add(i);
+               taken++;
              
-               count += find(digits , ds , visit);
-               ds.remove(ds.size()-1);
+               count += find(digits , taken , visit);
+               taken--;
                visit[i]=false;
               }
           }
