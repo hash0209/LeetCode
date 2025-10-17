@@ -3,49 +3,31 @@ class Solution {
 
         
 
-        if(n == 0){
+        if(n ==  0){
+
             return 1;
+
         }
-        if(n ==1 ){
+
+        if( n == 1){
             return 10;
         }
 
-        int count = 1;
+        int count = 10;
 
-        for(int i = 1 ; i <= n ; i++){
-            count+= find(i , 0 , new boolean[10]);
-           
+        int factor =9;
+        int product = 9;
+
+        for(int i = 2 ; i <= n ; i++){
+            product = product* factor;
+            factor --;
+            count=count+product;
         }
 
         return count;
 
 
+       
         
-    }
-
-    public int find (int digits , int taken , boolean[] visit){
-          if(digits == taken){
-            return 1;
-          }
-
-          int count= 0;
-
-
-          for(int i =0; i <= 9 ; i++){
-              if(taken==0 && i == 0){
-                continue;
-              }
-              if(!visit[i]){
-               visit[i] =true;
-              
-               taken++;
-             
-               count += find(digits , taken , visit);
-               taken--;
-               visit[i]=false;
-              }
-          }
-
-          return count;
     }
 }
