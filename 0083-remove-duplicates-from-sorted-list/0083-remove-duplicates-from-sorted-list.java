@@ -15,17 +15,19 @@ class Solution {
         }
 
         ListNode node = head;
-        ListNode temp = head;
+        
 
         while(node!=null){
 
-            while(temp != null && temp.next!=null && temp.val == temp.next.val){
+            ListNode temp = node.next;
+
+            while(temp != null &&  temp.val == node.val){
                 temp = temp.next;
             }
 
-            node.next = temp.next;
+            node.next = temp;
             node = node.next;
-            temp = node;
+            
         }
         return head;
 
