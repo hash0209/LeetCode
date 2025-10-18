@@ -29,7 +29,7 @@ class Solution {
             String sub = s.substring(i,i+2);
            
                  int num = Integer.valueOf(sub);
-                 if(num >= 1 && num <= 26){
+                 if( num <= 26){
             
             ways+= find(i+2,dp ,s);
                  }
