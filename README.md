@@ -229,6 +229,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/hash0209/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0345-reverse-vowels-of-a-string](https://github.com/hash0209/LeetCode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0402-remove-k-digits](https://github.com/hash0209/LeetCode/tree/master/0402-remove-k-digits) |
+| [0412-fizz-buzz](https://github.com/hash0209/LeetCode/tree/master/0412-fizz-buzz) |
 | [0415-add-strings](https://github.com/hash0209/LeetCode/tree/master/0415-add-strings) |
 | [0424-longest-repeating-character-replacement](https://github.com/hash0209/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0482-license-key-formatting](https://github.com/hash0209/LeetCode/tree/master/0482-license-key-formatting) |
@@ -496,6 +497,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0043-multiply-strings](https://github.com/hash0209/LeetCode/tree/master/0043-multiply-strings) |
 | [0054-spiral-matrix](https://github.com/hash0209/LeetCode/tree/master/0054-spiral-matrix) |
 | [0068-text-justification](https://github.com/hash0209/LeetCode/tree/master/0068-text-justification) |
+| [0412-fizz-buzz](https://github.com/hash0209/LeetCode/tree/master/0412-fizz-buzz) |
 | [0415-add-strings](https://github.com/hash0209/LeetCode/tree/master/0415-add-strings) |
 | [0735-asteroid-collision](https://github.com/hash0209/LeetCode/tree/master/0735-asteroid-collision) |
 | [2169-simple-bank-system](https://github.com/hash0209/LeetCode/tree/master/2169-simple-bank-system) |
@@ -609,6 +611,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0357-count-numbers-with-unique-digits](https://github.com/hash0209/LeetCode/tree/master/0357-count-numbers-with-unique-digits) |
 | [0368-largest-divisible-subset](https://github.com/hash0209/LeetCode/tree/master/0368-largest-divisible-subset) |
 | [0384-shuffle-an-array](https://github.com/hash0209/LeetCode/tree/master/0384-shuffle-an-array) |
+| [0412-fizz-buzz](https://github.com/hash0209/LeetCode/tree/master/0412-fizz-buzz) |
 | [0415-add-strings](https://github.com/hash0209/LeetCode/tree/master/0415-add-strings) |
 | [1370-count-number-of-nice-subarrays](https://github.com/hash0209/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
 | [3374-count-alternating-subarrays](https://github.com/hash0209/LeetCode/tree/master/3374-count-alternating-subarrays) |
