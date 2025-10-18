@@ -7,8 +7,27 @@ class Solution {
             list.add("");
 
         }
-
         for(int i =0; i < n ; i++){
+            int num =i+1;
+
+            if(num % 3== 0 && num%5 == 0){
+                    list.set(i,"FizzBuzz");
+
+                }
+                else if(num%3 == 0){
+                     list.set(i,"Fizz");
+             }
+             else if(num%5==0){
+                  list.set(i,"Buzz");
+             }
+             else{
+                 list.set(i,String.valueOf(num));
+             }
+
+
+        //}
+
+       /* for(int i =0; i < n ; i++){
             if(!list.get(i).isEmpty()){
                 continue;
             }
@@ -16,32 +35,15 @@ class Solution {
              int factor =1;
 
              while(num <= n){
-                if(num % 3== 0 && num%5 == 0){
-                    list.set(num-1,"FizzBuzz");
-
-                }
-                else if(num%3 == 0){
-                     list.set(num-1,"Fizz");
-             }
-             else if(num%5==0){
-                  list.set(num-1,"Buzz");
-             }
-             else{
-                 list.set(num-1,String.valueOf(num));
-             }
-
-             factor++;
+                
+            factor++;
             num=num*factor;
              
              
 
              
 
-        }
-        }
-        return list;
+        } */
+        }return list;
 
-
-        
-    }
-}
+}}
