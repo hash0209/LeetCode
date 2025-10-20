@@ -299,6 +299,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/hash0209/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0943-sum-of-subarray-minimums](https://github.com/hash0209/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 | [0967-minimum-falling-path-sum](https://github.com/hash0209/LeetCode/tree/master/0967-minimum-falling-path-sum) |
+| [1013-fibonacci-number](https://github.com/hash0209/LeetCode/tree/master/1013-fibonacci-number) |
 | [1129-longest-string-chain](https://github.com/hash0209/LeetCode/tree/master/1129-longest-string-chain) |
 | [1170-shortest-common-supersequence](https://github.com/hash0209/LeetCode/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/hash0209/LeetCode/tree/master/1250-longest-common-subsequence) |
@@ -375,6 +376,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0070-climbing-stairs](https://github.com/hash0209/LeetCode/tree/master/0070-climbing-stairs) |
 | [0139-word-break](https://github.com/hash0209/LeetCode/tree/master/0139-word-break) |
+| [1013-fibonacci-number](https://github.com/hash0209/LeetCode/tree/master/1013-fibonacci-number) |
 ## Stack
 |  |
 | ------- |
@@ -615,6 +617,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0412-fizz-buzz](https://github.com/hash0209/LeetCode/tree/master/0412-fizz-buzz) |
 | [0415-add-strings](https://github.com/hash0209/LeetCode/tree/master/0415-add-strings) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/hash0209/LeetCode/tree/master/0453-minimum-moves-to-equal-array-elements) |
+| [1013-fibonacci-number](https://github.com/hash0209/LeetCode/tree/master/1013-fibonacci-number) |
 | [1370-count-number-of-nice-subarrays](https://github.com/hash0209/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
 | [3374-count-alternating-subarrays](https://github.com/hash0209/LeetCode/tree/master/3374-count-alternating-subarrays) |
 ## Counting
@@ -816,6 +819,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0206-reverse-linked-list](https://github.com/hash0209/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0224-basic-calculator](https://github.com/hash0209/LeetCode/tree/master/0224-basic-calculator) |
 | [0234-palindrome-linked-list](https://github.com/hash0209/LeetCode/tree/master/0234-palindrome-linked-list) |
+| [1013-fibonacci-number](https://github.com/hash0209/LeetCode/tree/master/1013-fibonacci-number) |
 ## Binary Indexed Tree
 |  |
 | ------- |
