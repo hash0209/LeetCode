@@ -88,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0503-next-greater-element-ii](https://github.com/hash0209/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0518-coin-change-ii](https://github.com/hash0209/LeetCode/tree/master/0518-coin-change-ii) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/hash0209/LeetCode/tree/master/0673-number-of-longest-increasing-subsequence) |
+| [0697-degree-of-an-array](https://github.com/hash0209/LeetCode/tree/master/0697-degree-of-an-array) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/hash0209/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0733-flood-fill](https://github.com/hash0209/LeetCode/tree/master/0733-flood-fill) |
 | [0735-asteroid-collision](https://github.com/hash0209/LeetCode/tree/master/0735-asteroid-collision) |
@@ -167,6 +168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0424-longest-repeating-character-replacement](https://github.com/hash0209/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0496-next-greater-element-i](https://github.com/hash0209/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/hash0209/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0697-degree-of-an-array](https://github.com/hash0209/LeetCode/tree/master/0697-degree-of-an-array) |
 | [0768-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/hash0209/LeetCode/tree/master/0778-reorganize-string) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/hash0209/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
