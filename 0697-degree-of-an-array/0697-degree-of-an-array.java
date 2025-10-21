@@ -19,22 +19,20 @@ class Solution {
             }
 
              
-            List<Integer> l = new ArrayList<>();
+          
+
+            int minlen = Integer.MAX_VALUE;
 
             for(Integer key :  map.keySet()){
                 if(freq.get(key)==maxFreq){
                
-                    l.add(key);
+                    Pair p = map.get(key);
+                    minlen = Math.min(minlen,p.end-p.start+1);
                  }
             }
-
-            int minlen = Integer.MAX_VALUE;
-
-            for(Integer x : l){
-                Pair p = map.get(x);
-                minlen = Math.min(minlen,p.end-p.start+1);
-            }
             return minlen;
+
+            
 
 
 
