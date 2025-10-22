@@ -2,21 +2,26 @@ class Solution {
     public int openLock(String[] deadends, String target) {
 
         Set<String> set = new HashSet<>();
-
+        String begin="0000";
+       
+      
         for (int i = 0; i < deadends.length; i++) {
             set.add(deadends[i]);
         }
-
-        if(set.contains("0000")){
+          if(set.contains(begin)){
             return -1;
         }
 
-        if("0000".equals(target)){
-            return 0;
-        }
+       
+
+        
 
         Queue<String> q = new LinkedList<>();
-        q.add("0000");
+        q.add(begin);
+        Set<String> visited = new HashSet<>();
+        visited.add(begin);
+
+
        
 
         int moves = 0;
@@ -43,8 +48,8 @@ class Solution {
                   
                   
 
-                    if (!set.contains(s)) {
-                        set.add(s);
+                    if (!set.contains(s) && !visited.contains(s)) {
+                        visited.add(s);
                         q.add(s);
                     }
 
@@ -54,10 +59,11 @@ class Solution {
 
                    
 
-                    if (!set.contains(s)) {
-                        set.add(s);
+                     if (!set.contains(s) && !visited.contains(s)) {
+                        visited.add(s);
                         q.add(s);
                     }
+
                   
 
                     ch[c] = orig;
