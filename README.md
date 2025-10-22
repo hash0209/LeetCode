@@ -93,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0733-flood-fill](https://github.com/hash0209/LeetCode/tree/master/0733-flood-fill) |
 | [0735-asteroid-collision](https://github.com/hash0209/LeetCode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/hash0209/LeetCode/tree/master/0739-daily-temperatures) |
+| [0753-open-the-lock](https://github.com/hash0209/LeetCode/tree/master/0753-open-the-lock) |
 | [0890-lemonade-change](https://github.com/hash0209/LeetCode/tree/master/0890-lemonade-change) |
 | [0940-fruit-into-baskets](https://github.com/hash0209/LeetCode/tree/master/0940-fruit-into-baskets) |
 | [0943-sum-of-subarray-minimums](https://github.com/hash0209/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
@@ -170,6 +171,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/hash0209/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/hash0209/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0697-degree-of-an-array](https://github.com/hash0209/LeetCode/tree/master/0697-degree-of-an-array) |
+| [0753-open-the-lock](https://github.com/hash0209/LeetCode/tree/master/0753-open-the-lock) |
 | [0768-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/hash0209/LeetCode/tree/master/0778-reorganize-string) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/hash0209/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
@@ -241,6 +243,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0583-delete-operation-for-two-strings](https://github.com/hash0209/LeetCode/tree/master/0583-delete-operation-for-two-strings) |
 | [0678-valid-parenthesis-string](https://github.com/hash0209/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0696-count-binary-substrings](https://github.com/hash0209/LeetCode/tree/master/0696-count-binary-substrings) |
+| [0753-open-the-lock](https://github.com/hash0209/LeetCode/tree/master/0753-open-the-lock) |
 | [0768-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/hash0209/LeetCode/tree/master/0778-reorganize-string) |
 | [1084-find-k-length-substrings-with-no-repeated-characters](https://github.com/hash0209/LeetCode/tree/master/1084-find-k-length-substrings-with-no-repeated-characters) |
@@ -759,6 +762,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/hash0209/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/hash0209/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0733-flood-fill](https://github.com/hash0209/LeetCode/tree/master/0733-flood-fill) |
+| [0753-open-the-lock](https://github.com/hash0209/LeetCode/tree/master/0753-open-the-lock) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/hash0209/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/hash0209/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1036-rotting-oranges](https://github.com/hash0209/LeetCode/tree/master/1036-rotting-oranges) |
