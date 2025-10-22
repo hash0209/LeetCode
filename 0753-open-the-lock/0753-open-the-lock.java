@@ -44,24 +44,24 @@ class Solution {
                     int num = ch[c] - '0';
                     int num1 = (num + 1) % 10;
                     ch[c] = (char) (num1 + '0');
-                    String s = new String(ch);
+                    String up = new String(ch);
                   
                   
 
-                    if (!set.contains(s) && !visited.contains(s)) {
-                        visited.add(s);
-                        q.add(s);
+                    if (!set.contains(up) && !visited.contains(up)) {
+                        visited.add(up);
+                        q.add(up);
                     }
 
                     int num2 = (num - 1 + 10) % 10;
                     ch[c] = (char) (num2 + '0');
-                    s = new String(ch);
+                    String down = new String(ch);
 
                    
 
-                     if (!set.contains(s) && !visited.contains(s)) {
-                        visited.add(s);
-                        q.add(s);
+                     if (!set.contains(down) && !visited.contains(down)) {
+                        visited.add(down);
+                        q.add(down);
                     }
 
                   
