@@ -627,6 +627,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0412-fizz-buzz](https://github.com/hash0209/LeetCode/tree/master/0412-fizz-buzz) |
 | [0415-add-strings](https://github.com/hash0209/LeetCode/tree/master/0415-add-strings) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/hash0209/LeetCode/tree/master/0453-minimum-moves-to-equal-array-elements) |
+| [0796-reaching-points](https://github.com/hash0209/LeetCode/tree/master/0796-reaching-points) |
 | [1013-fibonacci-number](https://github.com/hash0209/LeetCode/tree/master/1013-fibonacci-number) |
 | [1370-count-number-of-nice-subarrays](https://github.com/hash0209/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
 | [3374-count-alternating-subarrays](https://github.com/hash0209/LeetCode/tree/master/3374-count-alternating-subarrays) |
