@@ -101,6 +101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0967-minimum-falling-path-sum](https://github.com/hash0209/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [1034-subarrays-with-k-different-integers](https://github.com/hash0209/LeetCode/tree/master/1034-subarrays-with-k-different-integers) |
 | [1036-rotting-oranges](https://github.com/hash0209/LeetCode/tree/master/1036-rotting-oranges) |
+| [1044-find-common-characters](https://github.com/hash0209/LeetCode/tree/master/1044-find-common-characters) |
 | [1046-max-consecutive-ones-iii](https://github.com/hash0209/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/hash0209/LeetCode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1129-longest-string-chain](https://github.com/hash0209/LeetCode/tree/master/1129-longest-string-chain) |
@@ -179,6 +180,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0966-binary-subarrays-with-sum](https://github.com/hash0209/LeetCode/tree/master/0966-binary-subarrays-with-sum) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/hash0209/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1034-subarrays-with-k-different-integers](https://github.com/hash0209/LeetCode/tree/master/1034-subarrays-with-k-different-integers) |
+| [1044-find-common-characters](https://github.com/hash0209/LeetCode/tree/master/1044-find-common-characters) |
 | [1084-find-k-length-substrings-with-no-repeated-characters](https://github.com/hash0209/LeetCode/tree/master/1084-find-k-length-substrings-with-no-repeated-characters) |
 | [1125-design-file-system](https://github.com/hash0209/LeetCode/tree/master/1125-design-file-system) |
 | [1129-longest-string-chain](https://github.com/hash0209/LeetCode/tree/master/1129-longest-string-chain) |
@@ -246,6 +248,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0753-open-the-lock](https://github.com/hash0209/LeetCode/tree/master/0753-open-the-lock) |
 | [0768-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/hash0209/LeetCode/tree/master/0778-reorganize-string) |
+| [1044-find-common-characters](https://github.com/hash0209/LeetCode/tree/master/1044-find-common-characters) |
 | [1084-find-k-length-substrings-with-no-repeated-characters](https://github.com/hash0209/LeetCode/tree/master/1084-find-k-length-substrings-with-no-repeated-characters) |
 | [1125-design-file-system](https://github.com/hash0209/LeetCode/tree/master/1125-design-file-system) |
 | [1129-longest-string-chain](https://github.com/hash0209/LeetCode/tree/master/1129-longest-string-chain) |
