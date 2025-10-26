@@ -1,48 +1,43 @@
 class Solution {
     public List<String> commonChars(String[] words) {
-        Map<Character,Integer> map =new HashMap<>();
-        for(char c : words[0].toCharArray()){
-            map.putIfAbsent(c,0);
-            map.put(c , map.get(c)+1);
-        }
+         int[] common = new int[26];
 
-        for(int i=1; i < words.length ; i++){
+         for(char c : words[0].toCharArray()){
+            common[c-'a']++;
+         }
+        
 
-             Map<Character,Integer> temp =new HashMap<>();
+        for(int i  =1; i < words.length ; i++){
+
+            int[] temp = new int[26];
 
             for(char c : words[i].toCharArray()){
-                if(map.containsKey(c)){
-                    if(map.get(c) ==1){
-                        map.remove(c);
-                    }
-                    else{
-                        map.put(c , map.get(c)-1);
-                    }
-                     temp.putIfAbsent(c,0);
-                     temp.put(c,temp.get(c)+1);
-
-                }
-                      
-                }
-                map = temp;
-
+                temp[c-'a']++;
 
             }
-        
+
+            for(int j=0; j < 26; j++){
+                common[j] = Math.min(temp[j],common[j]);
+            }
+        }
+
+
         List<String> list = new ArrayList<>();
 
-
-        for(char key : map.keySet()){
-                  
-                  int val = map.get(key);
-
-                  for(int i=0; i < val ;i++){
-                    list.add(String.valueOf(key));
-                  }
+        for(int i=0; i < common.length ;i++){
 
 
+            for(int val =0; val < common[i];val++){
+
+                char c = (char)(i+'a');
+                list.add(String.valueOf(c));
+                
+            }
         }
         return list;
+
+
+
 
 
     }
