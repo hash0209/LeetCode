@@ -104,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1044-find-common-characters](https://github.com/hash0209/LeetCode/tree/master/1044-find-common-characters) |
 | [1046-max-consecutive-ones-iii](https://github.com/hash0209/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/hash0209/LeetCode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
+| [1126-minimum-cost-to-connect-sticks](https://github.com/hash0209/LeetCode/tree/master/1126-minimum-cost-to-connect-sticks) |
 | [1129-longest-string-chain](https://github.com/hash0209/LeetCode/tree/master/1129-longest-string-chain) |
 | [1370-count-number-of-nice-subarrays](https://github.com/hash0209/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/hash0209/LeetCode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
@@ -507,6 +508,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0768-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/hash0209/LeetCode/tree/master/0778-reorganize-string) |
 | [0890-lemonade-change](https://github.com/hash0209/LeetCode/tree/master/0890-lemonade-change) |
+| [1126-minimum-cost-to-connect-sticks](https://github.com/hash0209/LeetCode/tree/master/1126-minimum-cost-to-connect-sticks) |
 ## Simulation
 |  |
 | ------- |
@@ -547,6 +549,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/hash0209/LeetCode/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/hash0209/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0778-reorganize-string](https://github.com/hash0209/LeetCode/tree/master/0778-reorganize-string) |
+| [1126-minimum-cost-to-connect-sticks](https://github.com/hash0209/LeetCode/tree/master/1126-minimum-cost-to-connect-sticks) |
 ## Monotonic Queue
 |  |
 | ------- |
