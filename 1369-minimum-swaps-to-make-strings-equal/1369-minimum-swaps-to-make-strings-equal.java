@@ -1,24 +1,24 @@
 class Solution {
     public int minimumSwap(String s1, String s2) {
 
+        if(s1.equals(s2)){
+            return 0;
+        }
+
          int xy =0;
          int yx =0;
 
          for(int i =0; i < s1.length() ; i++){
-            if(s1.charAt(i)==s2.charAt(i)){
-                continue;
-            }
+           
              if(s1.charAt(i)=='x' && s2.charAt(i)=='y'){
                 xy++;
              }
-             else{
+             else if(s1.charAt(i)=='y' && s2.charAt(i)=='x'){
                 yx++;
              }
          }
 
-         if(xy == 0 && yx ==0){
-            return 0;
-         }
+       
 
          int swaps =0;
 
