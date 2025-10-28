@@ -256,6 +256,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1129-longest-string-chain](https://github.com/hash0209/LeetCode/tree/master/1129-longest-string-chain) |
 | [1170-shortest-common-supersequence](https://github.com/hash0209/LeetCode/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/hash0209/LeetCode/tree/master/1250-longest-common-subsequence) |
+| [1252-break-a-palindrome](https://github.com/hash0209/LeetCode/tree/master/1252-break-a-palindrome) |
 | [1369-minimum-swaps-to-make-strings-equal](https://github.com/hash0209/LeetCode/tree/master/1369-minimum-swaps-to-make-strings-equal) |
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/hash0209/LeetCode/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/hash0209/LeetCode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
@@ -511,6 +512,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0778-reorganize-string](https://github.com/hash0209/LeetCode/tree/master/0778-reorganize-string) |
 | [0890-lemonade-change](https://github.com/hash0209/LeetCode/tree/master/0890-lemonade-change) |
 | [1126-minimum-cost-to-connect-sticks](https://github.com/hash0209/LeetCode/tree/master/1126-minimum-cost-to-connect-sticks) |
+| [1252-break-a-palindrome](https://github.com/hash0209/LeetCode/tree/master/1252-break-a-palindrome) |
 | [1369-minimum-swaps-to-make-strings-equal](https://github.com/hash0209/LeetCode/tree/master/1369-minimum-swaps-to-make-strings-equal) |
 ## Simulation
 |  |
