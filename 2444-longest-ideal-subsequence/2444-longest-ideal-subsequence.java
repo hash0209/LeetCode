@@ -17,7 +17,8 @@ class Solution {
                     }
             }
 
-            dp[idx] = Math.max(dp[idx] , max+1);
+           // dp[idx] = Math.max(dp[idx] , max+1);
+           dp[idx] = max+1;
             maxlen = Math.max(dp[idx], maxlen);
 
 
