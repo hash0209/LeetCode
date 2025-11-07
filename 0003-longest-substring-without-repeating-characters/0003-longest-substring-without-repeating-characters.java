@@ -10,8 +10,9 @@ class Solution {
         int l =0; int r =0;
 
         while(r < s.length()){
-            if(indicesMap.containsKey(s.charAt(r)) && l <= indicesMap.get(s.charAt(r))){
-                   int idx = indicesMap.get(s.charAt(r));
+             int idx =indicesMap.getOrDefault(s.charAt(r),-1);
+            if(l <= idx){
+                 
                    l= idx+1;
             }
             indicesMap.put(s.charAt(r),r);
