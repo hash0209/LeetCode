@@ -10,63 +10,70 @@
  */
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-          
-
            ListNode temp = new ListNode(-1);
-            ListNode  head = temp;
+           ListNode head = temp;
+           ListNode node;
+
            int carry = 0;
 
-           while(l1!=null && l2!= null){
+
+           while(l1!=null && l2!=null){
+
                   int sum = l1.val+l2.val+carry;
                   if(sum >= 10){
-                    carry =1;
+                    carry=1;
                     sum = sum-10;
                   }
                   else{
-                    carry =0;
-                  }   
+                    carry=0;
+                  }
+                  node = new ListNode(sum);
+                  temp.next = node;
+                  temp=temp.next;
+                  l1=l1.next;
+                  l2=l2.next;
 
-                  temp.next = new ListNode(sum);
-                  temp = temp.next; 
-                  l1 =l1.next;
-                  l2 =l2.next;
+
+
            }
+
 
            while(l1!=null){
                int sum = l1.val+carry;
                if(sum >= 10){
-                    carry =1;
-                    sum = sum-10;
-                  }
-                  else{
-                    carry =0;
-                  }   
-
-                  temp.next = new ListNode(sum);
-                  temp = temp.next;
+                carry=1;
+                sum=sum-10;
+               }
+               else{
+                carry=0;
+               }
+               node =new ListNode(sum);
+               temp.next = node;
+                  temp=temp.next;
                   l1=l1.next;
            }
+
             while(l2!=null){
                int sum = l2.val+carry;
                if(sum >= 10){
-                    carry =1;
-                    sum = sum-10;
-                  }
-                  else{
-                    carry =0;
-                  }   
-
-                  temp.next = new ListNode(sum);
-                  temp = temp.next;
+                carry=1;
+                sum=sum-10;
+               }
+               else{
+                carry=0;
+               }
+               node =new ListNode(sum);
+               temp.next = node;
+                  temp=temp.next;
                   l2=l2.next;
            }
 
-           if(carry ==1){
-            temp.next = new ListNode(carry);
-                  temp = temp.next;
+           if(carry !=0){
+            node=new ListNode(carry);
+            temp.next = node;
+
            }
+
            return head.next;
-           
-        
     }
 }
