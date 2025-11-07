@@ -1,25 +1,33 @@
 class Solution {
     public int numOfUnplacedFruits(int[] fruits, int[] baskets) {
-        boolean[] taken = new boolean[fruits.length];
 
-        int count = 0;
+        int unplaced =0;
 
-        for(int i =0; i < fruits.length ; i++){
+        boolean[] placed = new boolean[fruits.length];
 
-            boolean placed =false;
+
+        for(int i = 0; i < fruits.length ; i++){
+
+            boolean found = false;
+
             for(int j =0; j < baskets.length ; j++){
-                if(fruits[i] <= baskets[j] && !taken[j]){
-                    taken[j] = true;
-                    placed =true;
-                    break;
+                if(baskets[j]>= fruits[i] && !placed[j]){
+                     placed[j] = true;
+                     found = true;
+                     break;
                 }
             }
-            if(!placed){
-                count++;
+            if(!found){
+                unplaced++;
             }
         }
+        return unplaced;
 
-        return count ;
+
+
+        
+
+           
         
     }
 }
