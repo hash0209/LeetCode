@@ -139,6 +139,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0216-combination-sum-iii](https://github.com/hash0209/LeetCode/tree/master/0216-combination-sum-iii) |
 | [0257-binary-tree-paths](https://github.com/hash0209/LeetCode/tree/master/0257-binary-tree-paths) |
 | [0357-count-numbers-with-unique-digits](https://github.com/hash0209/LeetCode/tree/master/0357-count-numbers-with-unique-digits) |
+| [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/hash0209/LeetCode/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
 ## Hash Table
 |  |
 | ------- |
@@ -188,6 +189,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1129-longest-string-chain](https://github.com/hash0209/LeetCode/tree/master/1129-longest-string-chain) |
 | [1370-count-number-of-nice-subarrays](https://github.com/hash0209/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/hash0209/LeetCode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
+| [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/hash0209/LeetCode/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
 | [1987-substrings-of-size-three-with-distinct-characters](https://github.com/hash0209/LeetCode/tree/master/1987-substrings-of-size-three-with-distinct-characters) |
 | [2133-number-of-pairs-of-strings-with-concatenation-equal-to-target](https://github.com/hash0209/LeetCode/tree/master/2133-number-of-pairs-of-strings-with-concatenation-equal-to-target) |
 | [2169-simple-bank-system](https://github.com/hash0209/LeetCode/tree/master/2169-simple-bank-system) |
@@ -260,6 +262,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1369-minimum-swaps-to-make-strings-equal](https://github.com/hash0209/LeetCode/tree/master/1369-minimum-swaps-to-make-strings-equal) |
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/hash0209/LeetCode/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/hash0209/LeetCode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
+| [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/hash0209/LeetCode/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
 | [1987-substrings-of-size-three-with-distinct-characters](https://github.com/hash0209/LeetCode/tree/master/1987-substrings-of-size-three-with-distinct-characters) |
 | [2133-number-of-pairs-of-strings-with-concatenation-equal-to-target](https://github.com/hash0209/LeetCode/tree/master/2133-number-of-pairs-of-strings-with-concatenation-equal-to-target) |
 | [2444-longest-ideal-subsequence](https://github.com/hash0209/LeetCode/tree/master/2444-longest-ideal-subsequence) |
