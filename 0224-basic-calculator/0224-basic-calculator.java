@@ -1,59 +1,56 @@
 class Solution {
     public int calculate(String s) {
+
+        int res =0; 
+        int prevSign =1;
+        int num=0;
+
         Stack<Integer> st = new Stack<>();
 
-        int res =0;
-        int sign = 1;
-        int num =0;
-
-        for(int i = 0; i < s.length();i++){
-            
-            char c =s.charAt(i);
-            if(c == ' '){
+        for(int i=0; i < s.length() ;i++){
+             if(s.charAt(i)==' '){
                 continue;
-            } 
-            if(c == '+'){
-                res=res+(sign* num);
-                sign =1;
+             }
+
+             if(s.charAt(i)=='+'||s.charAt(i)=='-'){
+                num=num*prevSign;
+                res=res+num;
+                if(s.charAt(i)== '-'){
+                    prevSign = -1;
+                }
+                else{
+                    prevSign=1;
+                }
                 num=0;
 
-            }
-            else if(c== '-'){
-                res=res+(sign*num);
-                sign=-1;
-                num=0;
 
-            }
-            else if(Character.isDigit(c)){
-                 
-                 num=(num*10)+c-'0';
+             }
 
-            }
-            else if(c =='('){
+             if(s.charAt(i)=='('){
                 st.push(res);
-                st.push(sign);
-              
-
+                st.push(prevSign);
                 res=0;
-                sign=1;
-                num=0;
-            }
-            else if(c ==')'){
-                res+=sign*num;
+                prevSign=1;
 
-                res =res * st.pop();
-                
-              
+             }
+
+             if(s.charAt(i)==')'){
+                res+= num*prevSign;
+                res=res*st.pop();
                 res=res+st.pop();
+
                 num=0;
-                
+             }
 
+            if(Character.isDigit(s.charAt(i))){
+                int digit = s.charAt(i)-'0';
+                num=num*10+digit;
             }
-           
+
         }
-        return res+(sign*num);
 
-
+        res= res +(num*prevSign);
+        return res;
         
     }
 }
