@@ -3,33 +3,44 @@ class Solution {
 
         int[][] dp = new int[prices.length][2];
 
-        dp[prices.length-1][0] = (prices[prices.length-1] > fee )? prices[prices.length-1]- fee : 0;
+        for(int[] row : dp){
+            Arrays.fill(row,-1);
+        }
 
-        for (int idx = prices.length-2 ; idx >= 0; idx--){
 
-            for(int buy =0; buy <= 1; buy++){
+        return calc(0 , prices , 1 , fee , dp);
+        
+    }
 
-                if(buy==1){
+    public int calc(int index , int[] prices , int buy ,  int fee , int[][] dp){
 
-                    int buys = dp[idx+1][0] - prices[idx];
-
-                    int notbuys = dp[idx+1][buy];
-
-                    dp[idx][buy] =Math.max(buys,notbuys);
-                }
-                else{
-                    int sell = dp[idx+1][1] + prices[idx] - fee;
-
-                    int notsell = dp[idx+1][buy];
-
-                    dp[idx][buy] =Math.max(sell,notsell);
-                }
+        if(index == prices.length-1){
+            if(buy == 1){
+                return 0;
+            }
+            else {
+                return prices[index] - fee;
             }
         }
 
-        return dp[0][1];
+        if(dp[index][buy]!=-1){
+            return dp[index][buy];
+        }
 
+        if(buy ==1){
+            int buys = calc(index+1 , prices , 0 , fee , dp) - prices[index];
 
-        
+            int notbuy = calc(index+1 , prices , 1 , fee ,dp);
+
+            return  dp[index][buy]= Math.max(buys,notbuy);
+        }
+        else{
+            int sell = calc(index+1 , prices , 1 , fee ,dp) + prices[index] -fee;
+
+            int notsell = calc(index+1 , prices , 0 , fee ,dp);
+
+            return  dp[index][buy]= Math.max(sell,notsell); 
+        }
+
     }
 }
