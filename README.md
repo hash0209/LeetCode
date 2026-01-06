@@ -176,6 +176,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/hash0209/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0697-degree-of-an-array](https://github.com/hash0209/LeetCode/tree/master/0697-degree-of-an-array) |
 | [0753-open-the-lock](https://github.com/hash0209/LeetCode/tree/master/0753-open-the-lock) |
+| [0763-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0763-partition-labels) |
 | [0768-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/hash0209/LeetCode/tree/master/0778-reorganize-string) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/hash0209/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
@@ -250,6 +251,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0678-valid-parenthesis-string](https://github.com/hash0209/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0696-count-binary-substrings](https://github.com/hash0209/LeetCode/tree/master/0696-count-binary-substrings) |
 | [0753-open-the-lock](https://github.com/hash0209/LeetCode/tree/master/0753-open-the-lock) |
+| [0763-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0763-partition-labels) |
 | [0768-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/hash0209/LeetCode/tree/master/0778-reorganize-string) |
 | [1044-find-common-characters](https://github.com/hash0209/LeetCode/tree/master/1044-find-common-characters) |
@@ -491,6 +493,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/hash0209/LeetCode/tree/master/0455-assign-cookies) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/hash0209/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0696-count-binary-substrings](https://github.com/hash0209/LeetCode/tree/master/0696-count-binary-substrings) |
+| [0763-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0763-partition-labels) |
 | [0768-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0768-partition-labels) |
 | [1129-longest-string-chain](https://github.com/hash0209/LeetCode/tree/master/1129-longest-string-chain) |
 | [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/hash0209/LeetCode/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
@@ -511,6 +514,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/hash0209/LeetCode/tree/master/0455-assign-cookies) |
 | [0678-valid-parenthesis-string](https://github.com/hash0209/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/hash0209/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
+| [0763-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0763-partition-labels) |
 | [0768-partition-labels](https://github.com/hash0209/LeetCode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/hash0209/LeetCode/tree/master/0778-reorganize-string) |
 | [0890-lemonade-change](https://github.com/hash0209/LeetCode/tree/master/0890-lemonade-change) |
